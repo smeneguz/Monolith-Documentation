@@ -1,0 +1,21 @@
+#posizioni
+analista
+analisti
+responsabile
+#responsabili non dovrebbe servire
+progettista
+progettisti
+verificatore
+verificatori
+amministratore
+programmatore
+programmatori
+
+#documento
+Analisi dei requisiti v2.0.0
+Piano di progetto v3.0.0
+Piano di qualifica v3.0.0
+Norme di progetto v3.0.0
+Glossario v2.0.0
+Studio di fattibilità v1.0.0
+

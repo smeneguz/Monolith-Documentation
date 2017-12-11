@@ -1,0 +1,144 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{rotating} 
+\usepackage{multirow}
+
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\date{}
+
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\rightmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../../../file_comuni/copertina2}
+\nomedoc{Verbale esterno 2017-05-03}
+\versione{v1\_0\_0}
+\datacreazione{2017/05/03}
+\verifica{Riccardo Saggese}
+\approvazione{Nicolò Rigato}
+\redazione{Emanuele Crespan \eanche Federica Schifano}
+\uso{interno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Verbale dell'incontro tra il gruppo \emph{Obelix} e il
+  proponente \emph{RedBabel} in data 2017-05-03}
+
+
+\begin{document}
+\paginatitolo
+\section{Informazioni sulla riunione}
+
+\begin{itemize}
+\item[] Data: 2017-05-03
+\item[] Luogo: Residenza membro gruppo Obelix e sede Red Babel - videoconferenza
+\item[] Ora: 18:00
+\item[] Durata: 40'
+\item[] Partecipanti interni: Obelix
+  \begin{itemize}
+  \item[] Emanuele Crespan
+  \item[] Federica Schifano
+  \item[] Nicolò Rigato
+  \item[] Riccardo Saggese
+  \item[] Silvio Meneguzzo
+  \item[] Tomas Mali
+  \end{itemize}
+\item[] Partecipanti esterni: Red Babel
+  \begin{itemize}
+  \item[] Milo Ertola
+  \end{itemize}
+\end{itemize}
+
+\section{Conversazione}
+
+Di seguito vengono riportate in grassetto le domande e affermazioni effettuate dal gruppo Obelix
+nel corso della videoconferenza e in corsivo le risposte e osservazioni date dal Proponente Red Babel.\\
+
+\textbf{Innanzitutto volevamo aggiornarvi su quello che stavamo facendo e pensando. Siamo nella fase di progettazione architetturale, in realtà siamo molto confusi. 
+Vi dico quello che abbiamo fatto fino ad adesso…}\\
+\textit{L’ultima volta che ci siamo sentiti vi eravate appena formati, abbiamo discusso di come trovare l’idea per il progetto, giusto?? Come è andata?
+}\\
+
+\textbf{abbiamo fatto la prima presentazione con una serie di idee che erano forse molto abbozzate, ce l’ha fatta passare con una serie di note e correzioni da apportare.}\\
+\textit{Potete mostrarci la presentazione?
+L’idea con cui siete venuti fuori?}\\
+
+\textbf{Per quanto riguarda l’SDK abbiamo una parte più verso la grafica e una parte di altro, di funzionalità.}\\
+\textit{Dunque, il progetto è diviso in due parti: uno il cosiddetto contenuto tecnologico quindi l’SDK, lo strumento che utilizzano gli sviluppatori per venir fuori con le loro app e l’altro è l’utilizzo di questo SDK. Dunque l’SDK come è suddivisa?}\\
+
+\textbf{Una parte è il front-end che è pensata più che altro per semplificare la composizione, abbiamo pensato ad un sistema di elementi e contenitori inspirati al modo in cui funziona QT nel C++ o alle swing del Java. I contenitori contengono o contenitori o elementi, i contenitori si occupano di impilare o di accostare in orizzontale le cose (per realizzare il layout), abbiamo fatto una cosa così componibile con misure e dati tutti di default per fare tutto nel modo più automatico e veloce possibile.}\\
+\textit{Benissimo, ma se lo sviluppatore vuole può fare delle customizzazioni un po’ più spinte, giusto?}\\
+
+\textbf{Certo! 
+	Copriamo gli elementi dell’HTML principali in modo molto superficiale. Ad esempio se abbiamo un <p> (paragrafo) noi curiamo solo il contenuto, per il resto abbiamo pensato di dare la possibilità di riferirsi a un id o alle classi dell’HTML e se lo sviluppatore vuole si arrangia.}\\
+\textit{Una cosa, non so a che livello avete progettato, ma se dovete avere altre ispirazioni ci sono dei tool che funzionano più nella direzione di React o quantomeno più legate all’HTML e CSS. Sapete cos'è bootstrap?}\\
+
+\textbf{si, sappiamo cos'è.}\\
+\textit{Bene, in bootstrap c'è un sistema di greeding cioè una griglia senza cazzi e ramazzi, già impostata, vi consiglio di guardare e prendere spunto da cose che ci sono già in giro, non reinventare ovviamente questo nei limiti del framework Meteor e Rocket.chat.}\\
+
+\textbf{Perfetto, anche se in realtà questa è una delle cose che ci blocca di più perchè facciamo fatica a capire che strumento fa cosa..}\\
+\textit{Cosa non vi è chiaro più in particolare?}\\
+
+\textbf{Ad esempio come attaccarsi a Rochet.chat, cioè noi facciamo il nostro SDK e dobbiamo dare e ricevere delle informazioni da rocket.chat..}\\
+\textit{Esatto, Meteor è un sistema monolitico che utilizza Javascript sia su front-end e sia su back-end quindi il nostro SDK avrà una parte che girerà su fron-end quindi scritta in javascript e una parte che girerà nel back-end che può essere anche solo anch'esso scritta in javascript..Voi avete visto come funziona Rochet-chat e cosa fornisce?}
+
+\textbf{A livello di..?}\\
+\textit{Ad esempio se vi permette di usare bootstrap?}\\
+
+\textbf{Si, ci siamo informati un po'. Però non ci è ciaro come attaccarci a Rochet.chat..Cioè noi facciamo il nostro SDK e dobbiamo avere delle informazioni e dare delle informazioni a Rocket.chat.}\\
+\textit{Esatto, Rochet.chat è un'applicazione che gira su meteor, ed esso necessità dei package, quindi quando avete messo il vostro package nella vostra istanza di Rocket.chat, in sostanza uno script meteor che utilizza le API di Rochet.chat .
+}\\
+
+\textbf{Ok, andremo subito a guardarlo.}\\
+\textit{ Per saperne di più andate a vedere i pacchetti che ttrovate nella Repo di Rochet.chat, proprio il codice. I pacchetti che ho utilizzato per il mio esempio sono ad esempio gli action link per vedere come si poteva avere dei link azzionabili all'interno della bolla.}\\
+
+\textbf{Ok. Questo è già di aiuto su molte cose. Un altra cosa, è che nel capitolato si parlava di SCSS..}\\
+\textit{Si, SCSS come avete visto, SCSS compila un css e se scrivi css il css è scss valido.
+Vi permette di risparmiare lavoro con il css, inoltre SCSS è integrato in meteor.}\\
+
+\textbf{Perfetto, questo è chiaro, inoltre riguardo React, angular c'è qualche consiglio o avvertimento utile che puoi fornirci?}\\
+\textit{Di default Metor utilizza Blaze.js, ma comunque vi consiglio React o comunque è a vostra discrezione la scelta. Scusate, ma tra poco devo andare, per la Demo? cosa avete pensato?}\\
+
+\textbf{Ok, quindi dato che dobbiamo accellerare la demo era pensata come una versione più evoluta di una to do list..ad esempio posta in una situazione come magazzino/dispensa c'è un elenco di cose che devono esserci, quindi la bolla permette di spuntare da liste predefinite le cose che ci sono e quelle che non ci sono, quello che non c'è viene automaticamente messo in lista ev in quella lista si possono aggiungere ulteriori cose che non ci sono nelle liste di controllo.}\\
+\textit{Ok, quindi ci sono almeno due tipi di utente?}\\
+
+\textbf{Si, ci sarà un Mittente e un ricevente.}\\
+\textit{Ottimo. Come consiglio per l'SDK se riuscite a farvi il prototipo avete già un idea di come buttare giù gli schemi. Io adesso devo andare, se c'è altro scrivete su slack.}\\
+
+\textbf{Va bene, Grazie mille.}\\
+
+\section{Decisioni prese}
+\begin{enumerate}
+	\item Confermato struttura Demo, approvata l'idea da parte dei proponenti
+	\item Uso di bootsrap
+	\item valutazione tra Blaze.js, React e Angular con scelta finale di React
+	\item Affermate due tipologie di utente per la Demo (mittente e ricevente)
+	
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{listings}
+\date{}
+\input{../../documents_versions}
+
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\leftmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../file_comuni/copertina}
+\nomedoc{Manuale utente}
+\versione{v1\_0\_0}
+\datacreazione{2017-08-01}
+\verifica{Federica Schifano \eanche Nicolò Rigato}
+\approvazione{Silvio Meneguzzo}
+\redazione{Tomas Mali \eanche Emanuele Crespan \eanche Riccardo Saggese}
+\uso{Esterno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin}
+\sommario{Manuale utente per l'SDK Monolith e per le bolle di default e della Demo}
+
+
+
+\begin{document}
+
+%\input{copertina}
+\paginatitolo
+\include{controcopertina}
+
+%\hyphenchar\font=-1 % disable hyphen
+\tableofcontents
+%\clearpage
+%\listoffigures
+%\listoftables
+
+%\hyphenchar\font=`\- % reset hyphen
+\clearpage
+
+\include{contenuto}
+
+\end{document}

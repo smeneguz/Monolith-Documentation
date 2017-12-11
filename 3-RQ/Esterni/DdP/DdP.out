@@ -1,0 +1,149 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Scopo del documento}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Scopo del prodotto}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Glossario}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Riferimenti}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Normativi}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Informativi}{subsection.1.4}% 7
+\BOOKMARK [1][-]{section.2}{Tecnologie Utilizzate}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Javascript 6th edition \(ECMA SCRIPT 6\)}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Meteor}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Mongo DB}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.4}{HTML5}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.5}{SCSS}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.6}{React}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.7}{Node.js}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.8}{Rochet.chat}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.9}{Bootstrap}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.10}{polyglot.js}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.11}{Money.js}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.12}{weather.js}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.13}{classNames}{section.2}% 21
+\BOOKMARK [1][-]{section.3}{Descrizione Architettura}{}% 22
+\BOOKMARK [2][-]{subsection.3.1}{Metodo e formalismo di specifica}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.2}{Architettura generale - Componenti del sistema}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Monolith}{subsection.3.2}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Monolith::Database}{subsection.3.2}% 26
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Monolith::Database::InformationStorage}{subsection.3.2}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Monolith::Database::informationStorage::Checks}{subsection.3.2}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Monolith::Database::InformationStorage::DatabaseSettings}{subsection.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.6}{Monolith::UI}{subsection.3.2}% 30
+\BOOKMARK [3][-]{subsubsection.3.2.7}{Monolith::UI::Bubbles}{subsection.3.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.2.8}{Monolith::UI::SideAreas}{subsection.3.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.9}{Monolith::UI::SideAreas::SideArea1\137pkg}{subsection.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.10}{Monolith::UI::SideAreas::SideArea2\137pkg}{subsection.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.11}{Monolith::UI::UI-Layouts}{subsection.3.2}% 35
+\BOOKMARK [3][-]{subsubsection.3.2.12}{Monolith::UI::UI-SingleComponents}{subsection.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.3}{Architettura generale - Bolle Demo}{section.3}% 37
+\BOOKMARK [3][-]{subsubsection.3.3.1}{CurrencyBubble}{subsection.3.3}% 38
+\BOOKMARK [3][-]{subsubsection.3.3.2}{DiceBubble}{subsection.3.3}% 39
+\BOOKMARK [3][-]{subsubsection.3.3.3}{ListBubble}{subsection.3.3}% 40
+\BOOKMARK [3][-]{subsubsection.3.3.4}{ListBubble::CheckListCreation}{subsection.3.3}% 41
+\BOOKMARK [3][-]{subsubsection.3.3.5}{ListBubble::CheckListReading}{subsection.3.3}% 42
+\BOOKMARK [3][-]{subsubsection.3.3.6}{ListBubble::Configuration}{subsection.3.3}% 43
+\BOOKMARK [3][-]{subsubsection.3.3.7}{ListBubble::DataManagement}{subsection.3.3}% 44
+\BOOKMARK [3][-]{subsubsection.3.3.8}{ListBubble::Receiver}{subsection.3.3}% 45
+\BOOKMARK [3][-]{subsubsection.3.3.9}{ListBubble::Sender}{subsection.3.3}% 46
+\BOOKMARK [3][-]{subsubsection.3.3.10}{MeteoBubble}{subsection.3.3}% 47
+\BOOKMARK [3][-]{subsubsection.3.3.11}{SurveyBubble}{subsection.3.3}% 48
+\BOOKMARK [3][-]{subsubsection.3.3.12}{TranslationBubble}{subsection.3.3}% 49
+\BOOKMARK [2][-]{subsection.3.4}{Architettura di dettaglio - Classi del sistema Monolith}{section.3}% 50
+\BOOKMARK [3][-]{subsubsection.3.4.1}{check}{subsection.3.4}% 51
+\BOOKMARK [3][-]{subsubsection.3.4.2}{checkCreator}{subsection.3.4}% 52
+\BOOKMARK [3][-]{subsubsection.3.4.3}{concreteCheck}{subsection.3.4}% 53
+\BOOKMARK [3][-]{subsubsection.3.4.4}{checkDiscriminator}{subsection.3.4}% 54
+\BOOKMARK [3][-]{subsubsection.3.4.5}{concreteCheckCreator}{subsection.3.4}% 55
+\BOOKMARK [3][-]{subsubsection.3.4.6}{Bubble}{subsection.3.4}% 56
+\BOOKMARK [3][-]{subsubsection.3.4.7}{BubbleConfig}{subsection.3.4}% 57
+\BOOKMARK [3][-]{subsubsection.3.4.8}{bubbleCreator}{subsection.3.4}% 58
+\BOOKMARK [3][-]{subsubsection.3.4.9}{ConcreteBubble}{subsection.3.4}% 59
+\BOOKMARK [3][-]{subsubsection.3.4.10}{bubbleDiscriminator}{subsection.3.4}% 60
+\BOOKMARK [3][-]{subsubsection.3.4.11}{BubbleCreationButton}{subsection.3.4}% 61
+\BOOKMARK [3][-]{subsubsection.3.4.12}{ConcreteBubbleConfig}{subsection.3.4}% 62
+\BOOKMARK [3][-]{subsubsection.3.4.13}{concreteBubbleCreator}{subsection.3.4}% 63
+\BOOKMARK [3][-]{subsubsection.3.4.14}{ConcreteBubbleCreationButton}{subsection.3.4}% 64
+\BOOKMARK [3][-]{subsubsection.3.4.15}{SideArea1}{subsection.3.4}% 65
+\BOOKMARK [3][-]{subsubsection.3.4.16}{SentBubbleHistory}{subsection.3.4}% 66
+\BOOKMARK [3][-]{subsubsection.3.4.17}{BubbleCreationMenu}{subsection.3.4}% 67
+\BOOKMARK [3][-]{subsubsection.3.4.18}{SideArea2}{subsection.3.4}% 68
+\BOOKMARK [3][-]{subsubsection.3.4.19}{ReceivedBubbleHistory}{subsection.3.4}% 69
+\BOOKMARK [3][-]{subsubsection.3.4.20}{VerticalLayout}{subsection.3.4}% 70
+\BOOKMARK [3][-]{subsubsection.3.4.21}{ContainedElement}{subsection.3.4}% 71
+\BOOKMARK [3][-]{subsubsection.3.4.22}{HorizontalLayout}{subsection.3.4}% 72
+\BOOKMARK [3][-]{subsubsection.3.4.23}{ConditionalRendering}{subsection.3.4}% 73
+\BOOKMARK [3][-]{subsubsection.3.4.24}{Image}{subsection.3.4}% 74
+\BOOKMARK [3][-]{subsubsection.3.4.25}{ComboBox}{subsection.3.4}% 75
+\BOOKMARK [3][-]{subsubsection.3.4.26}{LineEdit}{subsection.3.4}% 76
+\BOOKMARK [3][-]{subsubsection.3.4.27}{LabelEdit}{subsection.3.4}% 77
+\BOOKMARK [3][-]{subsubsection.3.4.28}{PushButton}{subsection.3.4}% 78
+\BOOKMARK [3][-]{subsubsection.3.4.29}{CheckButton}{subsection.3.4}% 79
+\BOOKMARK [3][-]{subsubsection.3.4.30}{ImageButton}{subsection.3.4}% 80
+\BOOKMARK [3][-]{subsubsection.3.4.31}{CheckBoxList}{subsection.3.4}% 81
+\BOOKMARK [3][-]{subsubsection.3.4.32}{LabelComboBox}{subsection.3.4}% 82
+\BOOKMARK [3][-]{subsubsection.3.4.33}{TextAreaButton}{subsection.3.4}% 83
+\BOOKMARK [3][-]{subsubsection.3.4.34}{LabelPushButton}{subsection.3.4}% 84
+\BOOKMARK [3][-]{subsubsection.3.4.35}{LineEditComboBox}{subsection.3.4}% 85
+\BOOKMARK [3][-]{subsubsection.3.4.36}{RadioButtonGroup}{subsection.3.4}% 86
+\BOOKMARK [3][-]{subsubsection.3.4.37}{TextAreaComboBox}{subsection.3.4}% 87
+\BOOKMARK [3][-]{subsubsection.3.4.38}{LineEditPushButton}{subsection.3.4}% 88
+\BOOKMARK [3][-]{subsubsection.3.4.39}{LabelEditPushButton}{subsection.3.4}% 89
+\BOOKMARK [2][-]{subsection.3.5}{Architettura di dettaglio - Classi delle bolle demo}{section.3}% 90
+\BOOKMARK [3][-]{subsubsection.3.5.1}{CurrencyConversion}{subsection.3.5}% 91
+\BOOKMARK [3][-]{subsubsection.3.5.2}{CurrencyBubbleSender}{subsection.3.5}% 92
+\BOOKMARK [3][-]{subsubsection.3.5.3}{CurrencyBubbleCreator}{subsection.3.5}% 93
+\BOOKMARK [3][-]{subsubsection.3.5.4}{CurrencyBubbleReceiver}{subsection.3.5}% 94
+\BOOKMARK [3][-]{subsubsection.3.5.5}{CurrencyBubbleConfigMenu}{subsection.3.5}% 95
+\BOOKMARK [3][-]{subsubsection.3.5.6}{DiceRoller}{subsection.3.5}% 96
+\BOOKMARK [3][-]{subsubsection.3.5.7}{DiceBubbleSender}{subsection.3.5}% 97
+\BOOKMARK [3][-]{subsubsection.3.5.8}{DiceBubbleCreator}{subsection.3.5}% 98
+\BOOKMARK [3][-]{subsubsection.3.5.9}{DiceBubbleReceiver}{subsection.3.5}% 99
+\BOOKMARK [3][-]{subsubsection.3.5.10}{DiceBubbleConfigMenu}{subsection.3.5}% 100
+\BOOKMARK [3][-]{subsubsection.3.5.11}{CheckListCreator}{subsection.3.5}% 101
+\BOOKMARK [3][-]{subsubsection.3.5.12}{CheckListComponent}{subsection.3.5}% 102
+\BOOKMARK [3][-]{subsubsection.3.5.13}{CheckListItemsDefinition}{subsection.3.5}% 103
+\BOOKMARK [3][-]{subsubsection.3.5.14}{CheckList}{subsection.3.5}% 104
+\BOOKMARK [3][-]{subsubsection.3.5.15}{ListOfCheckLists}{subsection.3.5}% 105
+\BOOKMARK [3][-]{subsubsection.3.5.16}{ListCreationButton}{subsection.3.5}% 106
+\BOOKMARK [3][-]{subsubsection.3.5.17}{ListBubbleMenuConfig}{subsection.3.5}% 107
+\BOOKMARK [3][-]{subsubsection.3.5.18}{ListBubbleCreator}{subsection.3.5}% 108
+\BOOKMARK [3][-]{subsubsection.3.5.19}{ListBubbleReceiver}{subsection.3.5}% 109
+\BOOKMARK [3][-]{subsubsection.3.5.20}{ListBubbleSender}{subsection.3.5}% 110
+\BOOKMARK [3][-]{subsubsection.3.5.21}{MeteoItem}{subsection.3.5}% 111
+\BOOKMARK [3][-]{subsubsection.3.5.22}{MeteoDelivery}{subsection.3.5}% 112
+\BOOKMARK [3][-]{subsubsection.3.5.23}{MeteoBubbleSender}{subsection.3.5}% 113
+\BOOKMARK [3][-]{subsubsection.3.5.24}{MeteoBubbleCreator}{subsection.3.5}% 114
+\BOOKMARK [3][-]{subsubsection.3.5.25}{MeteoBubbleReceiver}{subsection.3.5}% 115
+\BOOKMARK [3][-]{subsubsection.3.5.26}{MeteoBubbleConfigMenu}{subsection.3.5}% 116
+\BOOKMARK [3][-]{subsubsection.3.5.27}{ResultsViewer}{subsection.3.5}% 117
+\BOOKMARK [3][-]{subsubsection.3.5.28}{SurveyManager}{subsection.3.5}% 118
+\BOOKMARK [3][-]{subsubsection.3.5.29}{SurveyBubbleSender}{subsection.3.5}% 119
+\BOOKMARK [3][-]{subsubsection.3.5.30}{SurveyBubbleCreator}{subsection.3.5}% 120
+\BOOKMARK [3][-]{subsubsection.3.5.31}{SurveyBubbleReceiver}{subsection.3.5}% 121
+\BOOKMARK [3][-]{subsubsection.3.5.32}{SurveyBubbleConfigMenu}{subsection.3.5}% 122
+\BOOKMARK [3][-]{subsubsection.3.5.33}{MessageTranslation}{subsection.3.5}% 123
+\BOOKMARK [3][-]{subsubsection.3.5.34}{TranslationBubbleSender}{subsection.3.5}% 124
+\BOOKMARK [3][-]{subsubsection.3.5.35}{TranslationBubbleCreator}{subsection.3.5}% 125
+\BOOKMARK [3][-]{subsubsection.3.5.36}{TranslationBubbleReceiver}{subsection.3.5}% 126
+\BOOKMARK [3][-]{subsubsection.3.5.37}{TranslationBubbleConfigMenu}{subsection.3.5}% 127
+\BOOKMARK [1][-]{section.4}{Standard di Progetto}{}% 128
+\BOOKMARK [2][-]{subsection.4.1}{Standard di documentazione del codice}{section.4}% 129
+\BOOKMARK [2][-]{subsection.4.2}{Standard di denominazione di entit\340 e relazioni }{section.4}% 130
+\BOOKMARK [2][-]{subsection.4.3}{Strumenti di lavoro}{section.4}% 131
+\BOOKMARK [1][-]{section.5}{Diagrammi di Attivit\340}{}% 132
+\BOOKMARK [2][-]{subsection.5.1}{Configurazione sondaggio}{section.5}% 133
+\BOOKMARK [2][-]{subsection.5.2}{Configurazione ListBubble}{section.5}% 134
+\BOOKMARK [1][-]{section.6}{Diagramma di Sequenza}{}% 135
+\BOOKMARK [2][-]{subsection.6.1}{Creazione Bolla}{section.6}% 136
+\BOOKMARK [2][-]{subsection.6.2}{Cancellazione Bolla}{section.6}% 137
+\BOOKMARK [2][-]{subsection.6.3}{Voto Bolla-Sondaggio}{section.6}% 138
+\BOOKMARK [1][-]{section.7}{Tracciamento}{}% 139
+\BOOKMARK [2][-]{subsection.7.1}{Tracciamento componenti-requisiti}{section.7}% 140
+\BOOKMARK [2][-]{subsection.7.2}{Tracciamento requisiti-componenti}{section.7}% 141
+\BOOKMARK [2][-]{subsection.7.3}{Tracciamento classi-requisiti}{section.7}% 142
+\BOOKMARK [2][-]{subsection.7.4}{Tracciamento requisiti-classi}{section.7}% 143
+\BOOKMARK [1][-]{appendix.Alph1}{Descrizione Design Pattern}{}% 144
+\BOOKMARK [2][-]{subsection.Alph1.1}{Design Pattern Utilizzati}{appendix.Alph1}% 145
+\BOOKMARK [3][-]{subsubsection.Alph1.1.1}{Factory Method}{subsection.Alph1.1}% 146
+\BOOKMARK [3][-]{subsubsection.Alph1.1.2}{Template Method}{subsection.Alph1.1}% 147
+\BOOKMARK [3][-]{subsubsection.Alph1.1.3}{Proxy Pattern}{subsection.Alph1.1}% 148
+\BOOKMARK [3][-]{subsubsection.Alph1.1.4}{Composite Pattern}{subsection.Alph1.1}% 149

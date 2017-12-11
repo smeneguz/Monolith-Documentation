@@ -1,0 +1,11 @@
+\frametitle{Bubble Menu}
+%[caption=My Javascript Example]
+	\begin{center}
+	\includegraphics[width=.5\textwidth]{code/hellobubbleconfig.png}
+	\vfill
+	{
+	\vfill
+	\includegraphics[width=.3\textwidth]{code/config.png}
+	\vfill
+	}
+	\end{center}

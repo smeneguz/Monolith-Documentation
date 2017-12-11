@@ -1,0 +1,1174 @@
+\section{Introduzione}
+
+\subsection{Scopo del documento}
+
+Il documento definisce le norme che i membri del gruppo Obelix
+dovranno seguire nello svolgimento del progetto Monolith. Tutti i
+membri del gruppo devono prendere visione del documento. \'E necessario
+adottare le norme in esso contenute per ottenere massima coerenza ed
+efficienza durante lo svolgimento delle attività. 
+
+\subsection{Scopo del prodotto}
+
+Lo scopo del prodotto è quello di permettere la creazione 
+di bolle interattive,che dovranno funzionare nell’ambiente
+Rocket.chat. Queste bolle permetteranno di aumentare l'interattività
+tra gli utenti della chat, aggiungendo nuove funzionalità che
+saranno accessibili direttamente dalla conversazione senza il bisogno
+di ricorrere all'apertura di applicazioni diverse. 
+Il sistema offrirà agli sviluppatori un set di \glossario{API} per creare e
+rilasciare nuove bolle e agli utenti finali la possibilità di
+usufruire di un insieme di bolle predefinite.  
+
+\subsection{Glossario}
+
+Al fine di evitare ogni ambiguità di linguaggio e massimizzare la
+comprensibilità dei documenti. I termini che necessitano di essere
+chiariti saranno marcati con una |G| in pedice alla prima occorrenza e saranno
+riportati nel Glossario. 
+
+\subsection{Riferimenti}
+
+\subsubsection{Informativi}
+\begin{itemize}
+\item \textbf{Javascript 6th edition}:\\ \url{https://exploringjs.com/es6/ch\_promises.html}
+\item \textbf{12 Factors app guidelines}:\\ \url{https://12factor.net}
+\item \textbf{SCSS}: \\ \url{http://sass-lang.com}
+\item \textbf{Piano di Progetto}: \\ Piano di Progetto v1.1.0
+\item \textbf{Piano di Qualifica}: \\  \emph{Piano di Qualifica v1.0.0} 
+\end{itemize}
+
+\subsubsection{Normativi}
+\begin{itemize}
+\item \textbf{The Airbnb Javascript style guide}: \\ \url{https://github.com/airbnb/javascript}
+\item \textbf{ESLint}: \\ \url{https://github.com/eslint/eslint}
+\end{itemize}
+
+\section{Processi primari}
+
+\subsection{Fornitura}
+
+\subsubsection{Studio di fattibilità}
+
+Il documento inerente allo studio di fattibilità dovrà essere stilato
+dagli  \emph{Analisti}  che effettueranno un resoconto delle prime riunioni tra
+i membri del gruppo. Saranno sviluppati i seguenti punti relativi al
+capitolato scelto: 
+\begin{itemize}
+\item Scopo del progetto
+\item Dominio applicativo
+\item Dominio tecnologico
+\item Criticità e rischi durante lo sviluppo del prodotto
+\end{itemize}
+Infine saranno presentate le motivazioni che hanno condotto il gruppo
+nella scelta del capitolato.
+
+\subsection{Sviluppo}
+
+\subsubsection{Analisi dei requisiti}
+
+Gli \emph{Analisti} si occuperanno,inoltre, della stesura dell'analisi dei
+requisiti. Saranno analizzati e classificati i requisiti che il
+prodotto finale deve soddisfare.
+
+
+\paragraph{Classificazione dei casi d'uso} 
+
+Gli \emph{Analisti} dovranno analizzare i
+casi d'uso (UC - Use Case) procedendo dal generale al particolare. Ogni
+caso d'uso sarà identificato nel seguente modo: 
+$$ UC[\text{codice univoco del padre}].[\text{codice progressivo di livello}]-[\text{sigla identificativa}] $$ 
+Il codice progressivo può includere diversi livelli di gerarchia
+separati da un punto. L'uso della sigla identificativa è
+opzionale.
+
+Per ogni caso d'uso saranno specificati:
+
+\begin{itemize}
+\item Titolo sintetico e significativo
+\item Attori principali
+\item Attori secondari, se presenti
+\item Precondizione
+\item Scenario principale e relativo flusso degli eventi
+\item Scenari secondari,se presenti
+\item Postcondizione
+\item Generalizzazioni, se presenti
+\item Inclusioni, se presenti
+\item Estensioni, se presenti
+\end{itemize}
+
+
+\paragraph{Classificazione dei requisiti}
+
+Dopo aver stilato gli use case gli  \emph{Analisti}  determineranno i
+requisiti che saranno organizzati per utilità strategica:
+\begin{itemize}
+\item Ob: Obbligatori
+\item De: Desiderabili
+\item Op: Opzionali
+\end{itemize}
+Ogni requisito dovrà essere distinto,inoltre ,in base al tipo e quindi al modo in cui dovrà essere verificato:
+\begin{itemize}
+\item Fu: Funzionale
+\item Qu: Qualitativo
+\item Di: Dichiarativo
+\end{itemize}
+Ogni requisito dovrà rispettare la seguente codifica:
+$$ R[\text{utilità strategica}][\text{tipo}][\text{codice}] $$
+
+Il codice univoco dovrà essere espresso in forma gerarchica.
+
+Per ogni requisito saranno inseriti una descrizione, il più possibile
+chiara e priva di ambiguità, e la fonte da cui è emerso: 
+\begin{itemize}
+\item Capitolato
+\item Incontri/Conferenze con il proponente
+\item Discussioni interne al gruppo
+\item Casi d'uso
+\end{itemize}
+
+
+
+\subsubsection{Progettazione}
+
+L'attività di progettazione consiste nel tracciamento delle linee
+guida che dovranno essere seguite per la codifica. Alla fine di questa
+attività sarà, dunque, definita l'architettura del sistema da
+realizzare. L'architettura sarà suddivisa in componenti distinte che
+dipendono il meno possibile le une dalle altre. Ogni componente dovrà
+soddisfare almeno un requisito e tutti i requisiti dovranno essere
+soddisfatti. 
+
+Il documento derivante da questa attività è Definizione di Prodotto. Alcune sezioni del documento saranno dedicate alla descrizione della progettazione ad alto livello del
+sistema e dei singoli componenti. Le altre sezioni del documento dovranno riguardare la progettazione di dettaglio del sistema: ogni singola unità di cui è composto il sistema sarà definita in modo dettagliato. 
+
+\paragraph{Descrizione progettazione ad alto livello}
+
+I contenuti da coprire sono i seguenti:
+
+\begin{itemize}
+\item \textbf{Diagrammi UML}:
+  \begin{itemize}
+  \item Diagrammi dei package
+  \item Diagrammi delle classi
+  \item Diagrammi di sequenza
+  \item Diagrammi di attività
+  \end{itemize}
+\item \textbf{Design Pattern}:
+
+  Devono essere descritti i design patterns utilizzati per realizzare
+  l'architettura. Si deve includere una breve descrizione e un
+  diagramma che esponga il significato e la struttura di ciascuno. 
+
+\item \textbf{Tracciamento dei componenti}:
+%%%%%%%%%%%%%%%%%%%%%%%%%% TRACCIARE A / SU COMPONENTE
+  Ogni requisito deve essere tracciato al componente che lo
+  soddisfa. In questo modo è possibile verificare che vengano
+  soddisfatti tutti i requisiti e che ogni componente soddisfi almeno
+  un requisito.  
+
+\end{itemize}
+
+\paragraph{Descrizione progettazione di dettaglio}
+
+I contenuti da coprire sono i seguenti:
+
+\begin{itemize}
+\item \textbf{Diagrammi UML}:
+  \begin{itemize}
+  \item Diagrammi delle classi
+  \item Diagrammi di sequenza
+  \item Diagrammi di attività
+  \end{itemize}
+\item \textbf{Definizioni delle classi}:
+
+  Ogni classe progettata deve essere descritta in modo da spiegarne lo
+  scopo e definirne le funzionalità ad essa associate. Per ogni classe
+  dovranno anche essere definiti i vari metodi ed attributi che la
+  caratterizzano. 
+
+\item \textbf{Tracciamento delle classi}:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+  Ogni classe deve essere tracciata ed associata ad almeno un
+  requisito, in questo modo è possibile avere la certezza che tutti i
+  requisiti siano soddisfatti e che ogni classe soddisfi almeno un
+  requisito.  
+
+\end{itemize}
+
+\subsubsection{Codifica}
+
+Lo scopo dell'attività di codifica è quello di realizzare il prodotto
+software seguendo le linee guida delineate nell'attività di
+progettazione. 
+\'E necessario che tutti i  \emph{Programmatori}  utilizzino lo stesso stile di codifica
+per garantire la creazione di codice uniforme. Le norme stilistiche riguardano:
+\begin{itemize}
+\item Formattazione
+\item Intestazione
+\item Nomi di elementi
+\item Commenti
+\item Stile di codifica
+\end{itemize}
+\paragraph{Formattazione}
+\begin{itemize}
+\item Indentazione: è richiesto l'uso di esattamente quattro spazi
+\item \'E necessario rientrare le righe di codice secondo la relativa costruzione  logica
+\item \'E richiesto di inserire le parentesi di delimitazione dei costrutti di controllo in linea
+\item \'E richiesto di inserire le parentesi di delimitazione dei costrutti di dichiarazione di funzioni o classi
+  al di sotto di essi e non in linea
+
+\end{itemize}
+
+\paragraph{Intestazione}
+
+L’intestazione di ogni file deve contenere obbligatoriamente le seguenti informazioni:
+\begin{itemize}
+\item Name: nome del file
+\item Location: percorso di locazione del file
+\item Author: autore del file
+\item Creation data: data di creazione del file
+\item Description: descrizione del file
+\item History:
+  \begin{itemize}
+  \item Version: codice univoco indicante la versione del file
+  \item Update data: data ultima di modifica
+  \item Description: descrizione della modifica
+  \item Author: autore della modifica
+  \end{itemize}
+\end{itemize}
+
+\begin{verbatim}
+/*
+* Name : { Nome del file }
+* Location : {/ path / della / cartella /}
+* Author: {Autore del file}
+* Creation Data: {Data di creazione del file}
+* Description: {Breve descrizione del file}
+* History :
+*     Version: {Versione del file}
+*     Update data: {Data ultima modifica}
+*     Description: {descrizione della modifica}
+*     Author: {Autore della modifica}
+*/
+\end{verbatim}
+
+\paragraph{Nomi}
+\begin{itemize}
+\item Assegnare ad ogni elemento un nome univoco significativo
+\item I nomi di variabili, metodi e funzioni devono avere la prima lettera minuscola e  le successive iniziali delle parole, che ne compongono il nome, in maiuscolo (la cosiddetta notazione a cammello)
+\item I nomi delle classi devono avere la prima lettera maiuscola
+\end{itemize}
+
+\paragraph{Commenti}
+
+L'inserimento di commenti all'interno del codice ne agevola la
+comprensione ed è incoraggiato. \'E opportuno inserire i commenti per chiarire il
+comportamento di funzioni e metodi o per precisare tutto ciò che può essere ambiguo
+nel codice.
+
+\paragraph{Stile di codifica}
+Vanno osservate le regole stilistiche descritte nei riferimenti sopra indicati.
+
+\subsubsection{Strumenti usati}
+
+\paragraph{Tracciabilità}
+
+La Tracciabilità dei requisiti e dei casi d’uso avviene tramite l’utilizzo di un database MySQL
+
+\paragraph{Astah}
+
+Astah è l’editor scelto dal gruppo per la modellazione nel linguaggio UML. \glossario{Astah} è un editor
+gratuito, scaricabile online sia per Microsoft Windows, sia per \glossario{Linux} che per Mac OS. \'E
+un editor abbastanza semplice e user-friendly. Infatti ad un primo utilizzo, è facile capire come
+muoversi nell’ambiente di sviluppo, come aggiungere classi, diagrammi e relazioni. Strumento
+molto utile che l’editor mette a disposizione è quello di poter esportare il diagramma realizzato in
+un file immagine. Questo software verrà utilizzato nelle attività di analisi e progettazione per la creazione
+di tutti i diagrammi \glossario{UML} necessari.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Processi di supporto}
+\subsection{Documentazione}
+\subsubsection{Descrizione }
+Lo scopo del processo di documentazione è quello di illustrare le
+convenzioni che riguardano la stesura, la verifica e l’approvazione
+dei documenti. La classificazione di tali documenti è come segue: 
+\begin{itemize} 
+\item Interni: utilizzo interno al team
+\item Esterni: distribuzione esterna al gruppo, per il \glossario{committente} e/o per il proponente
+\end{itemize}
+
+\subsubsection{Strumenti}
+
+Come linguaggio di markup per la stesura della documentazione  è stato
+scelto \LaTeX. Questa scelta è stata presa per evitare possibili
+incompatibilità che si possono presentare utilizzando software
+differenti. 
+
+\subsubsection{Ciclo di vita di un documento}
+
+I documenti si possono trovare in uno degli stati seguenti:
+\begin{itemize}
+\item Documento in lavorazione
+\item Documento da verificare
+\item Documenti approvati
+\end{itemize}
+
+I documenti in lavorazione sono i documenti che si trovano in stesura
+da parte del redattore. Una volta terminata la loro realizzazione,
+questi documenti vanno segnati come da verificare.
+Solo dopo la verifica da parte 
+del relativo  \emph{Verificatore}  i documenti passano nello stato 
+''approvato''. In questo stato i documenti sono stati consegnati al
+ \emph{Responsabile}  del Progetto che ha il compito di approvarli in via
+definitiva. 
+
+\subsubsection{Documenti finali}
+
+\paragraph{Studio di Fattibilità } 
+Gli \emph{Analisti} analizzano tutti i capitolati valutandone
+i fattori positivi e negativi. \'E un'attività critica perché porterà alla scelta del 
+progetto sul quale il gruppo andrà a lavorare.  Questo
+documento è utilizzato internamente al \glossario{team} e la lista di
+distribuzione comprende solo il committente. 
+
+\paragraph{Norme di Progetto }
+
+In questo documento vengono riportati gli strumenti, le norme e le
+convenzioni che il team adotterà nello sviluppo del progetto. Questo
+documento è utilizzato internamente al team e la lista di
+distribuzione comprende solo il committente. 
+
+\paragraph{Piano di Progetto }
+
+In questo documento vengono descritte le strategie che il team
+applicherà per la gestione delle risorse umane e temporali. La lista
+di distribuzione di questo documento comprende il committente ed il
+proponente. 
+
+\paragraph{Piano di Qualifica }
+
+Lo scopo di questo documento è quello di illustrare un piano con il
+quale  il team punta a soddisfare gli obiettivi di qualità.  La lista
+di distribuzione di questo documento comprende il committente ed il
+proponente. 
+
+\paragraph{Analisi dei Requisiti }
+
+In questo documento viene descritta la raccolta dei requisiti e dei
+casi d’uso nel modo più dettagliato possibile. Questo documento
+conterrà dunque tutti i casi d’uso ed
+i diagrammi di attività che rappresentano l’interazione 
+tra utente e sistema. Questo documento è utilizzato sia
+esternamente che internamente. 
+
+
+\paragraph{Specifica Tecnica }
+I  \emph{Progettisti}  devono descrivere la progettazione ad alto livello del
+sistema e dei singoli componenti nella Specifica Tecnica. Devono
+essere definiti, inoltre, opportuni test di integrazione tra le varie
+componenti.
+
+
+
+\paragraph{Definizione di Prodotto  }
+Lo scopo di questo documento è di descrivere i dettagli implementativi del prodotto.
+Queste informazioni saranno la base per il processo di codifica.
+
+\paragraph{Glossario  }
+In questo documento verranno elencati tutti i termini
+che necessitano disambiguazione provenienti da tutta la documentazione.
+Ciascuno di questi termini sarà accompagnato dalla spiegazione del
+significato. Questo documento è utilizzato anche esternamente e la
+lista di distribuzione comprende committenti e proponenti. 
+
+\paragraph{Manuale Utente  }
+Con questo documento verrà fornito all’utente una guida dettagliata coprendo tutte le funzionalità che il prodotto offre.
+Su richiesta del \glossario{proponente} verrà stilato in lingua inglese.
+
+
+\paragraph{Verbali }
+In questo documento vengono descritte formalmente tutte le discussioni
+e le decisioni prese durante le riunioni. I verbali possono essere
+interni oppure esterni. 
+Ogni verbale dovrà essere denominato nel seguente modo: 
+
+
+$$\text{Verbale}\_\text{Numero del verbale}\_\text{Tipo di verbale}\_\text{Data del verbale} $$
+
+dove:
+\begin{itemize}
+\item Numero del verbale: numero identificativo univoco del verbale
+\item Tipo di verbale: identifica se si tratta di un Verbale Interno oppure Verbale Esterno
+\item Data del verbale: identifica la data nella quale si è svolta la riunione corrispondente al verbale. Il formato è YYYY-MM-DD  
+\end{itemize}
+
+
+Nella parte introduttiva del verbale dovranno essere specificate le
+seguenti informazioni:
+\begin{itemize}
+\item Data incontro:  data in cui si è svolta la riunione
+\item Ora inizio incontro: ora di inizio della riunione
+\item Ora termine incontro: ora di terminazione della riunione
+\item Luogo incontro: luogo in cui si è svolta la riunione
+\item Durata: durata della riunione
+\item Oggetto: argomento della riunione
+\item Segretario: cognome e nome del membro incaricato a redigere il verbale
+\item Partecipanti: cognome e nome di tutti i membri partecipanti alla
+  riunione
+\end{itemize}
+
+\subsubsection{Struttura del documento}
+
+\paragraph{Prima pagina }
+
+Tutti i documenti dovranno contenere nella prima pagina le seguenti informazioni:
+\begin{itemize}
+\item Nome del gruppo
+\item Logo del progetto
+\item Nome del progetto
+\item Nome del documento
+\item Versione del documento
+\item Data di creazione del documento
+\item Stato del documento
+\item Nome e cognome del redattore del documento
+\item Nome e cognome del  \emph{Verificatore}  del documento
+\item Nome e cognome del  \emph{responsabile}  approvatore del documento
+\item Lista di distribuzione
+\item Uso del documento
+\item Email di riferimento del gruppo
+\item Un sommario contenente una breve descrizione del documento
+\end{itemize}
+
+
+\paragraph{Diario delle modifiche }
+
+Il diario delle modifiche sarà presente nella seconda pagina dove verranno inserite tutte le modifiche del documento. Tutte queste informazioni verranno riportate in una tabella che in ogni riga conterrà le seguenti informazioni:
+\begin{itemize}
+\item  Versione: versione del documento dopo la modifica
+\item  Descrizione: descrizione della modifica
+\item  Autore e Ruolo: autore della modifica e il suo ruolo
+\item  Data: data della modifica
+\end{itemize}
+\paragraph{Indice}
+
+In ogni documento, dopo il diario delle modifiche, deve essere presente un indice di tutte le
+sezioni. In presenza di tabelle e/o immagini queste devono essere indicate con i relativi indici.
+
+\paragraph{Formattazione generale delle pagine}
+
+La formattazione della pagina, oltre al contenuto, prevede un’intestazione e un piè di pagina.
+L’intestazione della pagina contiene:
+\begin{itemize}
+\item Nome e logo del gruppo
+\item Nome della sezione corrente
+\end{itemize}
+
+Il piè di pagina contiene:
+\begin{itemize} 
+\item Il numero di pagina e il numero totale di pagina
+\end{itemize}
+
+\subsubsection{Norme tipografiche}
+
+Le seguenti norme tipografiche indicano i criteri riguardanti l’ortografia e la tipografia di tutti i documenti.
+
+\paragraph{Stili di testo}
+
+\begin{itemize}
+\item Corsivo: il testo corsivo verrà utilizzato nelle seguenti situazioni:
+
+  \begin{itemize}
+  \item  Ruoli: ogni riferimento a ruoli di progetto va scritto in corsivo
+  \item  Documenti: ogni riferimento ad un documento
+  %\item Stati del documento: ogni stato del documento va scritto in corsivo
+  %\item  Citazioni: ogni citazione va scritta in corsivo
+  \item  Glossario: ogni parola presente nel glossario deve essere scritta in corsivo. Inoltre presentano una |G| a pedice
+  \end{itemize}
+
+\item Font codice: il font per il codice (''font macchina da scrivere'') deve essere utilizzato per indicare qualsiasi parte riguardi posizione del codice.
+\end{itemize}
+
+\paragraph{Punteggiatura}
+
+\begin{itemize}
+\item  Punteggiatura: ogni simbolo di punteggiatura non può seguire un carattere di spazio
+
+\item  Lettere maiuscole:  le lettere maiuscole vanno utilizzate dopo
+  il punto, il punto interrogativo, il punto esclamativo. 
+\end{itemize}
+
+\paragraph{ Formati }
+\begin{itemize}
+\item Date: le date presenti nei documenti devono seguire lo standard 
+\textbf{ISO 8601:2004:  YYYY-MM-DD}\\
+  dove:
+  \begin{itemize}
+  \item YYYY: rappresenta l’anno
+  \item MM: rappresenta il mese
+  \item DD: rappresenta il giorno
+  \end{itemize}
+
+\item Ore: le ore presenti nei documenti devono seguire lo standard 
+\textbf{ISO 8601:2004} con il sistema a 24 ore:\\
+  dove:
+  \begin{itemize}
+  \item hh: rappresentano le ore
+  \item  mm: rappresentano i minuti
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Composizione email}
+In questo paragrafo verranno descritte le norme da applicare nella composizione delle email.
+
+\paragraph{Destinatario}
+\begin{itemize} 
+\item Interno: l’indirizzo da utilizzare è \href{mailto:obelixswe@gmail.com}{obelixswe@gmail.com}
+\item Esterno: l’indirizzo del destinatario varia a seconda si tratti del Prof. Tullio Vardanega
+  Prof. Riccardo Cardin o i proponenti del progetto
+\end{itemize}
+\paragraph{Mittente}
+\begin{itemize}
+\item Interno: l’indirizzo è di colui che scrive e spedisce la email
+\item Esterno: l’indirizzo da utilizzare è \href{mailto:obelixswe@gmail.com}{obelixswe@gmail.com} ed è utilizzabile unicamente dal  \emph{Responsabile}  di Progetto
+\end{itemize}
+\paragraph{Oggetto}
+
+L’oggetto della mail deve essere chiaro, preciso e conciso in modo da rendere semplice il riconoscimento di una mail tra le altre.
+
+
+\subsubsection{Componenti grafiche}
+
+\paragraph{Tabelle }
+
+Tutte le tabelle in tutti i documenti devono avere una didascalia ed
+un indice identificativo univoco per il loro tracciamento nel
+documento stesso. 
+
+\paragraph{Immagini }
+
+Le immagini inserite nel documento sono nel formato PNG. Le immagini hanno una didascalia e compaiono nell'indice dedicato.
+
+\subsubsection{Versionamento}
+
+Ogni documento prodotto deve essere identificato dal nome e dal numero di versione nel seguente modo:
+
+$$ \_vX.Y.Z $$
+
+
+
+dove:
+\begin{itemize}
+\item  X: indica il numero di uscite formali del documento e viene incrementato in seguito all’approvazione finale da parte del  \emph{Responsabile}  di Progetto.
+L’incremento dell’indice X comporta l’azzeramento degli indici Y e Z
+
+\item  Y: indica il numero crescente delle verifiche. L’incremento viene eseguito dal  \emph{Verificatore}  e comporta l’azzeramento dell’indice Z
+
+\item  Z: indica il numero di modifiche minori apportate al documento prima della sua verifica. Viene aumentato in modo incrementale
+\end{itemize}
+
+\subsection{Gestione della configurazione}
+La gestione della configurazione deve comprendere tutte le attività necessarie a rendere
+affidabile l’evoluzione del progetto, tenendo traccia delle sue versioni.
+
+\subsubsection{Controllo di versione}
+
+Per il versionamento ed il salvataggio dei file prodotti durante l'attività di progetto è stato deciso di affidarsi ad alcuni \glossario{repository} su GitHub. L'\emph{Amministratore}  di Progetto si occupa della creazione dei repository e, successivamente, gli altri membri del gruppo vi accederanno tramite il loro account personale.
+
+
+\subsubsection{Repository}
+
+I file, che saranno prodotti dal team, saranno suddivisi in due repository distinti: uno contenente i file relativi ai documenti e un'altro contenente i file necessari alla creazione del prodotto software.
+
+\paragraph{Struttura del repository dei documenti} 
+I file all’interno del repository dei documenti verranno organizzati secondo questa struttura:
+
+\begin{itemize}
+	\item RR
+	\begin{itemize}
+		\item Interni
+		\item Esterni
+	\end{itemize}
+	\item RP
+	\begin{itemize}
+		\item Interni
+		\item Esterni
+	\end{itemize}
+	\item RQ
+	\begin{itemize}
+		\item Interni
+		\item Esterni
+	\end{itemize}
+	\item RA
+	\begin{itemize}
+		\item Interni
+		\item Esterni
+	\end{itemize}
+	\item tools
+	\item file\_comuni
+\end{itemize}
+
+Per la visualizzazione dei documenti nel formato pdf sarà necessario scaricare e compilare i file.tex relativi.
+
+
+\paragraph{Struttura del repository del codice sorgente}
+I file all’interno del repository del codice sorgente verranno organizzati secondo questa struttura:
+
+\begin{itemize}
+	\item SDK
+	\item Bolle predefinite
+	\item Demo
+\end{itemize}
+
+\paragraph{Nomi dei file}  
+I nomi dei file interni al repository devono sottostare alle seguenti norme:
+\begin{itemize}
+	\item devono avere lunghezza minima di tre caratteri
+	\item devono identificare in modo non ambiguo i file
+	\item devono riportare le informazioni dal generale al particolare
+	\item devono, nel caso contengano date, rispettare il formato YYYY-MM-DD
+\end{itemize}
+
+\paragraph{Norme sui commit}
+Ogni volta che vengono effettuate delle modifiche ai file del
+repository bisogna specificarne le motivazioni. Questo avviene utilizzando il comando
+\texttt{"git commit"} accompagnato da un messaggio riassuntivo e una descrizione in cui va specificato: 
+\begin{itemize}
+	\item lista dei file coinvolti
+	\item liste delle modifiche effettuate, ordinate per ogni singolo file
+\end{itemize}
+Prima di eseguire tale procedura, va aggiornato il diario delle modifiche, secondo le regole viste in \S 3.1.5.
+
+
+\subsection{Verifica}
+
+\subsubsection{Descrizione}
+
+La verifica di processi, documenti e prodotti è un’attività da eseguire continuamente
+durante lo sviluppo del progetto. Di conseguenza, servono modalità operative chiare
+e dettagliate, in modo da uniformare le attività di verifica svolte ed ottenere il miglior
+risultato possibile.
+
+\subsubsection{Analisi}
+
+\paragraph{Analisi statica}
+
+
+L’analisi statica è il processo di valutazione di un sistema senza che esso venga eseguito. Ci sono diverse tecniche di analisi statica. Le due più applicate sono Walkthrough e Inspection.
+\begin{itemize}
+\item  Walkthrough: riguarda un analisi informale del codice svolta da vari partecipanti umani che ‘operano come il computer’: in pratica, si scelgono alcuni casi di test e si simula
+l’esecuzione del codice a mano (si attraversa (walkthrough) il codice). Si presta attenzione sulla ricerca dei difetti, piuttosto che sulla correzione.
+
+\item  Inspection: questa tecnica di ispezione di codice può rilevare
+  ed eliminare anomalie fastidiose e rendere più precisi i
+  risultati. Inspection è una tecnica completamente manuale per
+  trovare e correggere errori. Spesso l’analisi dei difetti effettuata
+  viene discussa e vengono decise le eventuali azioni da
+  intraprendere. Il codice è analizzato usando checklist dei tipici
+  errori di programmazione.  
+\end{itemize}
+
+\paragraph{Analisi dinamica }
+
+L’analisi dinamica consiste nell’esaminare il software  quando è in esecuzione ed è tipicamente effettuata dopo aver compiuto l’analisi statica di base.
+
+\subsubsection{Test}
+
+\paragraph{Test di unità}
+
+Lo scopo del test di unità è quello di verificare che tutte le componenti
+del software funzionino correttamente. Questo test aiuta a ridurre il
+più possibile la presenza di errori nelle componenti. 
+I test di unità sono identificati dalla seguente sintassi:
+
+$$ TU[\text{Codice Test}] $$
+
+\paragraph{Test di Integrazione }
+
+Questo test permette di verificare che ciascuna componente che è stata
+validata singolarmente, funzioni correttamente anche dopo averla
+integrata con l’intero sistema. I test di integrazione sono
+identificati dalla seguente sintassi: 
+
+$$ TI[\text{Codice Test}] $$
+
+\paragraph{Test di sistema }
+
+I test di sistema hanno lo scopo di verificare che tutti i requisiti
+siano soddisfatti. Questo test viene effettuato quando il prodotto è
+giunto alla versione definitiva. I test di sistema sono identificati
+dalla seguente sintassi: 
+
+$$ TS[\text{Codice Requisito}] $$
+
+\paragraph{Test di regressione }
+
+Il test di regressione consiste nell’effettuare i test per tutte le
+componenti che sono state modificate. I test di regressione sono
+identificati dalla seguente sintassi: 
+
+$$ TR[\text{Codice Test}] $$ 
+
+\subsubsection{Verifica dei documenti}
+
+\'E compito del Responsabile di Progetto assegnare ai Verificatori i ticket per l'attività di verifica. Attraverso il diario delle modifiche è possibile focalizzare l’attenzione maggiormente sulle sezioni che hanno subito dei cambiamenti dall’ultima verifica, riducendo il tempo necessario al controllo.
+Per eseguire un’accurata verifica dei documenti redatti è necessario seguire i seguenti
+punti:
+\begin{enumerate}
+	\item \textbf{Controllo sintattico del periodo}:gli errori di sintassi, di sostituzione di lettere che provocano la creazione di parole grammaticalmente corrette ma sbagliate nel
+	contesto ed i periodi di difficile comprensione necessitano dell’intervento di un verificatore umano. Per questa ragione ciascun documento dovrà essere sottoposto
+	ad un walkthrough da parte dei verificatori per individuare tali errori
+	\item \textbf{Rispetto delle norme di progetto}: in questo documento sono state definite
+	norme tipografiche di carattere generale. Queste regole impongono una struttura
+	dei documenti che non può essere verificata in maniera automatica, di conseguenza è necessario che i Verificatori eseguano inspection sul rispetto di tali norme
+	\item \textbf{Verifica delle proprietà di glossario}: il Verificatore dovrà controllare che
+	i termini che hanno bisogno di disambiguazione siano presenti nel Glossario con la relativa definizione
+	\item \textbf{Miglioramento del processo di verifica}: per avere un miglioramento del
+	processo di verifica, quando il Verificatore utilizza la tecnica walkthrough su un
+	documento, dovrà riportare gli errori più frequenti, per consentire l’utilizzo di
+	inspection su tali errori nelle verifiche future
+	\item \textbf{Calcolo dell’indice Gulpease}: su ogni documento redatto il Verificatore deve calcolare l’indice di leggibilità. Nel caso in cui l’indice risultasse troppo basso, sarà necessario eseguire walkthrough del documento alla ricerca delle frasi troppo lunghe o complesse
+\end{enumerate}
+
+\subsubsection{Verifica del codice} 
+Per la verifica del codice al Verificatore è richiesto l’avvio dei test statici e dinamici e l’analisi dei risultati ottenuti.
+Di seguito un elenco degli strumenti da usare: 
+
+\begin{itemize}
+	\item  JSHint: è uno strumento che aiuta a rilevare errori possibili nel codice JavaScript. Verrà installato come modulo per Node.js
+	\item  CSSHint: è uno strumento che aiuta a rilevare possibili errori nel codice CSS. Verrà installato come modulo per Node.js
+	\item  Complexity-report: è un’applicazione che verrà installata come modulo per Node.js e serve a misurare metriche riguardanti codice JavaScript
+	\item  Google Chrome DevTools: gli strumenti offerti da Google Chrome agli sviluppatori servono a tenere sotto controllo l’utilizzo di CPU e di memoria da parte degli oggetti e funzioni JavaScript
+	\item  Karma: è uno strumento per eseguire test di unità e sarà utilizzato
+	per eseguire test sugli script realizzati. Verrà installato come
+	modulo per Node.js
+%	\item Velocity G : esegue i test sul framework G MeteorJS 
+\end{itemize}
+
+
+\subsection{Validazione}
+
+\subsubsection{Test di validazione}
+Il test di validazione coincide con il collaudo del software in
+presenza del proponente. Ha l’obbiettivo di verificare che il prodotto finale sia conforme a quanto è stato pianificato. In caso di esito positivo si procede con il
+rilascio del software. I test di validazione sono identificati dalla
+seguente sintassi: 
+
+$$ TV[\text{Codice requisito}] $$
+
+\section{Processi Organizzativi}
+
+\subsection{Scopo}
+Lo scopo di questi processi è quello di migliorare e facilitare l’organizzazione interna al gruppo stabilendo le norme per la pianificazione e gestione dei ruoli e per le comunicazioni interne ed esterne.
+\subsection{Aspettative del Processo}
+Questo processo produce:
+\begin{itemize}
+	\item Definizione dei ruoli del team
+	\item Identificazione delle modalità di comunicazione interne al gruppo
+	\item Documentazione sulle modalità di ticketing
+\end{itemize}
+
+\subsection{Ruoli di Progetto}
+
+Durante l’intero sviluppo del progetto  ogni membro del team dovrà ricoprire, a
+turno, ognuno dei ruoli elencati di seguito.
+Inoltre non potrà mai accadere che un membro del gruppo risulti redattore e verificatore di un
+medesimo documento. In questo modo si tende ad evitare il conflitto di interessi che potrebbe sorgere se la responsabilità della stesura e della verifica di un documento fosse affidata ad
+un’unica persona. Un membro può inoltre ricoprire più ruoli contemporaneamente.
+
+\subsubsection{Amministratore di Progetto} 
+L' \emph{Amministratore}  di Progetto ha il compito di controllare ed
+amministrare l'ambiente di lavoro assumendosi le seguenti
+responsabilità: 
+\begin{itemize}
+	\item studio e ricerca di strumenti per migliorare l'ambiente lavorativo
+	\item minimizzare il carico di lavoro umano automatizzando dove possibile
+	\item garantire un controllo della qualità del prodotto fornendo procedure e strumenti di segnalazione e monitoraggio
+	\item risolvere i problemi legati alla gestione dei processi e alle risorse disponibili
+	\item gestire il versionamento e l'archiviazione della documentazione di progetto
+\end{itemize}
+\subsubsection{Responsabile  di Progetto}
+Il  \emph{Responsabile}  di Progetto funge da punto di riferimento per
+il gruppo, il committente ed il proponente.\\ Approva
+le scelte prese dal gruppo e si assume le seguenti responsabilità: 
+\begin{itemize}
+	\item approvazione della documentazione
+	\item approvazione dell'offerta economica
+	\item gestione delle risorse umane
+	\item coordinamento e pianificazione delle attività di progetto
+	\item studio e gestione dei rischi
+\end{itemize}
+\subsubsection{Analista}
+L' \emph{Analista}  deve effettuare ricerche e studi approfonditi sul
+dominio del problema. Non è richiesta la sua presenza per l'intera
+durata del progetto e si assume le seguenti responsabilità: 
+\begin{itemize}
+	\item comprensione della natura e della complessità del problema
+	\item produzione dello Studio di Fattibilità e
+	dell'Analisi dei Requisiti delineando specifiche comprensibili
+	ad ogni figura coinvolta (proponente e committente)
+\end{itemize}
+\subsubsection{Progettista}
+Il  \emph{Progettista}  deve avere profonde conoscenze delle
+tecnologie utilizzate e competenze tecniche aggiornate, in modo tale
+da poter interagire con il committente per arrivare ad un chiarimento 
+progressivo delle varie caratteristiche del sistema finale.\\Il  \emph{Progettista}  si assume le seguenti responsabilità:
+\begin{itemize}
+	\item effettuare scelte efficienti ed ottimizzate su aspetti tecnici del progetto
+	\item effettuare scelte che rendano il prodotto più facilmente mantenibile
+\end{itemize}
+\subsubsection{Verificatore}
+Il  \emph{Verificatore}  deve avere ampia conoscenza delle normative di progetto.\\Il suo compito è controllare che le attività di progetto siano svolte secondo le norme stabilite.
+\subsubsection{Programmatore}
+Il  \emph{Programmatore}  è responsabile delle attività di codifica e di creazione delle componenti di supporto, utili a effettuare le prove di verifica e validazione sul prodotto software.\\
+Si assume le seguenti responsabilità:
+\begin{itemize}
+	\item implementare le soluzioni previste dal  \emph{Progettista} 
+	\item scrivere codice pulito, mantenibile  e conforme alle norme di progetto
+	\item versionare il codice prodotto
+	\item realizzare gli strumenti utili per poter compiere le prove di verifica e validazione
+\end{itemize}
+
+\subsection{Comunicazioni}
+\subsubsection{Comunicazioni interne}
+Per le comunicazioni interne è stato deciso di utilizzare
+l'applicazione \glossario{Slack} dove è stato creato un gruppo di lavoro
+"Obelix" all'interno del quale i membri del gruppo possono comunicare
+attraverso la chat principale.\\ 
+Per quanto riguarda la comunicazione su argomenti specifici è possibile la creazione di alcune chat "interne" per mandare messaggi solo ai membri interessati.
+Nel caso fosse necessaria una video-chiamata verrà utilizzata l'applicazione \emph{Skype}.
+\subsubsection{Comunicazioni esterne}
+Per le comunicazioni esterne è stato creato un indirizzo email
+apposito: \href{mailto:obelixswe@gmail.com}{obelixswe@gmail.com}.\\Il
+\emph{ \emph{Responsabile}  del 
+	Progetto} avrà l'onere di gestire le comunicazioni esterne
+riservandosi di condividere le mail che lo richiedono con il resto del
+team attraverso Slack o una mailing list. 
+
+
+\subsection{Riunioni}
+Il \emph{ \emph{Responsabile}  di progetto} ha il compito di indire le riunioni sia interne che esterne.
+\subsubsection{Riunioni interne}
+Per ogni incontro interno il \emph{ \emph{Responsabile}  di progetto} dovrà
+accordarsi con il team inviando un messaggio sull'adeguata chat di
+Slack almeno 2 giorni prima della data scelta.\\ 
+Una volta che si sarà accordato coi membri del gruppo potrà creare l'evento dell'incontro sul calendario di \emph{Slack} indicando:
+\begin{itemize}
+	\item data\item ora \item luogo\item argomento di discussione
+\end{itemize}
+Vi possono essere casi eccezionali, come una milestone, in cui il vincolo sull'avviso (2 giorni prima) può essere ignorato.\\
+Gli altri componenti del gruppo possono richiedere una riunione
+interna straordinaria, presentando al \emph{ \emph{Responsabile}  di
+	progetto} le motivazioni per le quali si ritiene necessaria una
+riunione. In questi casi il \emph{ \emph{Responsabile}  di progetto} può: 
+\begin{itemize}
+	\item autorizzare lo svolgimento della riunione
+	\item negare lo
+	svolgimento della riunione, nel caso in cui non ritenga le 
+	motivazioni presentate valide abbastanza da richiedere una
+	riunione
+	\item suggerire mezzi di comunicazione differenti. 
+\end{itemize}
+
+\subsubsection{Riunioni esterne}
+Il Responsabile di progetto ha il compito di fissare le riunioni esterne con i proponenti o con i
+committenti, contattandoli tramite la casella di posta elettronica del gruppo.
+Il Responsabile di progetto ha, inoltre, il compito di accordarsi con i proponenti o committenti riguardo data, orario e luogo dell’incontro, tenendo conto anche della disponibilità degli elementi del gruppo e cercando, per quanto possibile, di far partecipare tutti alla riunione. \\
+Per le comunicazioni con il proponente è possibile utilizzare anche \emph{Slack} e \emph{Skype}.
+
+\subsection{Ticketing}
+
+Per suddividere i task all’interno del gruppo verrà utilizzato Asana, un sistema che permette di ottimizzare e facilitare il lavoro di squadra. Con Asana è possibile:
+\begin{itemize}
+	\item Creare task
+	\item Assegnare task
+	\item Seguire task 
+	\item Commentare task
+\end{itemize}
+Essendo un applicativo web sarà possibile visionare in ogni istante i compiti completati, in corso e assegnati a ciascun membro del gruppo.
+
+
+\subsubsection{Struttura del ticket}
+Ogni ticket creato dovrà avere le seguenti caratteristiche:
+\begin{itemize}
+	\item Titolo: deve riassumere in modo conciso il task svolto o da svolgere. Se si tratta di un documento bisogna specificarne il nome
+	\item Commento: breve commento per chiarire, se necessario, il task qualora non fosse abbastanza chiaro
+	\item Lista dei tags: dovranno essere inserite le giuste etichette per indicare lo stato e l’ambito del task 
+	\item Subtask: è possibile inserire dei compiti secondari se necessario
+\end{itemize}
+
+Il nome dell’assegnatario sarà impostato del Responsabile di Progetto, le date della creazione e terminazione del ticket vengono inserite e memorizzate dall’applicativo Asana.
+
+\subsubsection{Etichette}
+
+Ogni ticket avrà una o più etichette, ciò aiuterà a supervisionare le attività e il loro stato. I tags che devono essere utilizzati sono:
+
+\begin{itemize}
+	
+	\item I ticket non assegnati saranno identificati dal tag di stato Aperto
+	\item I ticket di cui si avrà presa visione saranno identificati dal tag di stato Accettato
+	\item I ticket su cui si sta lavorando saranno identificati dal tag di stato In corso
+	\item I ticket interrotti per mancanza di risorse, input o problematiche, saranno identificati dal tag di stato In attesa
+	\item I ticket completati e che sono in attesa di verifica saranno identificati dal tag di stato Completato
+	\item I ticket verificati, quindi conclusi, saranno identificati dal tag di stato Verificato
+	
+\end{itemize}
+
+\subsubsection{Ciclo di vita del ticket}
+
+Ogni ticket rappresenterà un compito da effettuare, e dovrà rispettare i seguenti passi:
+\begin{enumerate}
+	\item Creazione di un nuovo task
+	\item Il Responsabile di Progetto assegna il task ad un membro del team (se non è ancora assegnato verrà inserita nella lista dei tags l’etichetta Aperto)
+	\item L’assegnatario può accettare oppure no:
+	\begin{itemize}
+		\item Se non accetta, l’assegnatario deve inserire un commento con le giuste motivazioni, e verrà rieseguito il punto 2
+		\item Se accetta, l’assegnatario inserisce nella lista dei tags l’etichetta Accettato
+	\end{itemize}
+	\item Se il task richiede una dipendenza, andrà inserita l’etichetta In attesa
+	\item Esecuzione del task
+	\item Se il task è completo, l’assegnatario inserisce il tag Completato	
+\end{enumerate}
+
+\subsubsection{Verifica Ticket}
+
+Ogni ticket con etichetta di stato Completato dovrà essere verificato. Il procedimento per fare ciò è il seguente:
+
+\begin{enumerate}
+	\item  Al completamento di ogni task viene automaticamente creato un nuovo task di verifica associato
+	\item Il Responsabile di Progetto assegna il task ad un Verificatore
+	\item Il Verificatore individua eventuali anomalie e crea i task necessari per la correzione. In mancanza di errori chiude il task inserendo l’etichetta di stato Verificato
+	\item Il Responsabile di Progetto assegna gli eventuali task di correzione prestando attenzione ad evitare conflitto di interessi
+\end{enumerate}
+
+\subsection{Procedure di supporto}
+Di seguito vengono descritte le procedure di supporto che i componenti del gruppo sono tenuti a seguire per convergere agli obiettivi definiti nel Piano di Qualifica. Il Responsabile di Progetto ha la responsabilità di gestione dell’intero progetto.
+Dovrà garantire un corretto sviluppo delle attività utilizzando gli strumenti che gli permetteranno di:
+\begin{itemize}
+	\item Coordinare e pianificare le attività
+	\item Analizzare i rischi
+	\item Elaborare i dati di avanzamento
+\end{itemize}
+
+\subsubsection{Pianificazione delle attività}
+
+Per ogni periodo individuato nel documento Piano di Progetto, il Responsabile di Progetto dovrà realizzare un diagramma di Gantt. Esso dovrà anche eseguire le seguenti attività:
+
+\begin{itemize}
+	\item Creare un calendario lavorativo per il progetto
+	\item Inserire le attività da svolgere
+	\item Inserire eventuali dipendenze tra le attività
+	\item Inserire le milestone indicanti il termine previsto delle attività
+\end{itemize}
+
+\subsubsection{Coordinamento delle attività}
+
+Una volta pianificate le attività il Responsabile di Progetto ha il compito di assegnarle, attraverso il sistema di ticketing offerto da Asana, ai singoli componenti del gruppo. Ogni membro del team potrà vedere le attività che gli sono state assegnate e modificarne lo stato, permettendo al Responsabile di Progetto di monitorare lo stato di avanzamento.
+
+\subsubsection{Gestione dei rischi}
+
+Il \emph{ \emph{Responsabile}  di Progetto} ha il compito di individuare i
+rischi indicati nel \emph{Piano di Progetto}. Quando questi vengono
+individuati, il \emph{Responsabile} ha il compito di estendere
+l'analisi dei rischi ai nuovi casi rilevati.\\Complessivamente la
+procedura prevede i seguenti passi: 
+\begin{enumerate}
+	\item rilevazione ed individuazione attiva dei rischi previsti e dei
+	problemi non calcolati
+	\item registrazione del riscontro effettivo
+	dei rischi nel \emph{Piano di Progetto}
+	\item trattazione e
+	pianificazione per la gestione dei nuovi rischi individuati
+	\item
+	ridefinizione e aggiornamento delle strategie in base alle necessità
+	e alle previsioni. 
+\end{enumerate}
+
+
+\subsection{Strumenti}
+\subsubsection{Sistema operativo}
+Il gruppo di progetto opera sui seguenti sistemi operativi:
+\begin{itemize}
+	\item MacOS 10.12
+	\item MacOS 10.9
+	\item Ubuntu x64 16.04 LTS 
+	\item Windows 10 Pro
+	\item Linux Mint 17.1
+	\item Windows 7 Pro
+\end{itemize}
+
+\subsubsection{Git} 
+Git è un sistema software di controllo di versione distribuito, creato da \glossario{Linus Torvalds} nel 2005. La versione utilizzata è maggiore o uguale alla 2.10.1.
+
+\subsubsection{GitHub}
+GitHub è un servizio web di hosting per lo sviluppo di progetti
+software, che usa il sistema di controllo di versione Git. Può essere
+utilizzato anche per la condivisione e la modifica di file di testo e
+documenti revisionabili (sfruttando il sistema di versionamento dei
+file di Git). \glossario{GitHub} ha diversi piani per repository privati sia a
+pagamento, sia gratuiti, molto utilizzati per lo sviluppo di progetti
+open-source. 
+
+\subsubsection{Asana}
+Asana è uno strumento di project management utilizzato per la gestione e assegnazione dei compiti e delle attività. \'E strutturato in aree di lavoro, progetti, task e subtask. 
+
+\subsubsection{Microsoft Project}
+
+Microsoft Project è un software di pianificazione sviluppato e venduto
+da Microsoft. \'E uno strumento per assistere i responsabili di progetto
+nella pianificazione, nell'assegnazione delle risorse, nella verifica
+del rispetto dei tempi, nella gestione dei budget e nell'analisi dei
+carichi di lavoro. Questo software verrà utilizzato 
+per la creazione di tutti i diagrammi di Gantt necessari. 
+
+\subsubsection{Slack}
+Slack è una piattaforma per la comunicazione tra gruppi di lavoro. É
+organizzato in canali e permette di condividere file in modo facile e veloce.
+
+\subsubsection{Telegram}
+Telegram è un servizio di messaggistica istantanea erogato senza fini
+di lucro dalla società \glossario{Telegram} LLC. I \emph{client} ufficiali di
+Telegram sono distribuiti come software libero per diverse
+piattaforme.\\Viene utilizzato dai membri del gruppo per comunicare
+liberamente sul progetto e su dettagli organizzativi. 
+
+\subsubsection{Google Drive}
+Il sevizio \emph{cloud} based \emph{Google Drive} viene utilizzato
+per un rapido scambio di documenti e file non soggetti a versionamento
+che non hanno necessità di risiedere nel \emph{repository}.
+
+\subsubsection{Google Calendar}
+\emph{Google Calendar} viene utilizzato dai membri del team per
+segnare le date di importanti scadenze, come \emph{milestone},
+incontri o riunioni. 
+
+\subsubsection{Skype}
+\emph{Skype} è un software proprietario freeware di messaggistica
+istantanea e VoIP. Esso unisce caratteristiche presenti nei client più
+comuni (chat, salvataggio delle conversazioni, trasferimento di file)
+ad un sistema di telefonate basato su un network Peer-to-peer. 
+
+
+\clearpage
+
+\appendix
+
+
+
+\section{Lista di controllo}
+
+
+
+\begin{itemize}
+
+\item \textbf{Norme stilistiche}
+
+	\begin{itemize}
+	
+	\item norme documento: non viene indicata la versione del documento relativo dove  necessaria
+	\item mancanza di punto alla fine della frase
+	\item inizio del paragrafo senza la lettera maiuscola
+	\item mancanza di due punti per introdurre un elenco
+	\item parole troppo distanti in una frase: utilizzo di due spazi consecutivi anziché uno
+	
+	\end{itemize}
+
+
+\item \textbf{Italiano}
+
+	\begin{itemize}
+
+	\item frasi troppo lunghe rendono i concetti di difficile comprensione 
+	\item utilizzo ridondante delle virgole lì dove non sarebbe necessario
+	\item utilizzo erroneo degli articoli determinativi
+	\item utilizzo erroneo del termine “fase”
+	\item carattere ‘\'E’: non viene scritto correttamente utilizzando il comando apposito
+	\item vengono utilizzate frasi troppo lunghe creando difficoltà nel comprendere il significato di quest’ultime
+	\item caratteri accentati erroneamente scritti con l’accento acuto anziché grave
+	
+	\end{itemize}
+
+
+\item \textbf{UML}
+
+
+	\begin{itemize}
+	\item mancanza del nome del caso d’uso di riferimento nelle figure chiamandolo UC anziché con il proprio nome
+	\item didascalia dei diagrammi ambigua
+	\end{itemize}
+
+
+
+\item \textbf{LaTex}
+
+	\begin{itemize}
+	
+	\item mancanza di utilizzo del comando "empf" per le parole in corsivo
+	\item mancanza di utilizzo del comando per andare a capo
+	\item indirizzi URL non “cliccabili”
+	\item utilizzo erroneo del comando “item”
+	\item calcolo erroneo dei sottoparagrafi 
+	\item numero elevato di commenti lasciati nei documenti .tex inquinando l’ambiente di lavoro
+	
+	\end{itemize}
+
+
+
+\item \textbf{Tracciamento dei requisiti}
+
+	\begin{itemize}
+	\item ad ogni requisito deve corrispondere almeno una fonte
+	\item ad ogni caso d’uso deve corrispondere almeno un elemento
+	\end{itemize}
+
+
+\item \textbf{Glossario}
+
+	\begin{itemize}
+	\item termini presenti nei documenti mancanti nel glossario
+	\end{itemize}
+
+
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

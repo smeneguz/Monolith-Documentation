@@ -1,0 +1,66 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{rotating} 
+\usepackage{multirow}
+
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\date{}
+\input{../../documents_versions}
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\leftmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../file_comuni/copertina}
+\nomedoc{Piano di Progetto}
+\versione{v4\_0\_0}
+\datacreazione{2017/02/25}
+\verifica{Federica Schifano}
+\approvazione{Nicolò Rigato}
+\redazione{Nicolò Rigato \eanche Silvio Meneguzzo}
+\uso{esterno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Documento contenente il piano di progetto relativo al prodotto \\ Monolith determinato dal gruppo Obelix.}
+
+
+\begin{document}
+
+%\input{copertina}
+\paginatitolo
+\include{controcopertina}
+\tableofcontents
+\clearpage
+\listoffigures
+ 
+\listoftables
+\clearpage
+
+\include{contenuto}
+
+\end{document}

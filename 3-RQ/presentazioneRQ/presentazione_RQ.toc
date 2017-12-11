@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {italian}
+\select@language {italian}
+\beamer@sectionintoc {2}{Il gruppo Obelix}{3}{0}{1}
+\beamer@sectionintoc {3}{Scopo del progetto}{4}{0}{2}
+\beamer@sectionintoc {4}{Copertura dei Requisiti}{5}{0}{3}
+\beamer@sectionintoc {5}{Lavori da ultimare}{6}{0}{4}
+\beamer@sectionintoc {6}{Test}{7}{0}{5}
+\beamer@subsectionintoc {6}{1}{Stato dei Test}{7}{0}{5}
+\beamer@subsectionintoc {6}{2}{Strumenti usati}{10}{0}{5}
+\beamer@sectionintoc {7}{Poblematiche riscontrate e soluzioni adottate}{11}{0}{6}
+\beamer@subsectionintoc {7}{1}{Generali}{11}{0}{6}

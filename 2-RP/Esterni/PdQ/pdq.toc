@@ -1,0 +1,72 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{4}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{4}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{4}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{4}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{4}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Strategia di verifica}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Definizione obiettivi}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Qualit\IeC {\`a} di processo}{5}{subsubsection.2.1.1}
+\contentsline {paragraph}{Miglioramento costante}{5}{section*.4}
+\contentsline {paragraph}{Rispetto della pianificazione}{5}{section*.5}
+\contentsline {paragraph}{Rispetto del budget}{5}{section*.6}
+\contentsline {subsubsection}{\numberline {2.1.2}Qualit\IeC {\`a} di prodotto}{5}{subsubsection.2.1.2}
+\contentsline {paragraph}{Qualit\IeC {\`a} dei documenti}{5}{section*.7}
+\contentsline {subparagraph}{Leggibilit\IeC {\`a} e comprensibilit\IeC {\`a}}{6}{section*.8}
+\contentsline {subparagraph}{Correttezza ortografica}{6}{section*.9}
+\contentsline {subparagraph}{Correttezza concettuale}{6}{section*.10}
+\contentsline {subsection}{\numberline {2.2}Procedure di controllo della qualit\IeC {\`a} di processo}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Procedure di controllo della qualit\IeC {\`a} di prodotto}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Organizzazione}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Analisi}{6}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Progettazione Architetturale}{7}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Progettazione di Dettaglio e Codifica}{7}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Responsabilit\IeC {\`a}}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Risorse}{7}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Tecniche di analisi}{7}{subsection.2.7}
+\contentsline {subsubsection}{\numberline {2.7.1}Analisi statica}{7}{subsubsection.2.7.1}
+\contentsline {paragraph}{Walkthrough}{7}{section*.11}
+\contentsline {paragraph}{Inspection}{8}{section*.12}
+\contentsline {subsubsection}{\numberline {2.7.2}Analisi dinamica}{8}{subsubsection.2.7.2}
+\contentsline {subsection}{\numberline {2.8}Misure e metriche}{8}{subsection.2.8}
+\contentsline {subsubsection}{\numberline {2.8.1}Metriche per i processi}{8}{subsubsection.2.8.1}
+\contentsline {paragraph}{Schedule Variance}{8}{section*.13}
+\contentsline {paragraph}{Budget Variance}{9}{section*.14}
+\contentsline {paragraph}{Produttivit\IeC {\`a}}{9}{section*.15}
+\contentsline {subparagraph}{Produttivit\IeC {\`a} di documentazione}{9}{section*.16}
+\contentsline {subparagraph}{Parametri utilizzati}{9}{section*.17}
+\contentsline {subparagraph}{Produttivit\IeC {\`a} di test}{10}{section*.18}
+\contentsline {subparagraph}{Produttivit\IeC {\`a} di codifica}{10}{section*.19}
+\contentsline {paragraph}{Copertura del test}{10}{section*.20}
+\contentsline {subparagraph}{Parametri utilizzati}{10}{section*.21}
+\contentsline {subsubsection}{\numberline {2.8.2}Metriche per i prodotti}{10}{subsubsection.2.8.2}
+\contentsline {paragraph}{Metriche per i documenti}{10}{section*.22}
+\contentsline {subparagraph}{Indice Gulpease}{10}{section*.23}
+\contentsline {subparagraph}{Errori ortografici rinvenuti e non corretti}{11}{section*.24}
+\contentsline {subparagraph}{Errori concettuali rinvenuti e non corretti}{11}{section*.25}
+\contentsline {paragraph}{Metriche per software}{11}{section*.26}
+\contentsline {subparagraph}{Complessit\IeC {\`a} ciclomatica}{11}{section*.27}
+\contentsline {subparagraph}{Numero di metodi - NOM}{12}{section*.28}
+\contentsline {subparagraph}{Variabili non utilizzate e non definite}{12}{section*.29}
+\contentsline {subparagraph}{Numero parametri per metodo}{12}{section*.30}
+\contentsline {subparagraph}{Halstead}{12}{section*.31}
+\contentsline {subparagraph}{Maintainability index}{14}{section*.32}
+\contentsline {subparagraph}{Statement Coverage}{14}{section*.33}
+\contentsline {subparagraph}{Branch Coverage}{14}{section*.34}
+\contentsline {section}{\numberline {3}Gestione amministrativa della revisione}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Comunicazione delle anomalie}{14}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Procedure di controllo per la qualit\IeC {\`a} di processo}{15}{subsection.3.2}
+\contentsline {section}{\numberline {A}Standard di qualit\IeC {\`a}}{16}{appendix.Alph1}
+\contentsline {subsection}{\numberline {A.1}Standard ISO/IEC 15504}{16}{subsection.Alph1.1}
+\contentsline {subsection}{\numberline {A.2}Ciclo di Deming PDCA}{17}{subsection.Alph1.2}
+\contentsline {subsection}{\numberline {A.3}Standard ISO/IEC 9126}{18}{subsection.Alph1.3}
+\contentsline {section}{\numberline {B}Resoconto delle attivit\IeC {\`a} di verifica}{20}{appendix.Alph2}
+\contentsline {subsection}{\numberline {B.1}Revisione dei Requisiti}{20}{subsection.Alph2.1}
+\contentsline {subsubsection}{\numberline {B.1.1}Processi}{20}{subsubsection.Alph2.1.1}
+\contentsline {subsubsection}{\numberline {B.1.2}Documenti}{20}{subsubsection.Alph2.1.2}
+\contentsline {subsection}{\numberline {B.2}Revisione di Progettazione}{20}{subsection.Alph2.2}
+\contentsline {subsubsection}{\numberline {B.2.1}Processi}{21}{subsubsection.Alph2.2.1}
+\contentsline {subsubsection}{\numberline {B.2.2}Documenti}{21}{subsubsection.Alph2.2.2}

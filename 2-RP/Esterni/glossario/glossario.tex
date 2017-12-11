@@ -1,0 +1,76 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{rotating} 
+
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\date{}
+
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\leftmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../file_comuni/copertina}
+
+\nomedoc{Glossario}
+\versione{v2\_0\_0}
+\datacreazione{2017/02/25}
+\verifica{Silvio Meneguzzo}
+\approvazione{Riccardo Saggese}
+\redazione{Nicolò Rigato}
+\uso{esterno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Documento contenente l'elenco e la definizione dei termini
+  incontrati durante lo sviluppo del prodotto Monolith e di cui si è
+  ritenuto necessario un chiarimento.}
+
+
+
+%% per fare l'indice con le lettere senza i numeri e aggiungerci i puntini
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\newcommand{\mysection}[2]{
+    \setcounter{section}{#1}
+    \section*{#2}
+    \addcontentsline{toc}{section}{#2}
+}
+
+
+
+\begin{document}
+
+%\input{copertina}
+\paginatitolo
+\include{controcopertina}
+\tableofcontents
+\clearpage
+
+\include{contenuto}
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{relsize}
+\date{}
+\input{../../documents_versions}
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\leftmark}
+% \rightmark}% L è la sezione R è la sezione
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../file_comuni/copertina}
+\nomedoc{Norme di Progetto}
+\versione{v4\_0\_0}
+\datacreazione{2017/02/20}
+\verifica{Riccardo Saggese}
+\approvazione{Silvio Meneguzzo}
+\redazione{Emanuele Crespan \eanche Federica Schifano}
+\uso{interno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Gruppo Obelix}
+\sommario{Documento contenente le norme di progetto che il gruppo Obelix \\ seguirà durante tutte le fasi di realizzazione del prodotto Monolith.}
+
+
+\begin{document}
+
+%\input{copertina}
+\paginatitolo
+\include{controcopertina}
+\tableofcontents
+\clearpage
+
+\include{contenuto}
+
+\end{document}

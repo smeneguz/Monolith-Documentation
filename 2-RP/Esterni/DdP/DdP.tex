@@ -1,0 +1,72 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{multirow}
+\date{}
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\leftmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../file_comuni/copertina}
+\nomedoc{Definizione di Prodotto}
+\versione{v1\_0\_0}
+\datacreazione{2017-05-01}
+\verifica{Nicolò Rigato \eanche Silvio Meneguzzo \eanche Emanuele Crespan \eanche Riccardo Saggese \eanche Federica Schifano}
+\approvazione{Riccardo Saggese}
+\redazione{ Tomas Mali \eanche Nicolò Rigato \eanche Silvio Meneguzzo \eanche Emanuele Crespan \eanche Riccardo Saggese \eanche Federica Schifano}
+\uso{esterno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Questo documento descrive l’architettura generale e di dettaglio del prodotto Monolith che verrà
+  sviluppato dal gruppo Obelix.}
+
+
+
+\begin{document}
+
+%\input{copertina}
+\paginatitolo
+\include{controcopertina}
+
+%\hyphenchar\font=-1 % disable hyphen
+\tableofcontents
+\clearpage
+\listoffigures
+\listoftables
+
+%\hyphenchar\font=`\- % reset hyphen
+\clearpage
+
+\include{contenuto}
+
+\end{document}

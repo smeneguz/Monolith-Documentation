@@ -1,0 +1,375 @@
+\subsection{Requisiti funzionali}
+
+\begin{center}
+\begin{longtable}{|
+*{1}{>{\centering\arraybackslash}p{2.5cm}|}
+*{1}{>{\centering\arraybackslash}p{2cm}|}
+*{1}{>{\centering\arraybackslash}p{5cm}|}
+*{1}{>{\centering\arraybackslash}p{2.5cm}|}}
+\hline \textbf{Requisito} & \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
+\hline \endhead
+\hline \endfoot
+
+RObFu10 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter accedere alle bolle dall'interfaccia di Rocket.Chat. & \makecell{UC3}\\
+\hline
+
+RObFu10.1 & \makecell{Obbligatorio \\ Funzionale} & All'interfaccia standard di Rocket.Chat devono essere aggiunti due pulsanti nella tabbar laterale che permettano di accedere alle SideAreas. & \makecell{UC3.1}\\
+\hline
+
+RObFu10.2 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter utilizzare la SideArea1 che permette di creare, inviare, visualizzare e modificare le bolle inviate. & \makecell{UC3.2}\\
+\hline
+
+RObFu10.2.1 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter visualizzare i tipi di bolla disponibili. & \makecell{UC3.2.1}\\
+\hline
+
+RObFu10.2.2 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter selezionare il tipo di bolla da inviare. & \makecell{UC3.2.2}\\
+\hline
+
+RObFu10.2.3 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter configurare la bolla tramite l'apposito menu. & \makecell{UC3.2.3}\\
+\hline
+
+RObFu10.2.4 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter inviare la bolla che ha configurato. & \makecell{UC3.2.4}\\
+\hline
+
+RObFu10.2.5 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter visualizzare lo storico delle bolle che ha inviato. & \makecell{UC3.2.5}\\
+\hline
+
+RObFu10.2.5.1 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve visualizzare un messaggio appropriato nel caso non ci siano bolle nello storico in uscita. & \makecell{UC3.2.7}\\
+\hline
+
+RObFu10.2.6 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter interagire con le bolle inviate. & \makecell{UC3.2.6}\\
+\hline
+
+RObFu10.2.7 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter visualizzare un messaggio di errore nel caso in cui la configurazione della bolla non fosse andata a buon fine. & \makecell{UC3.2.8}\\
+\hline
+
+RObFu10.3 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter utilizzare la SideArea2 che permette di visualizzare e interagire con le bolle ricevute. & \makecell{UC3.3}\\
+\hline
+
+RObFu10.3.1 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter visualizzare lo storico delle bolle ricevute. & \makecell{UC3.3.1}\\
+\hline
+
+RObFu10.3.1.1 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve visualizzare un messaggio appropriato nel caso in cui non ci siano bolle nello storico in ingresso. & \makecell{UC3.3.3}\\
+\hline
+
+RObFu10.3.2 & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter interagire con le bolle che ha ricevuto. & \makecell{UC3.3.2}\\
+\hline
+
+RObFu11 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve avere a disposizione gli strumenti per creare una bolla funzionante. & \makecell{UC0}\\
+\hline
+
+RObFu11.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter creare le proprie bolle a partire dalla bolla vuota. & \makecell{UC1}\\
+\hline
+
+RObFu11.2 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter accedere alle funzionalità offerte dall'API. & \makecell{UC2}\\
+\hline
+
+RObFu11.2.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter utilizzare le funzionalità offerte dal sistema per descrivere l'aspetto visuale delle bolle. & \makecell{UC2.1}\\
+\hline
+
+RObFu11.2.1.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente grafico. & \makecell{UC2.1.1}\\
+\hline
+
+RObFu11.2.1.1.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente testo. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.1.2 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente immagine. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.1.3 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente campo di inserimento testo. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.1.4 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente pulsante. & \makecell{UC2.1.1\\interno}\\
+\hline
+
+RObFu11.2.1.1.5 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente checkbox. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.1.6 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un componente radiobutton. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.2 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un contenitore. & \makecell{UC2.1.1}\\
+\hline
+
+RObFu11.2.1.2.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un contenitore che posiziona gli elementi figli uno accanto all'altro dando a ciascuno uguale spazio. Il massimo numero di elementi accostabili è 12 a causa dei limiti del grid system di Bootstap. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.2.2 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un contenitore che posiziona gli elementi figli uno sotto l'altro. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.2.3 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire un contenitore il cui contenuto possa essere visualizzato o meno in base all'esecuzione di un comando. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObFu11.2.1.3 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter modificare le proprietà di un componente grafico. & \makecell{UC2.1.2}\\
+\hline
+
+RObFu11.2.1.3.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare le opzioni di scelta di un radiobutton. & \makecell{UC2.1.2.6}\\
+\hline
+
+RObFu11.2.1.3.2 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter modificare il contenuto di un componente testo. & \makecell{UC2.1.2.1}\\
+\hline
+
+RObFu11.2.1.3.3 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare il percorso dell'immagine da visualizzare in un componente immagine. & \makecell{UC2.1.2.2}\\
+\hline
+
+RObFu11.2.1.3.4 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter modificare il testo mostrato nel pulsante. & \makecell{UC2.1.2.3}\\
+\hline
+
+RObFu11.2.1.3.5 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare l'azione da associare al pulsante. & \makecell{UC2.1.2.4}\\
+\hline
+
+RObFu11.2.1.3.6 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare il testo della checkbox. & \makecell{UC2.1.2.5}\\
+\hline
+
+RObFu11.2.1.6 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter inserire il menu di configurazione della bolla. & \makecell{UC2.1.4}\\
+\hline
+
+RObFu11.2.1.7 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter selezionare un componente grafico o un contenitore. & \makecell{UC2.1.3}\\
+\hline
+
+RObFu11.2.2 & \makecell{Obbligatorio \\ Funzionale} & Deve essere possibile distinguere il mittente di una bolla da tutti gli altri utenti. & \makecell{UC2.2}\\
+\hline
+
+RObFu11.2.3 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter gestire la persistenza dei dati della bolla. & \makecell{UC2.3}\\
+\hline
+
+RObFu11.2.3.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare la memorizzazione di dati nella bolla. & \makecell{Interno\\UC2.3}\\
+\hline
+
+RObFu11.2.3.2 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare la modifica dei dati memorizzati nella bolla. & \makecell{Interno\\UC2.3}\\
+\hline
+
+RObFu11.2.3.3 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve poter impostare l'eliminazione dei dati memorizzati nella bolla. & \makecell{Interno\\UC2.3}\\
+\hline
+
+RObFu20 & \makecell{Obbligatorio \\ Funzionale} & I dati relativi alle singole istanze di bolla vengono memorizzati separatamente senza che lo sviluppatore debba operare la distinzione. & \makecell{Interno}\\
+\hline
+
+RObFu21 & \makecell{Obbligatorio \\ Funzionale} & Ogni client riceve dal data-system di Meteor solo i dati che lo riguardano, ovvero quelli di tutte le bolle presenti in rooms in cui sia presente anche l'utente. & \makecell{Interno}\\
+\hline
+
+RObFu22 & \makecell{Obbligatorio \\ Funzionale} & Deve essere possibile per lo sviluppatore effettuare dei controlli sull'input dell'utente. & \makecell{Interno}\\
+\hline
+
+RObFu22.1 & \makecell{Obbligatorio \\ Funzionale} & Lo sviluppatore deve essere in grado di effettuare controlli specifici per ciascuna situazione di input da  parte dell'utente. & \makecell{Interno}\\
+\hline
+
+RObFu23 & \makecell{Obbligatorio \\ Funzionale} & Vengono forniti allo sviluppatore una serie di componenti grafici di base. & \makecell{Interno}\\
+\hline
+
+RObFu01-cv & \makecell{Obbligatorio \\ Funzionale} & L'utente può convertire importi da una valuta all'altra. & \makecell{UC0-cv}\\
+\hline
+
+RObFu01.1-cv & \makecell{Obbligatorio \\ Funzionale} & L'utente può scegliere le valute tra cui effettuare la conversione. & \makecell{UC1-cv}\\
+\hline
+
+RObFu01.2-cv & \makecell{Obbligatorio \\ Funzionale} & L'utente può inserire l'importo da convertire. & \makecell{UC2-cv}\\
+\hline
+
+RObFu01.3-cv & \makecell{Obbligatorio \\ Funzionale} & I tassi di conversione vengono forniti tramite la libreria money.js. & \makecell{Interno}\\
+\hline
+
+RObFu01.4-cv & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare gli importi convertiti. & \makecell{UC3-cv}\\
+\hline
+
+ROpFu02-cv & \makecell{Opzionale \\ Funzionale} & L'utente può convertire importi da valori di pacchetti azionari. & \makecell{Interno}\\
+\hline
+
+RObFu01-dd & \makecell{Obbligatorio \\ Funzionale} & La bolla estrae un numero casualmente dal range impostato. & \makecell{UC0-dd}\\
+\hline
+
+RObFu01.1-dd & \makecell{Obbligatorio \\ Funzionale} & L'utente deve poter impostare il range da cui estrarre il numero casuale. & \makecell{UC1-dd}\\
+\hline
+
+RObFu01.2-dd & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare il numero casuale generato. & \makecell{UC2-dd}\\
+\hline
+
+ROpFu01.2.1-dd & \makecell{Opzionale \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare il numero casuale sotto forma di immagine (per esempio le facce di uno o più dadi). & \makecell{Interno}\\
+\hline
+
+RObFu01.3-dd & \makecell{Obbligatorio \\ Funzionale} & Il sistema genera lato server un numero casuale nel range specificato utilizzando la libreria Math inclusa in Javascript. & \makecell{Interno}\\
+\hline
+
+RObFu01-ls & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter definire una lista da inviare. & \makecell{UC1-ls}\\
+\hline
+
+RObFu01.1-ls & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter inserire manualmente un nuovo elemento. & \makecell{UC1.1-ls}\\
+\hline
+
+RObFu01.2-ls & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter inserire un elemento prelevandolo da una delle liste predefinite. & \makecell{UC1.2-ls}\\
+\hline
+
+RObFu02-ls & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter definire una lista predefinita. & \makecell{UC2-ls}\\
+\hline
+
+RObFu03-ls & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter spuntare una voce dalla lista inviatagli. & \makecell{UC3-ls}\\
+\hline
+
+RObFu04-ls & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare le spunte effettuate. & \makecell{UC4-ls}\\
+\hline
+
+RObFu01-mt & \makecell{Obbligatorio \\ Funzionale} & La bolla deve restituire le previsioni meteo per la località scelta. & \makecell{UC0-mt}\\
+\hline
+
+RObFu01.1-mt & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter selezionare la località desiderata. & \makecell{UC1-mt}\\
+\hline
+
+RObFu01.2-mt & \makecell{Obbligatorio \\ Funzionale} & Le previsioni meteorologiche vengono fornite tramite la libreria weather.js. & \makecell{Interno}\\
+\hline
+
+RObFu01.3-mt & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare il meteo per la località selezionata. & \makecell{UC2-mt}\\
+\hline
+
+RObFu01-sd & \makecell{Obbligatorio \\ Funzionale} & Il mittente può definire le opzioni tra cui i riceventi possono scegliere. & \makecell{UC1-sd}\\
+\hline
+
+RObFu02-sd & \makecell{Obbligatorio \\ Funzionale} & Il ricevente deve poter votare nel sondaggio. & \makecell{UC2-sd}\\
+\hline
+
+RObFu03-sd & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter votare nel proprio sondaggio. & \makecell{UC2-sd}\\
+\hline
+
+RObFu04-sd & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare i risultati del sondaggio. & \makecell{UC3-sd}\\
+\hline
+
+RObFu01-tr & \makecell{Obbligatorio \\ Funzionale} & La bolla deve tradurre il testo inserito nelle lingue selezionate. & \makecell{UC0-tr}\\
+\hline
+
+RObFu01.1-tr & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter configurare la lingua in cui sarà scritto il messaggio. & \makecell{UC1-tr}\\
+\hline
+
+RObFu01.2-tr & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter inserire il testo da tradurre. & \makecell{UC2-tr}\\
+\hline
+
+RObFu01.3-tr & \makecell{Obbligatorio \\ Funzionale} & Il mittente deve poter configurare la lingua in cui il messaggio sarà tradotto. & \makecell{UC3-tr}\\
+\hline
+
+RObFu01.4-tr & \makecell{Obbligatorio \\ Funzionale} & La traduzione deve essere fornita tramite la libreria polyglot.js. & \makecell{Interno}\\
+\hline
+
+RObFu01.5-tr & \makecell{Obbligatorio \\ Funzionale} & Il mittente e il ricevente devono poter visualizzare la traduzione. & \makecell{UC4-tr}\\
+\hline
+
+\hline
+\end{longtable}
+\captionof{table}{Requisiti funzionali}
+\end{center}
+\subsection{Requisiti qualitativi}
+
+\begin{center}
+\begin{longtable}{|
+*{1}{>{\centering\arraybackslash}p{2.5cm}|}
+*{1}{>{\centering\arraybackslash}p{2cm}|}
+*{1}{>{\centering\arraybackslash}p{5cm}|}
+*{1}{>{\centering\arraybackslash}p{2.5cm}|}}
+\hline \textbf{Requisito} & \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
+\hline \endhead
+\hline \endfoot
+
+RObQu04.1 & \makecell{Obbligatorio \\ Qualitativo} & Javascript deve essere usato secondo le Airbnb style guide. & \makecell{Capitolato}\\
+\hline
+
+RObQu06 & \makecell{Obbligatorio \\ Qualitativo} & Monolith e le bolle devono essere realizzati secondo il 12 Factors app guidelines. & \makecell{Capitolato}\\
+\hline
+
+RObQu08 & \makecell{Obbligatorio \\ Qualitativo} & Monolith deve essere corredato da un manuale in inglese. & \makecell{Capitolato}\\
+\hline
+
+RObQu08.1 & \makecell{Obbligatorio \\ Qualitativo} & Il manuale deve spiegare come installare Monolith in ambiente Rochet.Chat. & \makecell{Capitolato\\Interno}\\
+\hline
+
+RObQu15 & \makecell{Obbligatorio \\ Qualitativo} & Il framework è realizzato con uso di promise per la programmazione asincrona. & \makecell{Capitolato}\\
+\hline
+
+RObQu16 & \makecell{Obbligatorio \\ Qualitativo} & La documentazione formale standard deve essere
+
+scritta in italiano. & \makecell{Capitolato\\Verbale-2017-03-01}\\
+\hline
+
+RObQu17 & \makecell{Obbligatorio \\ Qualitativo} & La bolla presentata come Demo deve essere documentata. & \makecell{Interno}\\
+\hline
+
+\hline
+\end{longtable}
+\captionof{table}{Requisiti qualitativi}
+\end{center}
+\subsection{Requisiti dichiarativi}
+
+\begin{center}
+\begin{longtable}{|
+*{1}{>{\centering\arraybackslash}p{2.5cm}|}
+*{1}{>{\centering\arraybackslash}p{2cm}|}
+*{1}{>{\centering\arraybackslash}p{5cm}|}
+*{1}{>{\centering\arraybackslash}p{2.5cm}|}}
+\hline \textbf{Requisito} & \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
+\hline \endhead
+\hline \endfoot
+
+RObDi01 & \makecell{Obbligatorio \\ Dichiarativo} & Monolith deve essere realizzato come pacchetto RocketChat. & \makecell{Capitolato}\\
+\hline
+
+RObDi02 & \makecell{Obbligatorio \\ Dichiarativo} & Devono essere fornite alcune bolle predefinite. & \makecell{Capitolato}\\
+\hline
+
+RObDi02.1 & \makecell{Obbligatorio \\ Dichiarativo} & Una delle bolle predefinite funge da demo al fine di dimostrare l'utilizzo delle API. & \makecell{Capitolato}\\
+\hline
+
+RObDi03 & \makecell{Obbligatorio \\ Dichiarativo} & Monolith deve includere un set di API per lo sviluppo di bolle. & \makecell{Capitolato}\\
+\hline
+
+RObDi04 & \makecell{Obbligatorio \\ Dichiarativo} & Monolith deve essere realizzato usando Javascript ES6. & \makecell{Capitolato}\\
+\hline
+
+RObDi05 & \makecell{Obbligatorio \\ Dichiarativo} & Monolith deve essere realizzato usando SCSS. & \makecell{Capitolato}\\
+\hline
+
+RObDi07 & \makecell{Obbligatorio \\ Dichiarativo} & Utilizzo del framework frontend REACT per la creazione delle interfacce. & \makecell{Capitolato}\\
+\hline
+
+RObDi07.1 & \makecell{Obbligatorio \\ Dichiarativo} & I dati dei componenti React devono essere reattivi all'interno del data-system di Meteor. & \makecell{Interno}\\
+\hline
+
+RObDi09 & \makecell{Obbligatorio \\ Dichiarativo} & La demo deve essere installabile su Heroku. & \makecell{Capitolato}\\
+\hline
+
+RObDi11.2.1.2.4 & \makecell{Obbligatorio \\ Dichiarativo} & I layout offerti dai contenitori sono realizzati utilizzando il grid system di Bootstrap. & \makecell{Interno\\UC2.1.1}\\
+\hline
+
+RObDi12 & \makecell{Obbligatorio \\ Dichiarativo} & Il codice sorgente di Monolith e delle bolle deve essere disponibile su GitHub. & \makecell{Capitolato}\\
+\hline
+
+RObDi13 & \makecell{Obbligatorio \\ Dichiarativo} & Monolith deve supportare i browser in cui è eseguibile Rocket.Chat. & \makecell{Interno}\\
+\hline
+
+RObDi14 & \makecell{Obbligatorio \\ Dichiarativo} & L'interfaccia del sistema Monolith deve essere responsive. & \makecell{Interno}\\
+\hline
+
+RObDi18 & \makecell{Obbligatorio \\ Dichiarativo} & L'utilizzo di callbacks nel codice Javascript deve essere giustificato. & \makecell{Capitolato}\\
+\hline
+
+RObDi19 & \makecell{Obbligatorio \\ Dichiarativo} & La modifica del nome delle classi HTML dei componenti è realizzata attraverso l'utility classnames. & \makecell{Interno}\\
+\hline
+
+\hline
+\end{longtable}
+\captionof{table}{Requisiti dichiarativi}
+\end{center}
+\subsection{Riepilogo requisiti}
+
+I 102 requisiti individuati si suddividono come segue:
+\begin{center}
+  \centering
+  \begin{tabular}{|l|c|c|c|}
+    \hline
+      & Funzionali & Qualitativi & Dichiarativi   \\
+\hline
+Obbligatori &      78     &    7     & 15       \\
+\hline
+Desiderabili &     0     &     0     & 0    \\
+\hline
+Opzionali   &      2     &    0     & 0    \\
+\hline
+  \end{tabular}
+  \captionof{table}{Riepilogo del numero di requisiti individuati.}
+\end{center}
+

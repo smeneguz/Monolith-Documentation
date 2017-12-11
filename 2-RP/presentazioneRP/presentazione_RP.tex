@@ -1,0 +1,55 @@
+%\documentclass{beamer}
+\documentclass[RawSienna,dvipsnames]{beamer}
+
+%%% Dichiarazione dei pacchetti standard.
+\usepackage[italian]{babel}
+\usepackage[utf8x]{inputenc}
+%%% Personalizzazione del layout---articolata su cinque livelli.
+%\usetheme{split}        % layout complessivo. 
+\usetheme{CambridgeUS}
+\useinnertheme{rectangles} % layout interno.
+\useoutertheme{infolines} % layout esterno.
+\setbeamercolor{title}{fg=RawSienna}
+\setbeamercolor{frametitle}{fg=RawSienna}
+\usecolortheme{crane} % schema di colori.
+\usefonttheme{professionalfonts}  % schema dei font.
+\setbeamercolor{item}{fg=RawSienna}
+% Inutile dire che se volete tutti i default, potete risparmiarvi gli ultimi
+% quattro comandi. 
+
+%%% Titolo e autore.
+\title{Monolith}
+\subtitle{An interactive bubble provider}
+\author{Revisione di Progettazione}
+%\institute{Gruppo Utilizzatoti Italiani di \TeX}
+%\date{\today}
+\date{27 giugno 2017}
+
+\begin{document}
+	
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.13]{img/obelix.png}
+		\qquad\qquad
+		\includegraphics[scale=0.13]{img/monolith.png}
+	\end{center}
+	\titlepage
+\end{frame}
+
+
+\section[Sommario]{}
+\begin{frame}
+	\tableofcontents
+\end{frame}	
+
+\input{parte1} %fede
+
+\input{parte2} %nicolò e tomas
+
+\input{parte3} %emanuele
+
+\input{parte4} %silvio
+
+\input{parte5} %riccardo
+
+\end{document}

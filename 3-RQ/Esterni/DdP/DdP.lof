@@ -1,0 +1,105 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagramma per Monolith.\relax }}{22}{figure.caption.41}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagramma per Monolith::Database::InformationStorage.\relax }}{24}{figure.caption.42}
+\contentsline {figure}{\numberline {3}{\ignorespaces Diagramma per Monolith::Database::informationStorage::Checks.\relax }}{25}{figure.caption.43}
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagramma per Monolith::UI::Bubbles.\relax }}{28}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagramma per Monolith::UI::UI-Layouts.\relax }}{33}{figure.caption.44}
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagramma per Monolith::UI::UI-SingleComponents.\relax }}{34}{figure.caption.45}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagramma per CurrencyBubble.\relax }}{36}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagramma per DiceBubble.\relax }}{38}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Diagramma per ListBubble.\relax }}{40}{figure.caption.46}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagramma per ListBubble::CheckListCreation.\relax }}{41}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagramma per ListBubble::CheckListReading.\relax }}{43}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagramma per ListBubble::Configuration.\relax }}{44}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagramma per ListBubble::DataManagement.\relax }}{45}{figure.caption.47}
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagramma per ListBubble::Receiver.\relax }}{46}{figure.caption.48}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagramma per ListBubble::Sender.\relax }}{47}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagramma per MeteoBubble.\relax }}{48}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagramma per SurveyBubble.\relax }}{50}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagramma per TranslationBubble.\relax }}{52}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces {Diagramma per check in Checks}\relax }}{54}{figure.caption.49}
+\contentsline {figure}{\numberline {20}{\ignorespaces {Diagramma per checkCreator in Checks}\relax }}{55}{figure.caption.50}
+\contentsline {figure}{\numberline {21}{\ignorespaces {Diagramma per concreteCheck in Checks}\relax }}{56}{figure.caption.51}
+\contentsline {figure}{\numberline {22}{\ignorespaces {Diagramma per checkDiscriminator in Checks}\relax }}{57}{figure.caption.52}
+\contentsline {figure}{\numberline {23}{\ignorespaces {Diagramma per concreteCheckCreator in Checks}\relax }}{58}{figure.caption.53}
+\contentsline {figure}{\numberline {24}{\ignorespaces {Diagramma per Bubble in Bubbles}\relax }}{59}{figure.caption.54}
+\contentsline {figure}{\numberline {25}{\ignorespaces {Diagramma per BubbleConfig in Bubbles}\relax }}{60}{figure.caption.55}
+\contentsline {figure}{\numberline {26}{\ignorespaces {Diagramma per bubbleCreator in Bubbles}\relax }}{61}{figure.caption.56}
+\contentsline {figure}{\numberline {27}{\ignorespaces {Diagramma per ConcreteBubble in Bubbles}\relax }}{62}{figure.caption.57}
+\contentsline {figure}{\numberline {28}{\ignorespaces {Diagramma per bubbleDiscriminator in Bubbles}\relax }}{63}{figure.caption.58}
+\contentsline {figure}{\numberline {29}{\ignorespaces {Diagramma per BubbleCreationButton in Bubbles}\relax }}{64}{figure.caption.59}
+\contentsline {figure}{\numberline {30}{\ignorespaces {Diagramma per ConcreteBubbleConfig in Bubbles}\relax }}{65}{figure.caption.60}
+\contentsline {figure}{\numberline {31}{\ignorespaces {Diagramma per concreteBubbleCreator in Bubbles}\relax }}{66}{figure.caption.61}
+\contentsline {figure}{\numberline {32}{\ignorespaces {Diagramma per ConcreteBubbleCreationButton in Bubbles}\relax }}{67}{figure.caption.62}
+\contentsline {figure}{\numberline {33}{\ignorespaces {Diagramma per SideArea1 in SideArea1\_pkg}\relax }}{68}{figure.caption.63}
+\contentsline {figure}{\numberline {34}{\ignorespaces {Diagramma per SentBubbleHistory in SideArea1\_pkg}\relax }}{69}{figure.caption.64}
+\contentsline {figure}{\numberline {35}{\ignorespaces {Diagramma per BubbleCreationMenu in SideArea1\_pkg}\relax }}{70}{figure.caption.65}
+\contentsline {figure}{\numberline {36}{\ignorespaces {Diagramma per SideArea2 in SideArea2\_pkg}\relax }}{71}{figure.caption.66}
+\contentsline {figure}{\numberline {37}{\ignorespaces {Diagramma per ReceivedBubbleHistory in SideArea2\_pkg}\relax }}{72}{figure.caption.67}
+\contentsline {figure}{\numberline {38}{\ignorespaces {Diagramma per VerticalLayout in UI-Layouts}\relax }}{73}{figure.caption.68}
+\contentsline {figure}{\numberline {39}{\ignorespaces {Diagramma per ContainedElement in UI-Layouts}\relax }}{74}{figure.caption.69}
+\contentsline {figure}{\numberline {40}{\ignorespaces {Diagramma per HorizontalLayout in UI-Layouts}\relax }}{75}{figure.caption.70}
+\contentsline {figure}{\numberline {41}{\ignorespaces {Diagramma per ConditionalRendering in UI-Layouts}\relax }}{76}{figure.caption.71}
+\contentsline {figure}{\numberline {42}{\ignorespaces {Diagramma per Image in UI-SingleComponents}\relax }}{77}{figure.caption.72}
+\contentsline {figure}{\numberline {43}{\ignorespaces {Diagramma per ComboBox in UI-SingleComponents}\relax }}{78}{figure.caption.73}
+\contentsline {figure}{\numberline {44}{\ignorespaces {Diagramma per LineEdit in UI-SingleComponents}\relax }}{79}{figure.caption.74}
+\contentsline {figure}{\numberline {45}{\ignorespaces {Diagramma per LabelEdit in UI-SingleComponents}\relax }}{80}{figure.caption.75}
+\contentsline {figure}{\numberline {46}{\ignorespaces {Diagramma per PushButton in UI-SingleComponents}\relax }}{81}{figure.caption.76}
+\contentsline {figure}{\numberline {47}{\ignorespaces {Diagramma per CheckButton in UI-SingleComponents}\relax }}{82}{figure.caption.77}
+\contentsline {figure}{\numberline {48}{\ignorespaces {Diagramma per ImageButton in UI-SingleComponents}\relax }}{83}{figure.caption.78}
+\contentsline {figure}{\numberline {49}{\ignorespaces {Diagramma per CheckBoxList in UI-SingleComponents}\relax }}{84}{figure.caption.79}
+\contentsline {figure}{\numberline {50}{\ignorespaces {Diagramma per LabelComboBox in UI-SingleComponents}\relax }}{85}{figure.caption.80}
+\contentsline {figure}{\numberline {51}{\ignorespaces {Diagramma per TextAreaButton in UI-SingleComponents}\relax }}{86}{figure.caption.81}
+\contentsline {figure}{\numberline {52}{\ignorespaces {Diagramma per LabelPushButton in UI-SingleComponents}\relax }}{87}{figure.caption.82}
+\contentsline {figure}{\numberline {53}{\ignorespaces {Diagramma per LineEditComboBox in UI-SingleComponents}\relax }}{88}{figure.caption.83}
+\contentsline {figure}{\numberline {54}{\ignorespaces {Diagramma per RadioButtonGroup in UI-SingleComponents}\relax }}{89}{figure.caption.84}
+\contentsline {figure}{\numberline {55}{\ignorespaces {Diagramma per TextAreaComboBox in UI-SingleComponents}\relax }}{90}{figure.caption.85}
+\contentsline {figure}{\numberline {56}{\ignorespaces {Diagramma per LineEditPushButton in UI-SingleComponents}\relax }}{91}{figure.caption.86}
+\contentsline {figure}{\numberline {57}{\ignorespaces {Diagramma per LabelEditPushButton in UI-SingleComponents}\relax }}{92}{figure.caption.87}
+\contentsline {figure}{\numberline {58}{\ignorespaces {Diagramma per CurrencyConversion in CurrencyBubble}\relax }}{93}{figure.caption.88}
+\contentsline {figure}{\numberline {59}{\ignorespaces {Diagramma per CurrencyBubbleSender in CurrencyBubble}\relax }}{94}{figure.caption.89}
+\contentsline {figure}{\numberline {60}{\ignorespaces {Diagramma per CurrencyBubbleCreator in CurrencyBubble}\relax }}{95}{figure.caption.90}
+\contentsline {figure}{\numberline {61}{\ignorespaces {Diagramma per CurrencyBubbleReceiver in CurrencyBubble}\relax }}{96}{figure.caption.91}
+\contentsline {figure}{\numberline {62}{\ignorespaces {Diagramma per CurrencyBubbleConfigMenu in CurrencyBubble}\relax }}{97}{figure.caption.92}
+\contentsline {figure}{\numberline {63}{\ignorespaces {Diagramma per DiceRoller in DiceBubble}\relax }}{98}{figure.caption.93}
+\contentsline {figure}{\numberline {64}{\ignorespaces {Diagramma per DiceBubbleSender in DiceBubble}\relax }}{99}{figure.caption.94}
+\contentsline {figure}{\numberline {65}{\ignorespaces {Diagramma per DiceBubbleCreator in DiceBubble}\relax }}{100}{figure.caption.95}
+\contentsline {figure}{\numberline {66}{\ignorespaces {Diagramma per DiceBubbleReceiver in DiceBubble}\relax }}{101}{figure.caption.96}
+\contentsline {figure}{\numberline {67}{\ignorespaces {Diagramma per DiceBubbleConfigMenu in DiceBubble}\relax }}{102}{figure.caption.97}
+\contentsline {figure}{\numberline {68}{\ignorespaces {Diagramma per CheckListCreator in CheckListCreation}\relax }}{103}{figure.caption.98}
+\contentsline {figure}{\numberline {69}{\ignorespaces {Diagramma per CheckListComponent in CheckListCreation}\relax }}{104}{figure.caption.99}
+\contentsline {figure}{\numberline {70}{\ignorespaces {Diagramma per CheckListItemsDefinition in CheckListCreation}\relax }}{105}{figure.caption.100}
+\contentsline {figure}{\numberline {71}{\ignorespaces {Diagramma per CheckList in CheckListReading}\relax }}{106}{figure.caption.101}
+\contentsline {figure}{\numberline {72}{\ignorespaces {Diagramma per ListOfCheckLists in CheckListReading}\relax }}{107}{figure.caption.102}
+\contentsline {figure}{\numberline {73}{\ignorespaces {Diagramma per ListCreationButton in Configuration}\relax }}{108}{figure.caption.103}
+\contentsline {figure}{\numberline {74}{\ignorespaces {Diagramma per ListBubbleMenuConfig in Configuration}\relax }}{109}{figure.caption.104}
+\contentsline {figure}{\numberline {75}{\ignorespaces {Diagramma per ListBubbleCreator in DataManagement}\relax }}{110}{figure.caption.105}
+\contentsline {figure}{\numberline {76}{\ignorespaces {Diagramma per ListBubbleReceiver in Receiver}\relax }}{111}{figure.caption.106}
+\contentsline {figure}{\numberline {77}{\ignorespaces {Diagramma per ListBubbleSender in Sender}\relax }}{112}{figure.caption.107}
+\contentsline {figure}{\numberline {78}{\ignorespaces {Diagramma per MeteoItem in MeteoBubble}\relax }}{113}{figure.caption.108}
+\contentsline {figure}{\numberline {79}{\ignorespaces {Diagramma per MeteoDelivery in MeteoBubble}\relax }}{114}{figure.caption.109}
+\contentsline {figure}{\numberline {80}{\ignorespaces {Diagramma per MeteoBubbleSender in MeteoBubble}\relax }}{115}{figure.caption.110}
+\contentsline {figure}{\numberline {81}{\ignorespaces {Diagramma per MeteoBubbleCreator in MeteoBubble}\relax }}{116}{figure.caption.111}
+\contentsline {figure}{\numberline {82}{\ignorespaces {Diagramma per MeteoBubbleReceiver in MeteoBubble}\relax }}{117}{figure.caption.112}
+\contentsline {figure}{\numberline {83}{\ignorespaces {Diagramma per MeteoBubbleConfigMenu in MeteoBubble}\relax }}{118}{figure.caption.113}
+\contentsline {figure}{\numberline {84}{\ignorespaces {Diagramma per ResultsViewer in SurveyBubble}\relax }}{119}{figure.caption.114}
+\contentsline {figure}{\numberline {85}{\ignorespaces {Diagramma per SurveyManager in SurveyBubble}\relax }}{120}{figure.caption.115}
+\contentsline {figure}{\numberline {86}{\ignorespaces {Diagramma per SurveyBubbleSender in SurveyBubble}\relax }}{121}{figure.caption.116}
+\contentsline {figure}{\numberline {87}{\ignorespaces {Diagramma per SurveyBubbleCreator in SurveyBubble}\relax }}{122}{figure.caption.117}
+\contentsline {figure}{\numberline {88}{\ignorespaces {Diagramma per SurveyBubbleReceiver in SurveyBubble}\relax }}{123}{figure.caption.118}
+\contentsline {figure}{\numberline {89}{\ignorespaces {Diagramma per SurveyBubbleConfigMenu in SurveyBubble}\relax }}{124}{figure.caption.119}
+\contentsline {figure}{\numberline {90}{\ignorespaces {Diagramma per MessageTranslation in TranslationBubble}\relax }}{125}{figure.caption.120}
+\contentsline {figure}{\numberline {91}{\ignorespaces {Diagramma per TranslationBubbleSender in TranslationBubble}\relax }}{126}{figure.caption.121}
+\contentsline {figure}{\numberline {92}{\ignorespaces {Diagramma per TranslationBubbleCreator in TranslationBubble}\relax }}{127}{figure.caption.122}
+\contentsline {figure}{\numberline {93}{\ignorespaces {Diagramma per TranslationBubbleReceiver in TranslationBubble}\relax }}{128}{figure.caption.123}
+\contentsline {figure}{\numberline {94}{\ignorespaces {Diagramma per TranslationBubbleConfigMenu in TranslationBubble}\relax }}{129}{figure.caption.124}
+\contentsline {figure}{\numberline {95}{\ignorespaces Diagramma di attivit\IeC {\`a} per la bolla sondaggio\relax }}{131}{figure.95}
+\contentsline {figure}{\numberline {96}{\ignorespaces Diagramma di attivit\IeC {\`a} per la bolla ListBubble\relax }}{132}{figure.96}
+\contentsline {figure}{\numberline {97}{\ignorespaces Diagramma di sequenza per la creazione di una bolla\relax }}{132}{figure.97}
+\contentsline {figure}{\numberline {98}{\ignorespaces Diagramma di sequenza per la cancellazione di una bolla\relax }}{133}{figure.98}
+\contentsline {figure}{\numberline {99}{\ignorespaces Diagramma di sequenza per il voto in una bolla-sondaggio\relax }}{134}{figure.99}
+\contentsline {figure}{\numberline {100}{\ignorespaces Diagramma del Factory method\relax }}{163}{figure.caption.125}
+\contentsline {figure}{\numberline {101}{\ignorespaces Diagramma del Template method\relax }}{164}{figure.caption.126}
+\contentsline {figure}{\numberline {102}{\ignorespaces Diagramma del Proxy Pattern\relax }}{164}{figure.caption.127}
+\contentsline {figure}{\numberline {103}{\ignorespaces Diagramma del Composite Pattern\relax }}{165}{figure.caption.128}

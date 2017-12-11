@@ -1,0 +1,80 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{8}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{8}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{8}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{8}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{8}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{8}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Descrizione generale}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Contesto d'uso e funzionalit\IeC {\`a} dell'SDK}{8}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Caratteristiche degli utenti}{9}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Contesto d'uso e funzionalit\IeC {\`a} delle bolle}{10}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Caratteristiche degli utenti}{10}{subsubsection.2.2.1}
+\contentsline {section}{\numberline {3}Casi d'uso}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Caso d'uso UC0: Monolith.}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Caso d'uso UC1: Creazione bolla vuota.}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Caso d'uso UC2: Accesso alle funzionalit\IeC {\`a} dell'API.}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Caso d'uso UC2.1: Specifica Gui.}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Caso d'uso UC2.1.1: Inserimento di un componente grafico o di un contenitore.}{14}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Caso d'uso UC2.1.2: Modifica propriet\IeC {\`a} di un componente grafico.}{16}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Caso d'uso UC2.1.2.1: Modifica contenuto del componente testo.}{17}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Caso d'uso UC2.1.2.2: Impostazione percorso dell'immagine da visualizzare nel componente immagine.}{17}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Caso d'uso UC2.1.2.3: Modifica testo mostrato nel pulsante.}{17}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Caso d'uso UC2.1.2.4: Impostazione dell'azione associata al pulsante.}{18}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Caso d'uso UC2.1.2.5: Impostazione testo della checkbox.}{18}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}Caso d'uso UC2.1.2.6: Impostazione opzioni di scelta del radiobutton.}{18}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}Caso d'uso UC2.1.3: Selezione di un componente grafico o di un contenitore.}{18}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.14}Caso d'uso UC2.1.4: Inserimento del menu di configurazione della bolla.}{19}{subsection.3.14}
+\contentsline {subsection}{\numberline {3.15}Caso d'uso UC2.2: Identificazione Mittente o Ricevente.}{19}{subsection.3.15}
+\contentsline {subsection}{\numberline {3.16}Caso d'uso UC2.3: Gestione persistenza dei dati.}{19}{subsection.3.16}
+\contentsline {subsection}{\numberline {3.17}Caso d'uso UC3: Utilizzo dell'interfaccia in Rocket.Chat per l'uso delle bolle.}{20}{subsection.3.17}
+\contentsline {subsection}{\numberline {3.18}Caso d'uso UC3.1: Apertura di una delle due SideAreas.}{20}{subsection.3.18}
+\contentsline {subsection}{\numberline {3.19}Caso d'uso UC3.2: Utilizzo della SideArea1.}{22}{subsection.3.19}
+\contentsline {subsection}{\numberline {3.20}Caso d'uso UC3.2.1: Visualizzazione tipi di bolle.}{22}{subsection.3.20}
+\contentsline {subsection}{\numberline {3.21}Caso d'uso UC3.2.2: Selezione del tipo di bolla da inviare.}{23}{subsection.3.21}
+\contentsline {subsection}{\numberline {3.22}Caso d'uso UC3.2.3: Configurazione della bolla.}{23}{subsection.3.22}
+\contentsline {subsection}{\numberline {3.23}Caso d'uso UC3.2.4: Invio della bolla.}{23}{subsection.3.23}
+\contentsline {subsection}{\numberline {3.24}Caso d'uso UC3.2.5: Visualizzazione storico bolle inviate dall'utente corrente.}{23}{subsection.3.24}
+\contentsline {subsection}{\numberline {3.25}Caso d'uso UC3.2.6: Interazione con le bolle inviate.}{24}{subsection.3.25}
+\contentsline {subsection}{\numberline {3.26}Caso d'uso UC3.2.7: Visualizzazione messaggio storico in uscita vuoto.}{24}{subsection.3.26}
+\contentsline {subsection}{\numberline {3.27}Caso d'uso UC3.2.8: Visualizzazione messaggio errore.}{24}{subsection.3.27}
+\contentsline {subsection}{\numberline {3.28}Caso d'uso UC3.3: Utilizzo della SideArea2.}{25}{subsection.3.28}
+\contentsline {subsection}{\numberline {3.29}Caso d'uso UC3.3.1: Visualizzazione storico bolle ricevute.}{25}{subsection.3.29}
+\contentsline {subsection}{\numberline {3.30}Caso d'uso UC3.3.2: Interazione con le bolle.}{25}{subsection.3.30}
+\contentsline {subsection}{\numberline {3.31}Caso d'uso UC3.3.3: Visualizzazione messaggio storico in ingresso vuoto.}{26}{subsection.3.31}
+\contentsline {subsection}{\numberline {3.32}Caso d'uso UC0-cv: Bolla convertitore di valuta.}{27}{subsection.3.32}
+\contentsline {subsection}{\numberline {3.33}Caso d'uso UC1-cv: Seleziona valute.}{27}{subsection.3.33}
+\contentsline {subsection}{\numberline {3.34}Caso d'uso UC2-cv: Inserimento importo da convertire.}{28}{subsection.3.34}
+\contentsline {subsection}{\numberline {3.35}Caso d'uso UC3-cv: Visualizzazione valore convertito.}{28}{subsection.3.35}
+\contentsline {subsection}{\numberline {3.36}Caso d'uso UC0-dd: Bolla estrazione numeri casuali.}{29}{subsection.3.36}
+\contentsline {subsection}{\numberline {3.37}Caso d'uso UC1-dd: Seleziona range.}{29}{subsection.3.37}
+\contentsline {subsection}{\numberline {3.38}Caso d'uso UC2-dd: Visualizzazione numero estratto.}{29}{subsection.3.38}
+\contentsline {subsection}{\numberline {3.39}Caso d'uso UC0-ls: Lista con checklist.}{31}{subsection.3.39}
+\contentsline {subsection}{\numberline {3.40}Caso d'uso UC1-ls: Definizione della lista.}{32}{subsection.3.40}
+\contentsline {subsection}{\numberline {3.41}Caso d'uso UC1.1-ls: Inserimento di un nuovo elemento.}{32}{subsection.3.41}
+\contentsline {subsection}{\numberline {3.42}Caso d'uso UC1.2-ls: Selezione della voce da checklist.}{33}{subsection.3.42}
+\contentsline {subsection}{\numberline {3.43}Caso d'uso UC2-ls: Definizione di checklist.}{33}{subsection.3.43}
+\contentsline {subsection}{\numberline {3.44}Caso d'uso UC3-ls: Spunta della voce.}{33}{subsection.3.44}
+\contentsline {subsection}{\numberline {3.45}Caso d'uso UC4-ls: Visualizzazione delle spunte.}{33}{subsection.3.45}
+\contentsline {subsection}{\numberline {3.46}Caso d'uso UC0-mt: Meteo.}{34}{subsection.3.46}
+\contentsline {subsection}{\numberline {3.47}Caso d'uso UC1-mt: Seleziona localit\IeC {\`a}.}{34}{subsection.3.47}
+\contentsline {subsection}{\numberline {3.48}Caso d'uso UC2-mt: Visualizzazione informazioni meteo.}{35}{subsection.3.48}
+\contentsline {subsection}{\numberline {3.49}Caso d'uso UC0-sd: Sondaggio.}{36}{subsection.3.49}
+\contentsline {subsection}{\numberline {3.50}Caso d'uso UC1-sd: Seleziona opzioni.}{36}{subsection.3.50}
+\contentsline {subsection}{\numberline {3.51}Caso d'uso UC2-sd: Voto.}{37}{subsection.3.51}
+\contentsline {subsection}{\numberline {3.52}Caso d'uso UC3-sd: Visualizzazione risultati.}{37}{subsection.3.52}
+\contentsline {subsection}{\numberline {3.53}Caso d'uso UCUC4-sd: Visualizzazione messaggio di errore per numero di opzioni minore o uguale a 1.}{37}{subsection.3.53}
+\contentsline {subsection}{\numberline {3.54}Caso d'uso UC0-tr: Bolla traduttore automatico.}{38}{subsection.3.54}
+\contentsline {subsection}{\numberline {3.55}Caso d'uso UC1-tr: Selezione della lingua di partenza.}{38}{subsection.3.55}
+\contentsline {subsection}{\numberline {3.56}Caso d'uso UC2-tr: Scrittura del messaggio.}{39}{subsection.3.56}
+\contentsline {subsection}{\numberline {3.57}Caso d'uso UC3-tr: Selezione lingua di arrivo.}{39}{subsection.3.57}
+\contentsline {subsection}{\numberline {3.58}Caso d'uso UC4-tr: Visualizzazione traduzione.}{39}{subsection.3.58}
+\contentsline {section}{\numberline {4}Requisiti}{40}{section.4}
+\contentsline {subsection}{\numberline {4.1}Requisiti funzionali}{40}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Requisiti qualitativi}{46}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Requisiti dichiarativi}{47}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Riepilogo requisiti}{48}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Tracciamento fonti - requisiti per l'SDK}{48}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Tracciamento fonti - requisiti per le bolle}{50}{subsection.4.6}

@@ -1,0 +1,97 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{rotating} 
+\usepackage{multirow}
+
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\date{}
+
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\rightmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../../../file_comuni/copertina2}
+\nomedoc{Verbale interno 2017-07-07}
+\versione{v1\_0\_0}
+\datacreazione{2017/07/07}
+\verifica{Riccardo Saggese}
+\approvazione{Nicolò Rigato}
+\redazione{Emanuele Crespan \eanche Federica Schifano}
+\uso{interno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Verbale dell'incontro tra i membri del gruppo \emph{Obelix} in data 2017-07-07}
+
+
+\begin{document}
+\paginatitolo
+\section{Informazioni sulla riunione}
+
+\begin{itemize}
+\item[] Data: 2017-07-07
+\item[] Luogo: Torre Archimede - Via Trieste, 63 Padova
+\item[] Ora: 16:00
+\item[] Durata: 60'
+\item[] Partecipanti interni: Obelix
+  \begin{itemize}
+  \item[] Emanuele Crespan
+  \item[] Federica Schifano
+  \item[] Nicolò Rigato
+  \item[] Riccardo Saggese
+  \item[] Silvio Meneguzzo
+  \item[] Tomas Mali
+ \end{itemize}
+\end{itemize}
+
+\section{Argomenti trattati}
+\begin{enumerate}
+	\item Discussione in merito alle SideArea
+	\item Discussione in merito al Menù della SideArea1
+	\item Suddivisione del lavoro.
+\end{enumerate}
+
+\section{Decisioni Prese}
+\begin{enumerate}
+	\item \textbf{VI1.1}Si è deciso di mettere due pulsanti distinti lungo la tabbar laterale destra, contenete uno la sideArea1 e l'altro la SideArea2 , distinguendo bolle inviate e creazione di nuove bolle (SideArea1) e bolle ricevute (SideArea2), in base alla room in cui l'utente si trova.
+
+	\item \textbf{VI1.2}la SideArea1 è diviso in 3 parti:
+			\begin{enumerate}
+				\item Selezione di una tipologia di bolla
+				\item Menù di configurazione di una bolla scelta per essere creata
+				\item Lista delle bolle inviate dall'utente internamente a quella room
+			\end{enumerate}
+			
+
+	\item \textbf{VI1.3}Il lavoro è stato suddiviso in maniera equa tra tutti i membri ed ognuno lavorerà su parti di documenti distinte in modo da evitare possibili conflitti, e in caso di possibile condivisione di lavoro su uno stesso documento, si superano i conflitti grazie a gitflow adottato dal gruppo per la creazione di feature proprie e semplificazione di merge potenzialmente problematici 
+	
+	
+\end{enumerate}
+
+
+\end{document}

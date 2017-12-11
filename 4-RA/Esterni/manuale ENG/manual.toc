@@ -1,0 +1,28 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}intro}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}How to install}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Use requirements}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Requirements}{2}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Desktop requirements}{2}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Javascript}{3}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Access to the application}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Error and bug reporting}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Class Description}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}SingleComponents}{4}{subsection.3.1}
+\contentsline {paragraph}{CheckButton}{4}{section*.2}
+\contentsline {paragraph}{CheckBoxList}{4}{section*.3}
+\contentsline {paragraph}{ComboBox}{5}{section*.4}
+\contentsline {paragraph}{Image}{5}{section*.5}
+\contentsline {paragraph}{ImageButton}{5}{section*.6}
+\contentsline {paragraph}{LineEdit}{6}{section*.7}
+\contentsline {paragraph}{LineEditComboBox}{6}{section*.8}
+\contentsline {paragraph}{PushButton}{6}{section*.9}
+\contentsline {paragraph}{LineEditPushButton}{7}{section*.10}
+\contentsline {paragraph}{RadioButtonGroup}{7}{section*.11}
+\contentsline {paragraph}{TextAreaButton}{7}{section*.12}
+\contentsline {paragraph}{TextAreaComboBox}{8}{section*.13}
+\contentsline {subsection}{\numberline {3.2}Layout}{8}{subsection.3.2}
+\contentsline {paragraph}{VerticalLayout}{8}{section*.14}
+\contentsline {paragraph}{HorizontalLayout}{9}{section*.15}

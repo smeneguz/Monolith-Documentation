@@ -1,0 +1,198 @@
+\section{Introduzione}
+
+\subsection{Scopo del documento}
+Lo scopo del documento è definire i casi d'uso e i requisiti del prodotto emersi durante lo studio del capitolato C5 e dalle riunioni con \textit{Red Babel}.
+
+\subsection{Scopo del prodotto}
+
+Lo scopo del prodotto è quello di permettere la creazione di bolle
+interattive, che dovranno funzionare nell’ambiente Rocket.chat. Queste
+bolle permetteranno di aumentare l'interattività tra gli utenti della
+chat e aggiungeranno nuove funzionalità accessibili
+direttamente dalla room senza il bisogno di ricorrere
+all'apertura di applicazioni diverse.
+Il sistema offrirà agli sviluppatori un set di \glossario{API} per creare e
+rilasciare nuove bolle e agli utenti finali la possibilità di
+usufruire di un insieme di bolle predefinite.
+
+\subsection{Glossario}
+
+Al fine di evitare ogni ambiguità di linguaggio e massimizzare la
+comprensione dei documenti, i termini che necessitano di essere
+chiariti saranno scritti in corsivo e marcati con una |G| in pedice alla prima
+occorrenza e saranno riportati nel Glossario.
+
+
+\subsection{Riferimenti}
+
+\subsubsection{Normativi}
+\begin{itemize}
+\item \textbf{Norme di Progetto v3.0.0}.
+\end{itemize}
+
+\subsubsection{Informativi}
+\begin{itemize}
+\item
+  \textbf{Capitolato d'appalto C5}: Monolith \\
+  \url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C5.pdf}
+\item \textbf{Ingegneria del Software - Ian Sommerville - Decima edizione}
+\item \textbf{Slide dell’insegnamento - Diagrammi dei casi d’uso}:
+  \\ \url{http://www.math.unipd.it/~tullio/IS-1/2016/Dispense/E01b.pdf}
+
+\end{itemize}
+
+
+\section{Descrizione generale}
+\subsection{Contesto d'uso e funzionalità dell'SDK}
+
+Il prodotto consiste in una SDK per creare bolle interattive
+in ambiente \glossario{Rocket.chat}.
+L'utilizzo dell'SDK parte da un processo di inizializzazione 
+o la copia di alcuni file pronti che permette di lavorare su
+una bolla vuota a cui si possono aggiungere funzionalità tramite
+l'API.
+Le funzionalità comprendono la definizione facilitata della vista
+grafica e la gestione dei permessi degli utenti.
+%% spiegone su bolla vuota
+
+La procedura di inizializzazione consiste nella creazione automatica di una bolla
+vuota su cui lo sviluppatore può costruire il proprio prodotto.
+La bolla così creata comprende solo i file e le informazioni di base
+senza includere alcuna funzionalità. Nello specifico la parte visuale include
+solo un contenitore vuoto a cui poter aggiungere elementi.
+\'E previsto un solo tipo di bolla vuota.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ADD HERE altre cose
+%% DIAGRAMMA ATTORI
+
+
+Nelle API gli elementi grafici sono aggiunti in un sistema di contenitori:
+
+\begin{itemize}
+\item \textbf{Contenitori}\\
+  La progettazione dell'interfaccia è pensata in termini di
+  elementi HTML. Ciascun elemento visualizzato deve trovarsi
+  all'interno di un contenitore. Il contenitore impone delle regole
+  di layout ai suoi figli e li organizza in verticale o in
+  orizzontale. Organizzando opportunamente gerarchie di contenitori
+  è possibile descrivere layout anche non banali.
+\item \textbf{Tipologie di elementi grafici}: testo, immagini, campi
+  di inserimento di testo, pulsanti, checkbox, radio buttons,
+  tabelle. Ciascuna tipologia può essere inserita in un contenitore e
+  posizionata in quel modo.
+
+\end{itemize} % direzione di espansione, tipologie dette ``elemento di
+              % ****'' ,
+
+Altre funzionalità offerte sono:
+\begin{itemize}
+
+\item \textbf{Gestione dei permessi tra mittente e riceventi}\\
+L'unica differenza rilevante tra utenti è quella tra mittente e
+ricevente. Quindi l'API fornisce  la possibilità di distinguere con
+facilità le due tipologie.
+
+\item \textbf{Gestione della persistenza dei dati} \\
+Lo sviluppatore deve essere in grado di memorizzare informazioni senza
+doversi preoccupare dei dettagli del database.
+
+\item \textbf{Menù di accesso alle bolle}\\
+L'Sdk include anche un'interfaccia grafica per l'utilizzo delle
+bolle. \'E generica e estensibile per utilizzare nuove bolle.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\subsubsection{Caratteristiche degli utenti}
+Il prodotto si rivolge a sviluppatori di bolle per il sistema di chat
+Rocket.chat.
+Nei casi d'uso relativi all'SDK sono presenti due attori: lo
+sviluppatore e l'utente di Rocket.Chat.
+ %% DIAGRAMMA
+
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/solo_attori_sviluppatore.png}
+   \caption{Diagramma per l'attore sviluppatore.}
+\end{figure}
+
+
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/solo_attori_utente.png}
+   \caption{Diagramma per l'attore utente.}
+\end{figure}
+
+%\clearpage
+\subsection{Contesto d'uso e funzionalità delle bolle}
+\begin{itemize}
+\item \textbf{Convertitore di valuta}\\
+La bolla converte gli importi inseriti da una valuta all'altra. I tassi di cambio sono prelevati da una fonte esterna.
+\item \textbf{Estrazione numeri casuali}\\
+La bolla estrae un numero casualmente dal "range" impostato.
+\item \textbf{Lista con checklist}\\
+Il mittente inserisce gli elementi nella lista da inviare, ha inoltre a disposizione una lista di controllo (checklist) da cui prendere elementi. I riceventi possono spuntare elementi dalla lista ricevuta.
+\item \textbf{Meteo}\\
+ La bolla restituisce le previsioni meteo per la località scelta.
+\item \textbf{Sondaggio}\\
+Il mittente seleziona un certo numero di opzioni tra cui i riceventi possono scegliere.
+\item \textbf{Traduttore automatico}\\
+Una bolla che traduce il testo inserito nelle lingue selezionate.
+\end{itemize}
+
+\subsubsection{Caratteristiche degli utenti}
+I prodotti realizzati con l'SDK, ovvero le bolle, sono rivolti agli
+utenti di Rocket.chat.
+
+
+Tra gli utenti si distingue tra mittente e ricevente del messaggio che
+contiene la bolla. 
+
+
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Casi d'uso}
+\input{uccases}
+\clearpage
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Requisiti}
+
+I requisiti sono organizzati per utilità strategica:
+\begin{itemize}
+\item Ob: Obbligatori
+\item De: Desiderabili
+\item Op: Opzionali
+\end{itemize}
+Ogni requisito dovrà essere distinto, inoltre, in base al tipo e quindi al modo in cui dovrà essere verificato:
+\begin{itemize}
+\item Fu: Funzionale
+\item Qu: Qualitativo
+\item Di: Dichiarativo
+\end{itemize}
+Ogni requisito dovrà rispettare la seguente codifica:
+$$
+R[\text{utilità strategica}][\text{tipo}][\text{codice}]-[\text{sigla
+    bolla}]
+$$
+
+Dove la sigla bolla è una parte opzionale del codice che indica una
+bolla predefinita allo stesso modo dei codici degli use case.
+I requisiti sono di seguito esposti suddivisi per tipo.
+
+\input{requirements}
+\input{tracciamento_src_req}

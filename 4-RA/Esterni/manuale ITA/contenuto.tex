@@ -1,0 +1,486 @@
+%% MANUALE DELL'APPLICAZIONE
+\section{Introduzione}
+\subsection{Cos'è Monolith SDK?}
+Monolith SDK è un pacchetto \glossario{Meteor} che consente la creazione di bolle interattive in ambiente \glossario{Rocket.chat}.\\
+Lo sviluppatore avrà la possibilità di usare i componenti della SDK per costruire le proprie bolle da integrare a quelle già esistenti sulla piattaforma di \glossario{Rocket.chat}.
+\subsection{Scopo del documento}
+Questo documento rappresenta il manuale utente per l'applicazione Monolith SDK nel quale vengono descritte dettagliatamente tutte le caratteristiche dell'applicativo utilizzabili dallo sviluppatore.
+Il manuale sarà diviso in sezioni per essere maggiormente comprensibile e spiegherà le varie feature che lo sviluppatore potrà utilizzare per costruire la propria bolla.
+\subsection{Organizzazione dei repository}
+Vengono forniti 4 repository:
+\begin{itemize}
+	\item \textbf{monolith-sdk} \\
+	Contiene il codice per l'SDK. Sono fornite le funzionalità di Monolith. Tutti gli altri pacchetti dipendono da questo. \\
+	\url{}
+	\item \textbf{monolith-hello} \\
+	Contiene il codice per l'esempio più semplice possibile su come usare l'SDK Monolith. \\
+	\url{}
+	\item \textbf{monolith-demo} \\
+	Contiene il codice per la demo ufficiale di Monolith. Rappresenta un caso d'uso più complesso rispetto a monolith-hello. Vedere la descrizione per maggiori dettagli. \\
+	\url{}
+	\item \textbf{monolith-emptybubble} \\
+	Contiene il codice per la bolla vuota. Contiene i file che si possono usare come base per costruire la propria bolla. Vedere la guida allo sviluppo per maggiori dettagli. \\
+	\url{}
+\end{itemize}
+
+\subsection{Comunicazione dei bug}
+Nel caso si riscontrino degli errori o dei problemi durante il normale utilizzo dell'applicazione si prega di comunicarlo al team di sviluppo aprendo un issue sul nostro repository Github:
+\url{https://github.com/ObelixSWE/monolith-sdk/issues} \\
+Il team si impegna a lavorare per migliorare l'applicazione e per risolvere qualunque bug venga segnalato.
+
+\section{Requisiti per l'installazione e l'utilizzo}
+\subsection{Installazione}
+Monolith è stato realizzato e testato su Meteor v1.5.1 e Rocket.chat v0.59. Non si garantisce il funzionamento per versioni precedenti.
+\subsection{Utilizzo}
+L'esecuzione lato client è supportata sui seguenti browsers:
+\begin{itemize}
+	\item Google Chrome v59+
+	\item Firefox v54+
+	\item Internet Explorer v11+
+	\item Safari v10+
+\end{itemize}
+Come per qualunque applicazione Meteor il browser deve avere JavaScript attivato.
+
+\section{Installazione}
+\subsection{Installazione dell'SDK}
+Per installare Monolith SDK su Rocket.chat è necessario eseguire i seguenti passi:
+\begin{lstlisting}
+  git clone https://github.com/RocketChat/Rocket.Chat.git
+  cd Rocket.Chat
+  meteor npm start # al termine chiudere meteor
+  meteor add templating blaze-html-templates 
+		react-meteor-data maxharris9:classnames
+		react-template-helper	
+  meteor npm i react react-dom bluebird simpl-schema 
+  		react-addons-pure-render-mixin money 
+  		request request-promise  --save
+  # copiare monolith-sdk all'interno di Rocket.chat/packages
+  meteor add monolith-sdk
+  meteor
+\end{lstlisting}
+
+\subsection{Installazione di monolith-hello}
+\textbf{Prerequisito}: monolith-sdk deve essere già installato come spiegato in \S 2.1. \\
+Per installare monolith-hello su Rocket.chat è necessario eseguire i seguenti passi: 
+
+\begin{lstlisting}
+# scaricare il contenuto del repository monolith-hello e 
+# inserire la directory all'interno di Rocket.chat/packages
+# eseguire nella directory principale di Rocket.chat:
+meteor add monolith-hello
+\end{lstlisting}
+
+
+\subsection{Installazione di monolith-demo}
+\textbf{Prerequisito}: monolith-sdk deve essere già installato come spiegato in \S 2.1. \\
+Per installare monolith-demo su Rocket.chat è necessario eseguire i seguenti passi: 
+
+\begin{lstlisting}
+# scaricare il contenuto del repository monolith-demo e 
+# inserire la directory all'interno di Rocket.chat/packages
+# eseguire nella directory principale di Rocket.chat:
+meteor add monolith-demo
+\end{lstlisting}
+
+
+\section{Utilizzo dell'SDK per la creazione di una bolla}
+
+\subsection{La bolla vuota come punto di partenza}
+Viene fornito monolith-emptybubble come punto di partenza per lo sviluppo di una nuova bolla. La prima cosa da fare è scegliere un nome per la bolla. Da adesso sarà usato <yourbubble> per indicare il nuovo progetto. Dopo aver scaricato la directory modificare i file come segue:
+\begin{itemize}
+	\item Rinominare la directory principale e tutti i file utilizzando <yourbubble>
+	\item \textbf{package.js}
+		\begin{itemize}
+			\item Cambiare il nome del package  in <yourbubble> in Package.describe name.
+			\item Rinominare i files all'interno di api.addFiles. 
+		\end{itemize}
+	\item \textbf{client/main.js}: correggere il percorso del file.
+	\item \textbf{server/main.js}: correggere il percorso del file.
+	\item \textbf{server/Methods.js}: scrivere i Meteor.Method. \'E richiesto per la modifica, ma è opzionale per l'inserimento. L'utilizzo viene spiegato in \S 4.4.
+	\item \textbf{lib/emptyDb.js}: rinominare la collezione utilizzando <yourbubble>.
+	\item \textbf{lib/emptyCheck.js}: rinominare l'oggetto check e inserire lo schema dei dati come descritto in \S 4.3.
+	\item \textbf{lib/emptyBubble.jsx}: Componente grafico. Vedere \S 4.2 per maggiori dettagli.
+	\item \textbf{lib/emptyBubbleConfig.jsx}: Componente grafico. Vedere \S 4.2 per maggiori dettagli.	
+	\item \textbf{lib/emptyBubbleCreationButton.jsx}: Componente grafico. Vedere \S 4.2 per maggiori dettagli.
+	\item \textbf{lib/emptyCreator.jsx}: sostituire <yourbubble> al posto di empty.
+		
+\end{itemize}
+
+\subsection{Componenti grafici essenziali}
+Questi sono i componenti essenziali che devono essere realizzati. \'E possibile semplificare il lavoro utilizzando i componenti grafici forniti con l'SDK.
+\subsubsection{emptyBubble.jsx}
+
+\subsubsection{emptyBubbleConfig.jsx}
+\subsubsection{emptyBubbleCreationButton.jsx}
+
+\subsection{Descrizione dello schema dei dati}
+
+\subsection{Configurazione del database e possibili usi}
+
+\subsection{Funzionalità non di base}
+
+
+\section{Descrizione delle classi utilizzabili}
+\subsection{Layout}
+\subsubsection{VerticalLayout}
+Layout verticale che conterrà i componenti della bolla e li posizionerà ognuno sotto al proprio precedente. La props \textit{hide} permette di nascondere la vista del layout (tramite valori \textit{true/false}).
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<VerticalLayout hide={}>
+<Children/>
+<Children/>
+.
+.
+.
+</VerticalLayout>
+\end{lstlisting}
+\end{center}
+
+
+\subsubsection{HorizontalalLayout}
+Layout orizzontale che conterrà i componenti della bolla e li posizionerà ognuno di fianco al proprio precedente. La props \textit{hide} permette di nascondere la vista del layout (tramite valori \textit{true/false}).
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<HorizontalLayout hide={}>
+<Children/>
+<Children/>
+.
+.
+.
+</HorizontalLayout>
+\end{lstlisting}
+\end{center}
+
+\subsection{Components}
+
+\subsubsection{CheckButton}
+
+Componente Checkbox, i suoi dati vengono ritornati (ad ogni click) tramite la funzione getCheck.
+\begin{center}
+	\underline{\textit{Utilizzo}}
+	\begin{lstlisting}
+	<CheckButton
+	id= ""
+	classes= // CSS classes
+	getCheck={this.fun}
+	value="" // Valore CheckButton
+	/>
+	\end{lstlisting}
+	\underline{\textit{Funzione di ritorno}}
+	\begin{lstlisting}
+	function fun(m) {...}
+	
+	m={id:'', value:'', check:''};
+	\end{lstlisting}
+\end{center}
+
+\subsubsection{CheckBoxList}
+Una lista di Checkbox, i dati del CheckButton cliccato vengono ritornati tramite la funzione getCheck.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+
+<CheckBoxList
+classes= // CSS classes
+options={opt}
+getCheck={this.fun}
+/>
+\end{lstlisting}
+\underline{\textit{Esempio opzioni}}
+\begin{lstlisting}
+var opt=[{id: 1, value: 'Hello World'},{id: 2, value: 'value'}];
+\end{lstlisting}
+\underline{\textit{Funzione di ritorno}}
+\begin{lstlisting}
+function fun(m) {...}
+
+m={id:'', value:'', check:''};
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=0.53]{img/checkbox.png}
+\\
+\end{center}
+
+
+\subsubsection{ComboBox}
+Semplice elemento ComboBox. La funzione di ritorno riceve l'elemento selezionato.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<ComboBox
+id= ""
+classes= // CSS classes
+options={["a","b","c"]} //array of options
+getSelection={this.fun}
+/>
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=0.9]{img/combobox.png}
+
+\end{center}
+
+\subsubsection{Image}
+Semplice elemento Immagine senza funzione di ritorno.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<Image
+id= ""
+classes= // CSS classes
+src= // like HTML "src" attribute
+alt=  // like HTML "alt" attribute
+width=  // like HTML "width" attribute
+height=  // like HTML "height" attribute
+/>
+\end{lstlisting}
+\end{center}
+\newpage
+\subsubsection{ImageButton}
+Elemento Immagine cliccabile come pulsante. La funzione di ritorno viene avviata quando l'immagine viene cliccata.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<ImageButton
+id= ""
+src= // like HTML "src" attribute
+alt=  // like HTML "alt" attribute
+width=  // like HTML "width" attribute
+height=  // like HTML "height" attribute
+handleClick={this.fun}
+/>
+\end{lstlisting}
+\end{center}
+
+
+\subsubsection{LineEdit}
+Casella di testo editabile. La funzione "fun" salva il testo digitato e viene chiamata ad ogni modifica.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<LineEdit
+id= ""
+classes= // CSS classes
+updateState={this.fun}
+value="default value"
+/>
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=1]{img/lineedit.png}
+\\
+\end{center}
+
+\subsubsection{LineEditComboBox}
+Elemento formato da una casella di testo editabile e una ComboBox.\\
+La funzione "fun1" riceve il testo dalla LineEdit mentre "fun2" l'opzione selezionata dal ComboBox.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<LineEditComboBox
+idle= // lineEdit id
+idcb= // comboBox id
+classesle= // lineEdit CSS classes
+classescb= // comboBox CSS classes
+textUpdate={this.fun1}
+options={["a","b","c"]} //array of option
+comboUpdate={this.fun2}
+/>
+\end{lstlisting}
+\end{center}
+
+\subsubsection{LineEditPushButton}
+Elemento formato da una casella di testo editabile e un pulsante cliccabile.\\
+La funzione "fun" riceve il testo dalla LineEdit quando il PushButton viene cliccato.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<LineEditPushButton
+idle= // lineEdit id
+idpb= // pushButton id
+classesle= // lineEdit CSS classes
+classespb= // pushButton CSS classes
+getText={this.fun}
+buttonName="button name"
+/>
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=0.75]{img/LEPush.png}
+\\
+\end{center}
+
+\subsubsection{PushButton}
+Pulsante cliccabile. La funzione "fun" viene eseguita al click sul pulsante.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<PushButton
+id= ""
+classes= // CSS classes
+handleClick={this.fun}
+buttonName="button name"
+/>
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=0.25]{img/pushB.png}
+\\
+\end{center}
+\newpage
+\subsubsection{RadioButtonGroup}
+Elemento formato da un gruppo di RadioButton. La funzione "fun" restituisce l'opzione selezionata ad ogni cambiamento.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<RadioButtonGroup
+classes= // CSS classes
+options={["a","b","c"]} //array of options
+getValue={this.fun}
+/>
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=0.6]{img/radiob.png}
+\\
+\end{center}
+
+\subsubsection{TextAreaButton}
+Elemento area di testo editabile ed un PushButton.\\
+La funzione "fun" riceve il testo dalla TextArea quando il PushButton viene cliccato.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<TextAreaButton
+idta= // textArea id
+classesta= // textArea CSS classes
+idpb= // PushButton id
+classespb= // CSS classes
+getText={this.fun}
+width= // textarea width
+height= // textarea height
+buttonName= // button name
+/>
+\end{lstlisting}
+\underline{\textit{Esempio:}}
+\\
+\includegraphics[scale=0.5]{img/textB.png}
+\\
+\end{center}
+
+\subsubsection{TextAreaComboBox}
+Elemento area di testo editabile ed un ComboBox.\\
+La funzione "fun1" riceve il testo dalla TextArea mentre "fun2" l'opzione selezionata dal ComboBox.
+\begin{center}
+\underline{\textit{Utilizzo}}
+\begin{lstlisting}
+<TextAreaComboBox
+idtx= //textArea id
+classestx= // textArea CSS classes
+idcb= //combobox id
+classescb= // combobox CSS classes
+width= // textarea width
+height= // textarea height
+textUpdate={this.fun1}
+options={["a","b","c"]} // array of options
+comboUpdate={this.fun2}
+/>
+\end{lstlisting}
+\end{center}
+
+\section{Utilizzo delle bolle}
+Vengono fornite alcune bolle tipo le quali vengono create tramite il menù presente nella SideArea1.\\
+
+\includegraphics[scale=0.75]{img/menu.png}
+\newpage
+\subsection{CurrencyBubble}
+La \textit{CurrencyBubble} è una bolla che funge da convertitore di valuta.
+\\Una volta selezionata dal menù la si può configurare impostando la valuta di base, di uscita ed il valore da convertire.\\
+
+\includegraphics[scale=0.75]{img/currConfig.png}
+\\
+Una volta inviata cliccando su \textbf{Send} il risultato sarà:\\
+
+\includegraphics[scale=0.75]{img/curr.png}
+\newpage
+\subsection{PollBubble}
+La \textit{PollBubble} è una bolla che permette di creare un sondaggio da lanciare ai membri della chat in questione.\\
+Una volta arrivati al menù di configurazione si impostano la domanda e le varie opzioni (che si possono aggiungere con il pulsante \textbf{Add}).
+\\
+
+\includegraphics[scale=0.75]{img/pollConfig.png}
+
+Una volta inviata cliccando su \textbf{Send} il risultato sarà:\\
+
+\includegraphics[scale=0.74]{img/poll.png}
+\\
+Ora che la bolla è stata creata sarà possibile votare cliccando sull'opzione desiderata.
+\subsection{DiceBubble}
+La \textit{DiceBubble} è una bolla che lancia un certo tipo di dado (a scelta in base al numero di facce) e ne ritorna un risultato casuale.\\
+Dal menù di configurazione bisognerà scegliere il numero di facce del dado.\\
+
+\includegraphics[scale=0.75]{img/randConfig.png}
+
+Una volta inviata cliccando su \textbf{Send} il risultato sarà:\\
+
+\includegraphics[scale=0.75]{img/rand.png}
+\\
+Attraverso il pulsante \textbf{Re-roll} si potrà rilanciare il dado.
+
+\newpage
+
+\section{Utilizzo della DEMO - Lista con Checklist}
+
+\subsection{Checklist}
+
+\begin{flushleft}
+Le Checklist sono delle liste di elementi che possono essere selezionate e inserite i altre liste.
+Per creare una nuova checklist selezionare il pulsante \textbf{Set Checklist}.\\
+\begin{center}
+\includegraphics[scale=0.75]{img/menu.png}
+\end{center}
+
+Una volta selezionato il pulsante \textbf{Set Checklist} dal menù di creazione delle bolle si aprirà il menù di configurazione della checklist.\\
+\begin{center}
+\includegraphics[scale=0.75]{img/checklist_conf.png}
+\end{center}
+
+Nel menù di configurazione bisogna inserire il nome della checklist e una o più opzioni.
+Per aggiungere una opzione bisogna selezionare il pulsante \textbf{Add}.
+
+Una volta completata la compilazione premendo il pulsante \textbf{Send} la checklist verrà inviata al server e sarà disponibile nella creazione delle liste.
+\end{flushleft}
+
+\subsection{Lista}
+\begin{flushleft}
+La \textit{Lista} è una bolla che permette di creare una lista nella quale è possibile aggiungere degli elementi dalle checklist precedentemente definite.
+
+Per crare una nuova lista selezionare il pulsante \textbf{Lista} dal menù di creazione delle bolle.\\
+\begin{center}
+\includegraphics[scale=0.75]{img/menu.png}
+\end{center}
+\newpage
+Una volta selezionato il pulsante \textbf{Lista} si aprirà il menù di configurazione della lista.\\
+\begin{center}
+\includegraphics[scale=0.75]{img/list_conf.png}
+\end{center}
+
+Nel menù di configurazione bisogna inserire il nome della lista e una o più opzioni.
+Per aggiungere una opzione bisogna selezionare il pulsante \textbf{Add} oppure si può selezionare degli elementi da inserire nella lista delle checklist.
+Per aprire il menù di selezione delle checklist bisogna premere il pulsante \textbf{Checklists} nel menù di configurazione della lista.\\
+\begin{center}
+\includegraphics[scale=0.75]{img/list_checklist1.png}
+\end{center}
+
+Premendolo nuovamente il menù delle checklist verrà chiuso.
+Una volta selezionate le checklist bisogna premere il pulsante \textbf{Add checklist} per aggiungerle alla lista.\\
+\begin{center}
+\includegraphics[scale=0.75]{img/list_checklist2.png}
+\end{center}
+
+Una volta completata la compilazione premendo il pulsante \textbf{Send} la lista verrà inviata al server e sarà visualizza nell'area contenente le bolle inviate.
+
+\end{flushleft}

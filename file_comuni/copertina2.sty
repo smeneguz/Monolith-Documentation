@@ -1,0 +1,60 @@
+\newcommand{\glossario}[1]{\emph{#1}\ped{|G|}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% VARIABILI DELLA PAGINA DI TITOLO
+\newcommand{\eanche}{\\ &}
+\newcommand{\nomedoc}[1]{\gdef\@nomedoc{#1}}
+\newcommand{\versione}[1]{\gdef\@versione{#1}}
+\newcommand{\datacreazione}[1]{\gdef\@datacreazione{#1}}
+\newcommand{\verifica}[1]{\gdef\@verifica{#1}}
+\newcommand{\approvazione}[1]{\gdef\@approvazione{#1}}
+\newcommand{\redazione}[1]{\gdef\@redazione{#1}}
+\newcommand{\uso}[1]{\gdef\@uso{#1}}
+\newcommand{\distribuzione}[1]{\gdef\@distribuzione{#1}}
+\newcommand{\sommario}[1]{\gdef\@sommario{#1}}
+\newcommand{\listaDistribuzione}[1]{\gdef\@listaDistribuzione{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\paginatitolo}{%
+  \begin{titlepage}
+
+    \includegraphics[width=0.18\textwidth]{../../../../../file_comuni/immagini/monolith.png}\\[0.08in]
+
+    \begin{center}
+
+      \includegraphics[width=0.22\textwidth]{../../../../../file_comuni/immagini/obelisk_sample_02.png}\\[0.08in]
+                      {\Large Obelix Group \\% \vspace{.01in}
+                        obelixswe@gmail.com \\}
+                      \vspace{.15in}
+                             {\textbf{\Huge {\@nomedoc}}}
+
+                             \vspace{.15in}
+                             \bgroup
+                             \def\arraystretch{1.2}
+                             \begin{tabular}{r|l}
+                               \textbf{Versione}     & \emph{\@versione}  \\%\hline
+                               \textbf{Data creazione} & \@datacreazione  \\%\hline
+                               \textbf{Redattori} & \@redazione \\%\hline
+                               \textbf{Verificatori} & \@verifica \\%\hline
+                               \textbf{Approvazione} & \@approvazione
+                               \\%\hline
+                               \textbf{Stato} & Approvato \\
+                               \textbf{Uso} & \@uso \\
+                               \textbf{Distribuzione} & \@distribuzione \\
+                             \end{tabular}
+                             \egroup
+
+                             \vfill
+
+                             \begin{abstract}
+                               \@sommario
+                             \end{abstract}
+
+    \end{center}
+  \end{titlepage}
+}
+\endinput
+

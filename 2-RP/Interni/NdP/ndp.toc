@@ -1,0 +1,119 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{5}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Informativi}{5}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Normativi}{5}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Processi primari}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Fornitura}{6}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Studio di fattibilit\IeC {\`a}}{6}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Sviluppo}{6}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Analisi dei requisiti}{6}{subsubsection.2.2.1}
+\contentsline {paragraph}{Classificazione dei casi d'uso}{6}{section*.3}
+\contentsline {paragraph}{Classificazione dei requisiti}{7}{section*.4}
+\contentsline {subsubsection}{\numberline {2.2.2}Progettazione}{7}{subsubsection.2.2.2}
+\contentsline {paragraph}{Descrizione progettazione ad alto livello}{7}{section*.5}
+\contentsline {paragraph}{Descrizione progettazione di dettaglio}{8}{section*.6}
+\contentsline {subsubsection}{\numberline {2.2.3}Codifica}{8}{subsubsection.2.2.3}
+\contentsline {paragraph}{Formattazione}{9}{section*.7}
+\contentsline {paragraph}{Intestazione}{9}{section*.8}
+\contentsline {paragraph}{Nomi}{9}{section*.9}
+\contentsline {paragraph}{Commenti}{10}{section*.10}
+\contentsline {paragraph}{Stile di codifica}{10}{section*.11}
+\contentsline {subsubsection}{\numberline {2.2.4}Strumenti usati}{10}{subsubsection.2.2.4}
+\contentsline {paragraph}{Tracciabilit\IeC {\`a}}{10}{section*.12}
+\contentsline {paragraph}{Astah}{10}{section*.13}
+\contentsline {section}{\numberline {3}Processi di supporto}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Documentazione}{10}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Descrizione }{10}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Strumenti}{10}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Ciclo di vita di un documento}{10}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Documenti finali}{11}{subsubsection.3.1.4}
+\contentsline {paragraph}{Studio di Fattibilit\IeC {\`a} }{11}{section*.14}
+\contentsline {paragraph}{Norme di Progetto }{11}{section*.15}
+\contentsline {paragraph}{Piano di Progetto }{11}{section*.16}
+\contentsline {paragraph}{Piano di Qualifica }{11}{section*.17}
+\contentsline {paragraph}{Analisi dei Requisiti }{11}{section*.18}
+\contentsline {paragraph}{Specifica Tecnica }{11}{section*.19}
+\contentsline {paragraph}{Definizione di Prodotto }{11}{section*.20}
+\contentsline {paragraph}{Glossario }{11}{section*.21}
+\contentsline {paragraph}{Manuale Utente }{12}{section*.22}
+\contentsline {paragraph}{Verbali }{12}{section*.23}
+\contentsline {subsubsection}{\numberline {3.1.5}Struttura del documento}{12}{subsubsection.3.1.5}
+\contentsline {paragraph}{Prima pagina }{12}{section*.24}
+\contentsline {paragraph}{Diario delle modifiche }{13}{section*.25}
+\contentsline {paragraph}{Indice}{13}{section*.26}
+\contentsline {paragraph}{Formattazione generale delle pagine}{13}{section*.27}
+\contentsline {subsubsection}{\numberline {3.1.6}Norme tipografiche}{13}{subsubsection.3.1.6}
+\contentsline {paragraph}{Stili di testo}{14}{section*.28}
+\contentsline {paragraph}{Punteggiatura}{14}{section*.29}
+\contentsline {paragraph}{ Formati }{14}{section*.30}
+\contentsline {subsubsection}{\numberline {3.1.7}Composizione email}{14}{subsubsection.3.1.7}
+\contentsline {paragraph}{Destinatario}{14}{section*.31}
+\contentsline {paragraph}{Mittente}{15}{section*.32}
+\contentsline {paragraph}{Oggetto}{15}{section*.33}
+\contentsline {subsubsection}{\numberline {3.1.8}Componenti grafiche}{15}{subsubsection.3.1.8}
+\contentsline {paragraph}{Tabelle }{15}{section*.34}
+\contentsline {paragraph}{Immagini }{15}{section*.35}
+\contentsline {subsubsection}{\numberline {3.1.9}Versionamento}{15}{subsubsection.3.1.9}
+\contentsline {subsection}{\numberline {3.2}Gestione della configurazione}{15}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Controllo di versione}{15}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Repository}{15}{subsubsection.3.2.2}
+\contentsline {paragraph}{Struttura del repository dei documenti}{16}{section*.36}
+\contentsline {paragraph}{Struttura del repository del codice sorgente}{16}{section*.37}
+\contentsline {paragraph}{Nomi dei file}{16}{section*.38}
+\contentsline {paragraph}{Norme sui commit}{17}{section*.39}
+\contentsline {subsection}{\numberline {3.3}Verifica}{17}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Descrizione}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Analisi}{17}{subsubsection.3.3.2}
+\contentsline {paragraph}{Analisi statica}{17}{section*.40}
+\contentsline {paragraph}{Analisi dinamica }{17}{section*.41}
+\contentsline {subsubsection}{\numberline {3.3.3}Test}{17}{subsubsection.3.3.3}
+\contentsline {paragraph}{Test di unit\IeC {\`a}}{17}{section*.42}
+\contentsline {paragraph}{Test di Integrazione }{18}{section*.43}
+\contentsline {paragraph}{Test di sistema }{18}{section*.44}
+\contentsline {paragraph}{Test di regressione }{18}{section*.45}
+\contentsline {subsubsection}{\numberline {3.3.4}Verifica dei documenti}{18}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Verifica del codice}{19}{subsubsection.3.3.5}
+\contentsline {subsection}{\numberline {3.4}Validazione}{19}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Test di validazione}{19}{subsubsection.3.4.1}
+\contentsline {section}{\numberline {4}Processi Organizzativi}{19}{section.4}
+\contentsline {subsection}{\numberline {4.1}Scopo}{19}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Aspettative del Processo}{19}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Ruoli di Progetto}{20}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Amministratore di Progetto}{20}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Responsabile di Progetto}{20}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Analista}{20}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Progettista}{21}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Verificatore}{21}{subsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.6}Programmatore}{21}{subsubsection.4.3.6}
+\contentsline {subsection}{\numberline {4.4}Comunicazioni}{21}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Comunicazioni interne}{21}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Comunicazioni esterne}{21}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Riunioni}{22}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Riunioni interne}{22}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Riunioni esterne}{22}{subsubsection.4.5.2}
+\contentsline {subsection}{\numberline {4.6}Ticketing}{22}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Struttura del ticket}{23}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Etichette}{23}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}Ciclo di vita del ticket}{23}{subsubsection.4.6.3}
+\contentsline {subsubsection}{\numberline {4.6.4}Verifica Ticket}{24}{subsubsection.4.6.4}
+\contentsline {subsection}{\numberline {4.7}Procedure di supporto}{24}{subsection.4.7}
+\contentsline {subsubsection}{\numberline {4.7.1}Pianificazione delle attivit\IeC {\`a}}{24}{subsubsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.2}Coordinamento delle attivit\IeC {\`a}}{25}{subsubsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.3}Gestione dei rischi}{25}{subsubsection.4.7.3}
+\contentsline {subsection}{\numberline {4.8}Strumenti}{25}{subsection.4.8}
+\contentsline {subsubsection}{\numberline {4.8.1}Sistema operativo}{25}{subsubsection.4.8.1}
+\contentsline {subsubsection}{\numberline {4.8.2}Git}{25}{subsubsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.3}GitHub}{25}{subsubsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.4}Asana}{26}{subsubsection.4.8.4}
+\contentsline {subsubsection}{\numberline {4.8.5}Microsoft Project}{26}{subsubsection.4.8.5}
+\contentsline {subsubsection}{\numberline {4.8.6}Slack}{26}{subsubsection.4.8.6}
+\contentsline {subsubsection}{\numberline {4.8.7}Telegram}{26}{subsubsection.4.8.7}
+\contentsline {subsubsection}{\numberline {4.8.8}Google Drive}{26}{subsubsection.4.8.8}
+\contentsline {subsubsection}{\numberline {4.8.9}Google Calendar}{26}{subsubsection.4.8.9}
+\contentsline {subsubsection}{\numberline {4.8.10}Skype}{26}{subsubsection.4.8.10}
+\contentsline {section}{\numberline {A}Lista di controllo}{27}{appendix.Alph1}

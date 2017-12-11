@@ -1,0 +1,78 @@
+%\documentclass{beamer}
+\documentclass[RawSienna,dvipsnames]{beamer}
+
+%%% Dichiarazione dei pacchetti standard.
+\usepackage[italian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{eurosym}
+%%% Personalizzazione del layout---articolata su cinque livelli.
+%\usetheme{split}        % layout complessivo. 
+%\usetheme{CambridgeUS}
+\usetheme{AnnArbor}
+\useinnertheme{rectangles} % layout interno.
+\useoutertheme{infolines} % layout esterno.
+\setbeamercolor{title}{fg=RawSienna}
+\setbeamercolor{frametitle}{fg=RawSienna}
+\usecolortheme{crane} % schema di colori.
+\usefonttheme{professionalfonts}  % schema dei font.
+\setbeamercolor{item}{fg=RawSienna}
+% Inutile dire che se volete tutti i default, potete risparmiarvi gli ultimi
+% quattro comandi. 
+%%% Titolo e autore.
+\title{Monolith}
+\subtitle{An interactive bubble provider}
+\author{Revisione di Qualifica}
+%\institute{Gruppo Utilizzatoti Italiani di \TeX}
+%\date{\today}
+\date{29 agosto 2017}
+
+\begin{document}
+	
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=0.13]{img/obelix.png}
+		\qquad\qquad
+		\includegraphics[scale=0.13]{img/monolith.png}
+	\end{center}
+	\titlepage
+\end{frame}
+
+
+\section[Sommario]{}
+\begin{frame}
+	\tableofcontents
+\end{frame}	
+
+\section{Il gruppo Obelix}
+\begin{frame}
+	
+	\begin{columns}
+		\begin{column}{0.2\textwidth}
+			
+		\end{column}
+		
+		\begin{column}{0.4\textwidth}
+			\begin{itemize}
+				\item Emanuele Crespan
+				\item Tomas Mali
+				\item Silvio Meneguzzo
+				\item Nicolò Rigato
+				\item Riccardo Saggese
+				\item Federica Schifano
+			\end{itemize}
+		\end{column}
+		
+		\begin{column}{0.2\textwidth}
+			
+		\end{column}
+	\end{columns}
+	
+	
+\end{frame}
+
+\input{parte1} %fede e tomas
+\input{parte2}
+\input{parte3}
+\input{parte4}
+\input{parte5}
+\end{document}

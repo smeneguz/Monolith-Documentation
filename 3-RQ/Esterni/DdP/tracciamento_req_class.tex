@@ -1,0 +1,284 @@
+\begin{center}
+\begin{longtable}{|
+*{1}{>{\centering\arraybackslash}m{2.5cm}|}
+*{1}{>{\centering\arraybackslash}m{7.5cm}|}}
+\hline \textbf{Requisiti} & \textbf{Classi}\\
+\hline \endhead
+\hline \endfoot
+
+RObFu01-cv & \makecell[l]{CurrencyBubble::CurrencyBubble
+\\CurrencyBubble::CurrencyCreator
+\\CurrencyBubble::CurrencyBubbleConfig
+\\CurrencyBubble::CurrencyBubbleCreationButton
+\\}\\\hline
+RObFu01-dd & \makecell[l]{RandomBubble::RandCreator
+\\RandomBubble::RandBubble
+\\RandomBubble::RandBubbleConfig
+\\RandomBubble::RandBubbleCreationButton
+\\}\\\hline
+RObFu01-ls & \makecell[l]{ListBubble::CheckListCreation:: \\ \hfill ListBubbleConfig
+\\ListBubble::CheckListCreation:: \\ \hfill ListBubbleCreationButton
+\\ListBubble::CheckListReading::ListBubble
+\\}\\\hline
+RObFu01-sd & \makecell[l]{PollBubble::PollBubbleConfig
+\\}\\\hline
+RObFu01.1-cv & \makecell[l]{CurrencyBubble::CurrencyBubbleConfig
+\\}\\\hline
+RObFu01.1-dd & \makecell[l]{RandomBubble::RandBubbleConfig
+\\}\\\hline
+RObFu01.2-cv & \makecell[l]{CurrencyBubble::CurrencyBubbleConfig
+\\}\\\hline
+RObFu01.2-dd & \makecell[l]{RandomBubble::RandBubbleCreationButton
+\\}\\\hline
+RObFu01.2-ls & \makecell[l]{ListBubble::CheckListReading::ListBubble
+\\}\\\hline
+ROpFu01.2.1-dd & \makecell[l]{RandomBubble::RandBubbleCreationButton
+\\}\\\hline
+RObFu01.3-cv & \makecell[l]{CurrencyBubble::CurrencyBubbleCreationButton
+\\}\\\hline
+RObFu01.3-dd & \makecell[l]{RandomBubble::RandBubble
+\\}\\\hline
+RObFu01.4-cv & \makecell[l]{CurrencyBubble::CurrencyBubble
+\\}\\\hline
+ROpFu02-cv & \makecell[l]{CurrencyBubble::CurrencyBubbleCreationButton
+\\CurrencyBubble::CurrencyBubbleConfig
+\\}\\\hline
+RObFu02-ls & \makecell[l]{ListBubble::CheckListCreation:: \\ \hfill ListBubbleConfig
+\\ListBubble::CheckListCreation:: \\ \hfill ListBubbleCreationButton
+\\}\\\hline
+RObFu02-sd & \makecell[l]{PollBubble::PollBubble
+\\}\\\hline
+RObFu04-sd & \makecell[l]{PollBubble::PollBubble
+\\PollBubble::PollBubbleCreationButton
+\\}\\\hline
+RObFu10 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\}\\\hline
+RObFu10.1 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\}\\\hline
+RObFu10.2 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SentBubbles
+\\}\\\hline
+RObFu10.2.1 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsButton
+\\}\\\hline
+RObFu10.2.2 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsButton
+\\}\\\hline
+RObFu10.2.3 & \makecell[l]{Monolith::UI::uiConstruction::AbsBubbleConfig
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\}\\\hline
+RObFu10.2.4 & \makecell[l]{Monolith::UI::uiConstruction::AbsBubbleConfig
+\\}\\\hline
+RObFu10.2.5 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SentBubbles
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubble
+\\}\\\hline
+RObFu10.2.5.1 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\}\\\hline
+RObFu10.2.7 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\}\\\hline
+RObFu10.3 & \makecell[l]{Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill ReceivedBubble
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\}\\\hline
+RObFu10.3.1 & \makecell[l]{Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill ReceivedBubble
+\\Monolith::UI::uiConstruction::AbsBubble
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\}\\\hline
+RObFu10.3.1.1 & \makecell[l]{Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\}\\\hline
+RObFu11 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SentBubbles
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill ReceivedBubble
+\\Monolith::UI::Layouts::HorizontalLayout
+\\Monolith::UI::Layouts::ContainedElement
+\\Monolith::UI::Layouts::VerticalLayout
+\\Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::SingleComponents::CheckButton
+\\Monolith::UI::uiConstruction::AbsButton
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubbleConfig
+\\Monolith::UI::uiConstruction::AbsBubble
+\\}\\\hline
+RObFu11.1 & \makecell[l]{Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubbleConfig
+\\Monolith::UI::uiConstruction::AbsBubble
+\\Monolith::UI::uiConstruction::AbsButton
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\}\\\hline
+RObFu11.2 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SentBubbles
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill ReceivedBubble
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\Monolith::UI::Layouts::VerticalLayout
+\\Monolith::UI::Layouts::HorizontalLayout
+\\Monolith::UI::Layouts::ContainedElement
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::SingleComponents::CheckButton
+\\Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::uiConstruction::AbsButton
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubbleConfig
+\\Monolith::UI::uiConstruction::AbsBubble
+\\}\\\hline
+RObFu11.2.1 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SentBubbles
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill ReceivedBubble
+\\Monolith::UI::Layouts::HorizontalLayout
+\\Monolith::UI::Layouts::ContainedElement
+\\Monolith::UI::Layouts::VerticalLayout
+\\Monolith::UI::SingleComponents::CheckButton
+\\Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubbleConfig
+\\Monolith::UI::uiConstruction::AbsBubble
+\\Monolith::UI::uiConstruction::AbsButton
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\}\\\hline
+RObFu11.2.1.1 & \makecell[l]{Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::SingleComponents::CheckButton
+\\}\\\hline
+RObFu11.2.1.1.2 & \makecell[l]{Monolith::UI::SingleComponents::Image
+\\}\\\hline
+RObFu11.2.1.1.3 & \makecell[l]{Monolith::UI::SingleComponents::LineEdit
+\\}\\\hline
+RObFu11.2.1.1.4 & \makecell[l]{Monolith::UI::SingleComponents::PushButton
+\\}\\\hline
+RObFu11.2.1.1.5 & \makecell[l]{Monolith::UI::SingleComponents::CheckBoxList
+\\}\\\hline
+RObFu11.2.1.1.6 & \makecell[l]{Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\}\\\hline
+RObFu11.2.1.2 & \makecell[l]{Monolith::UI::Layouts::VerticalLayout
+\\Monolith::UI::Layouts::HorizontalLayout
+\\Monolith::UI::Layouts::ContainedElement
+\\}\\\hline
+RObFu11.2.1.2.1 & \makecell[l]{Monolith::UI::Layouts::HorizontalLayout
+\\}\\\hline
+RObFu11.2.1.2.2 & \makecell[l]{Monolith::UI::Layouts::VerticalLayout
+\\}\\\hline
+RObFu11.2.1.3 & \makecell[l]{Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::CheckButton
+\\Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\}\\\hline
+RObFu11.2.1.3.1 & \makecell[l]{Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\}\\\hline
+RObFu11.2.1.3.3 & \makecell[l]{Monolith::UI::SingleComponents::Image
+\\}\\\hline
+RObFu11.2.1.3.4 & \makecell[l]{Monolith::UI::SingleComponents::PushButton
+\\}\\\hline
+RObFu11.2.1.3.5 & \makecell[l]{Monolith::UI::SingleComponents::PushButton
+\\}\\\hline
+RObFu11.2.1.3.6 & \makecell[l]{Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::SingleComponents::CheckButton
+\\}\\\hline
+RObFu11.2.1.6 & \makecell[l]{Monolith::UI::uiConstruction::AbsButton
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubbleConfig
+\\}\\\hline
+RObFu11.2.1.7 & \makecell[l]{Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill BubbleMenu
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SentBubbles
+\\Monolith::SideAreas::SideArea1\_pkg:: \\ \hfill SideArea1
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill ReceivedBubble
+\\Monolith::SideAreas::SideArea2\_pkg:: \\ \hfill SideArea2
+\\Monolith::UI::Layouts::VerticalLayout
+\\Monolith::UI::Layouts::ContainedElement
+\\Monolith::UI::Layouts::HorizontalLayout
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents::CheckButton
+\\Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::uiConstruction::bubbleCreator
+\\Monolith::UI::uiConstruction:: \\ \hfill bubbleDiscriminator
+\\Monolith::UI::uiConstruction::AbsBubbleConfig
+\\Monolith::UI::uiConstruction::AbsBubble
+\\Monolith::UI::uiConstruction::AbsButton
+\\}\\\hline
+RObFu23 & \makecell[l]{Monolith::UI::SingleComponents:: \\ \hfill TextAreaButton
+\\Monolith::UI::SingleComponents::PushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill RadioButtonGroup
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditPushButton
+\\Monolith::UI::SingleComponents:: \\ \hfill LineEditComboBox
+\\Monolith::UI::SingleComponents::LineEdit
+\\Monolith::UI::SingleComponents::CheckBoxList
+\\Monolith::UI::SingleComponents::ComboBox
+\\Monolith::UI::SingleComponents::ImageButton
+\\Monolith::UI::SingleComponents::CheckButton
+\\Monolith::UI::SingleComponents::Image
+\\Monolith::UI::SingleComponents:: \\ \hfill TextAreaComboBox
+\\}\\\hline
+\end{longtable}
+\captionof{table}{Tracciamento requisiti - classi}
+\end{center}

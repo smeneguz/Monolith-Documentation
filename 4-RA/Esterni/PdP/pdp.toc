@@ -1,0 +1,87 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{7}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{7}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{7}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{7}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Modello di sviluppo}{8}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Scadenze}{9}{subsection.1.6}
+\contentsline {section}{\numberline {2}Analisi dei rischi}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}Rischi tecnologici}{10}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Tecnologie adottate}{10}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Guasti Hardware}{10}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Rischi organizzativi}{10}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Rotazione ruoli}{10}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Pianificazione errata}{12}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Rischi sul personale}{12}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Problemi dei componenti del gruppo}{12}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Problemi tra i componenti del gruppo}{13}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Problemi di inesperienza}{13}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Rischi sulla strumentazione}{14}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Inesperienza nell'utilizzo degli strumenti}{14}{subsubsection.2.4.1}
+\contentsline {subsection}{\numberline {2.5}Rischi sui requisiti}{14}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Incomprensione dei requisiti}{14}{subsubsection.2.5.1}
+\contentsline {section}{\numberline {3}Pianificazione}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Analisi dei Requisiti}{15}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Analisi dei Requisiti in Dettaglio}{17}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Progettazione Architetturale}{18}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Progettazione di Dettaglio}{18}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Codifica}{19}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Validazione}{20}{subsection.3.6}
+\contentsline {section}{\numberline {4}Calendario delle attivit\IeC {\`a}}{20}{section.4}
+\contentsline {subsection}{\numberline {4.1}Analisi dei Requisiti}{20}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Analisi dei requisiti in dettaglio}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Progettazione Architetturale}{21}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Progettazione di Dettaglio}{22}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Codifica}{22}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Validazione}{23}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Quadro riassuntivo}{24}{subsection.4.7}
+\contentsline {section}{\numberline {5}Suddivisione del lavoro}{24}{section.5}
+\contentsline {subsection}{\numberline {5.1}Analisi dei requisiti}{25}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Analisi dei Requisiti in Dettaglio}{25}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Progettazione architetturale}{26}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Progettazione in Dettaglio}{27}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Codifica}{28}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Validazione}{29}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Totali}{30}{subsection.5.7}
+\contentsline {section}{\numberline {6}Prospetto economico}{31}{section.6}
+\contentsline {subsection}{\numberline {6.1}Analisi dei Requisiti}{31}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Analisi dei Requisiti in Dettaglio}{31}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Progettazione Architetturale}{32}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Progettazione di Dettaglio}{32}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Codifica}{33}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Validazione}{34}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Totale}{35}{subsection.6.7}
+\contentsline {subsubsection}{\numberline {6.7.1}Ore totali}{35}{subsubsection.6.7.1}
+\contentsline {subsubsection}{\numberline {6.7.2}Conclusioni}{35}{subsubsection.6.7.2}
+\contentsline {section}{\numberline {7}Consuntivo di periodo}{35}{section.7}
+\contentsline {subsection}{\numberline {7.1}Analisi dei Requisiti}{36}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Consuntivo}{36}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Conclusioni}{36}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}Analisi di dettaglio}{36}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Consuntivo}{36}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Conclusioni}{36}{subsubsection.7.2.2}
+\contentsline {subsection}{\numberline {7.3}Progettazione Architetturale}{37}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Consuntivo}{37}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Conclusioni}{37}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Preventivo a finire}{37}{subsubsection.7.3.3}
+\contentsline {subsection}{\numberline {7.4}Progettazione in Dettaglio}{37}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Consuntivo}{37}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Conclusioni}{38}{subsubsection.7.4.2}
+\contentsline {subsubsection}{\numberline {7.4.3}Preventivo a finire}{38}{subsubsection.7.4.3}
+\contentsline {subsection}{\numberline {7.5}Codifica}{38}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {7.5.1}Consuntivo}{38}{subsubsection.7.5.1}
+\contentsline {subsubsection}{\numberline {7.5.2}Conclusioni}{39}{subsubsection.7.5.2}
+\contentsline {subsubsection}{\numberline {7.5.3}Preventivo a finire}{39}{subsubsection.7.5.3}
+\contentsline {subsection}{\numberline {7.6}Validazione}{39}{subsection.7.6}
+\contentsline {subsubsection}{\numberline {7.6.1}Consuntivo}{39}{subsubsection.7.6.1}
+\contentsline {subsubsection}{\numberline {7.6.2}Conclusioni}{39}{subsubsection.7.6.2}
+\contentsline {subsubsection}{\numberline {7.6.3}Preventivo a finire}{39}{subsubsection.7.6.3}
+\contentsline {section}{\numberline {A}Organigramma}{40}{appendix.Alph1}
+\contentsline {subsection}{\numberline {A.1}Redazione}{40}{subsection.Alph1.1}
+\contentsline {subsection}{\numberline {A.2}Approvazione}{40}{subsection.Alph1.2}
+\contentsline {subsection}{\numberline {A.3}Accettazione dei componenti}{40}{subsection.Alph1.3}
+\contentsline {subsection}{\numberline {A.4}Componenti}{41}{subsection.Alph1.4}

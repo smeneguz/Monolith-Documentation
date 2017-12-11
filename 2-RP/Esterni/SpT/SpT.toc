@@ -1,0 +1,184 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{10}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{10}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{10}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{10}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{10}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{10}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{10}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Tecnologie Utilizzate}{11}{section.2}
+\contentsline {subsection}{\numberline {2.1}Javascript 6th edition (ECMA SCRIPT 6)}{11}{subsection.2.1}
+\contentsline {paragraph}{Licenza}{11}{section*.5}
+\contentsline {paragraph}{Vantaggi}{11}{section*.6}
+\contentsline {paragraph}{Svantaggi}{11}{section*.7}
+\contentsline {subsection}{\numberline {2.2}Meteor}{11}{subsection.2.2}
+\contentsline {paragraph}{Licenza}{12}{section*.8}
+\contentsline {paragraph}{Vantaggi}{12}{section*.9}
+\contentsline {paragraph}{Svantaggi}{12}{section*.10}
+\contentsline {subsection}{\numberline {2.3}Mongo DB}{12}{subsection.2.3}
+\contentsline {paragraph}{Licenza}{12}{section*.11}
+\contentsline {paragraph}{Vantaggi}{12}{section*.12}
+\contentsline {paragraph}{Svantaggi}{12}{section*.13}
+\contentsline {subsection}{\numberline {2.4}HTML5}{12}{subsection.2.4}
+\contentsline {paragraph}{Licenza}{13}{section*.14}
+\contentsline {paragraph}{Vantaggi}{13}{section*.15}
+\contentsline {paragraph}{Svantaggi}{13}{section*.16}
+\contentsline {subsection}{\numberline {2.5}SCSS}{13}{subsection.2.5}
+\contentsline {paragraph}{Licenza}{13}{section*.17}
+\contentsline {paragraph}{Vantaggi}{13}{section*.18}
+\contentsline {paragraph}{Svantaggi}{13}{section*.19}
+\contentsline {subsection}{\numberline {2.6}React}{13}{subsection.2.6}
+\contentsline {paragraph}{Licenza}{14}{section*.20}
+\contentsline {paragraph}{Vantaggi}{14}{section*.21}
+\contentsline {paragraph}{Svantaggi}{14}{section*.22}
+\contentsline {subsection}{\numberline {2.7}Node.js}{14}{subsection.2.7}
+\contentsline {paragraph}{Licenza}{14}{section*.23}
+\contentsline {paragraph}{Vantaggi}{14}{section*.24}
+\contentsline {paragraph}{Svantaggi}{14}{section*.25}
+\contentsline {subsection}{\numberline {2.8}Rochet.chat}{15}{subsection.2.8}
+\contentsline {paragraph}{Licenza}{15}{section*.26}
+\contentsline {paragraph}{Vantaggi}{15}{section*.27}
+\contentsline {paragraph}{Svantaggi}{15}{section*.28}
+\contentsline {subsection}{\numberline {2.9}Bootstrap}{15}{subsection.2.9}
+\contentsline {paragraph}{Licenza}{15}{section*.29}
+\contentsline {paragraph}{Vantaggi}{15}{section*.30}
+\contentsline {paragraph}{Svantaggi}{16}{section*.31}
+\contentsline {subsection}{\numberline {2.10}polyglot.js}{16}{subsection.2.10}
+\contentsline {paragraph}{Licenza}{16}{section*.32}
+\contentsline {paragraph}{Vantaggi}{16}{section*.33}
+\contentsline {subsection}{\numberline {2.11}Money.js}{16}{subsection.2.11}
+\contentsline {paragraph}{Licenza}{16}{section*.34}
+\contentsline {paragraph}{Vantaggi}{16}{section*.35}
+\contentsline {subsection}{\numberline {2.12}weather.js}{17}{subsection.2.12}
+\contentsline {paragraph}{Licenza}{17}{section*.36}
+\contentsline {paragraph}{Vantaggi}{17}{section*.37}
+\contentsline {paragraph}{Svantaggi}{17}{section*.38}
+\contentsline {subsection}{\numberline {2.13}classNames}{17}{subsection.2.13}
+\contentsline {paragraph}{Licenza}{17}{section*.39}
+\contentsline {paragraph}{Vantaggi}{17}{section*.40}
+\contentsline {section}{\numberline {3}Descrizione Architettura}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}Metodo e formalismo di specifica}{17}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Architettura generale - Componenti del sistema}{18}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Monolith}{18}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Monolith::Database}{19}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Monolith::Database::InformationStorage}{20}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Monolith::Database::informationStorage::Checks}{21}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Monolith::Database::InformationStorage::DatabaseSettings}{22}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Monolith::UI}{23}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Monolith::UI::Bubbles}{24}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}Monolith::UI::SideAreas}{26}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}Monolith::UI::SideAreas::SideArea1\_pkg}{27}{subsubsection.3.2.9}
+\contentsline {subsubsection}{\numberline {3.2.10}Monolith::UI::SideAreas::SideArea2\_pkg}{28}{subsubsection.3.2.10}
+\contentsline {subsubsection}{\numberline {3.2.11}Monolith::UI::UI-Layouts}{29}{subsubsection.3.2.11}
+\contentsline {subsubsection}{\numberline {3.2.12}Monolith::UI::UI-SingleComponents}{30}{subsubsection.3.2.12}
+\contentsline {subsection}{\numberline {3.3}Architettura generale - Bolle Demo}{32}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}CurrencyBubble}{32}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}DiceBubble}{34}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}ListBubble}{36}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}ListBubble::CheckListCreation}{37}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}ListBubble::CheckListReading}{39}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}ListBubble::Configuration}{40}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}ListBubble::DataManagement}{41}{subsubsection.3.3.7}
+\contentsline {subsubsection}{\numberline {3.3.8}ListBubble::Receiver}{42}{subsubsection.3.3.8}
+\contentsline {subsubsection}{\numberline {3.3.9}ListBubble::Sender}{43}{subsubsection.3.3.9}
+\contentsline {subsubsection}{\numberline {3.3.10}MeteoBubble}{44}{subsubsection.3.3.10}
+\contentsline {subsubsection}{\numberline {3.3.11}SurveyBubble}{46}{subsubsection.3.3.11}
+\contentsline {subsubsection}{\numberline {3.3.12}TranslationBubble}{48}{subsubsection.3.3.12}
+\contentsline {subsection}{\numberline {3.4}Architettura di dettaglio - Classi del sistema Monolith}{50}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}check}{50}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}checkCreator}{51}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}concreteCheck}{52}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}checkDiscriminator}{53}{subsubsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.5}concreteCheckCreator}{54}{subsubsection.3.4.5}
+\contentsline {subsubsection}{\numberline {3.4.6}Bubble}{55}{subsubsection.3.4.6}
+\contentsline {subsubsection}{\numberline {3.4.7}BubbleConfig}{56}{subsubsection.3.4.7}
+\contentsline {subsubsection}{\numberline {3.4.8}bubbleCreator}{57}{subsubsection.3.4.8}
+\contentsline {subsubsection}{\numberline {3.4.9}ConcreteBubble}{58}{subsubsection.3.4.9}
+\contentsline {subsubsection}{\numberline {3.4.10}bubbleDiscriminator}{59}{subsubsection.3.4.10}
+\contentsline {subsubsection}{\numberline {3.4.11}BubbleCreationButton}{60}{subsubsection.3.4.11}
+\contentsline {subsubsection}{\numberline {3.4.12}ConcreteBubbleConfig}{61}{subsubsection.3.4.12}
+\contentsline {subsubsection}{\numberline {3.4.13}concreteBubbleCreator}{62}{subsubsection.3.4.13}
+\contentsline {subsubsection}{\numberline {3.4.14}ConcreteBubbleCreationButton}{63}{subsubsection.3.4.14}
+\contentsline {subsubsection}{\numberline {3.4.15}SideArea1}{64}{subsubsection.3.4.15}
+\contentsline {subsubsection}{\numberline {3.4.16}SentBubbleHistory}{65}{subsubsection.3.4.16}
+\contentsline {subsubsection}{\numberline {3.4.17}BubbleCreationMenu}{66}{subsubsection.3.4.17}
+\contentsline {subsubsection}{\numberline {3.4.18}SideArea2}{67}{subsubsection.3.4.18}
+\contentsline {subsubsection}{\numberline {3.4.19}ReceivedBubbleHistory}{68}{subsubsection.3.4.19}
+\contentsline {subsubsection}{\numberline {3.4.20}VerticalLayout}{69}{subsubsection.3.4.20}
+\contentsline {subsubsection}{\numberline {3.4.21}ContainedElement}{70}{subsubsection.3.4.21}
+\contentsline {subsubsection}{\numberline {3.4.22}HorizontalLayout}{71}{subsubsection.3.4.22}
+\contentsline {subsubsection}{\numberline {3.4.23}ConditionalRendering}{72}{subsubsection.3.4.23}
+\contentsline {subsubsection}{\numberline {3.4.24}Image}{73}{subsubsection.3.4.24}
+\contentsline {subsubsection}{\numberline {3.4.25}ComboBox}{74}{subsubsection.3.4.25}
+\contentsline {subsubsection}{\numberline {3.4.26}LineEdit}{75}{subsubsection.3.4.26}
+\contentsline {subsubsection}{\numberline {3.4.27}LabelEdit}{76}{subsubsection.3.4.27}
+\contentsline {subsubsection}{\numberline {3.4.28}PushButton}{77}{subsubsection.3.4.28}
+\contentsline {subsubsection}{\numberline {3.4.29}CheckButton}{78}{subsubsection.3.4.29}
+\contentsline {subsubsection}{\numberline {3.4.30}ImageButton}{79}{subsubsection.3.4.30}
+\contentsline {subsubsection}{\numberline {3.4.31}CheckBoxList}{80}{subsubsection.3.4.31}
+\contentsline {subsubsection}{\numberline {3.4.32}LabelComboBox}{81}{subsubsection.3.4.32}
+\contentsline {subsubsection}{\numberline {3.4.33}TextAreaButton}{82}{subsubsection.3.4.33}
+\contentsline {subsubsection}{\numberline {3.4.34}LabelPushButton}{83}{subsubsection.3.4.34}
+\contentsline {subsubsection}{\numberline {3.4.35}LineEditComboBox}{84}{subsubsection.3.4.35}
+\contentsline {subsubsection}{\numberline {3.4.36}RadioButtonGroup}{85}{subsubsection.3.4.36}
+\contentsline {subsubsection}{\numberline {3.4.37}TextAreaComboBox}{86}{subsubsection.3.4.37}
+\contentsline {subsubsection}{\numberline {3.4.38}LineEditPushButton}{87}{subsubsection.3.4.38}
+\contentsline {subsubsection}{\numberline {3.4.39}LabelEditPushButton}{88}{subsubsection.3.4.39}
+\contentsline {subsection}{\numberline {3.5}Architettura di dettaglio - Classi delle bolle demo}{88}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}CurrencyConversion}{88}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}CurrencyBubbleSender}{90}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}CurrencyBubbleCreator}{91}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}CurrencyBubbleReceiver}{92}{subsubsection.3.5.4}
+\contentsline {subsubsection}{\numberline {3.5.5}CurrencyBubbleConfigMenu}{93}{subsubsection.3.5.5}
+\contentsline {subsubsection}{\numberline {3.5.6}DiceRoller}{94}{subsubsection.3.5.6}
+\contentsline {subsubsection}{\numberline {3.5.7}DiceBubbleSender}{95}{subsubsection.3.5.7}
+\contentsline {subsubsection}{\numberline {3.5.8}DiceBubbleCreator}{96}{subsubsection.3.5.8}
+\contentsline {subsubsection}{\numberline {3.5.9}DiceBubbleReceiver}{97}{subsubsection.3.5.9}
+\contentsline {subsubsection}{\numberline {3.5.10}DiceBubbleConfigMenu}{98}{subsubsection.3.5.10}
+\contentsline {subsubsection}{\numberline {3.5.11}CheckListCreator}{99}{subsubsection.3.5.11}
+\contentsline {subsubsection}{\numberline {3.5.12}CheckListComponent}{100}{subsubsection.3.5.12}
+\contentsline {subsubsection}{\numberline {3.5.13}CheckListItemsDefinition}{101}{subsubsection.3.5.13}
+\contentsline {subsubsection}{\numberline {3.5.14}CheckList}{102}{subsubsection.3.5.14}
+\contentsline {subsubsection}{\numberline {3.5.15}ListOfCheckLists}{103}{subsubsection.3.5.15}
+\contentsline {subsubsection}{\numberline {3.5.16}ListCreationButton}{104}{subsubsection.3.5.16}
+\contentsline {subsubsection}{\numberline {3.5.17}ListBubbleMenuConfig}{105}{subsubsection.3.5.17}
+\contentsline {subsubsection}{\numberline {3.5.18}ListBubbleCreator}{106}{subsubsection.3.5.18}
+\contentsline {subsubsection}{\numberline {3.5.19}ListBubbleReceiver}{107}{subsubsection.3.5.19}
+\contentsline {subsubsection}{\numberline {3.5.20}ListBubbleSender}{108}{subsubsection.3.5.20}
+\contentsline {subsubsection}{\numberline {3.5.21}MeteoItem}{109}{subsubsection.3.5.21}
+\contentsline {subsubsection}{\numberline {3.5.22}MeteoDelivery}{110}{subsubsection.3.5.22}
+\contentsline {subsubsection}{\numberline {3.5.23}MeteoBubbleSender}{111}{subsubsection.3.5.23}
+\contentsline {subsubsection}{\numberline {3.5.24}MeteoBubbleCreator}{112}{subsubsection.3.5.24}
+\contentsline {subsubsection}{\numberline {3.5.25}MeteoBubbleReceiver}{113}{subsubsection.3.5.25}
+\contentsline {subsubsection}{\numberline {3.5.26}MeteoBubbleConfigMenu}{114}{subsubsection.3.5.26}
+\contentsline {subsubsection}{\numberline {3.5.27}ResultsViewer}{115}{subsubsection.3.5.27}
+\contentsline {subsubsection}{\numberline {3.5.28}SurveyManager}{116}{subsubsection.3.5.28}
+\contentsline {subsubsection}{\numberline {3.5.29}SurveyBubbleSender}{117}{subsubsection.3.5.29}
+\contentsline {subsubsection}{\numberline {3.5.30}SurveyBubbleCreator}{118}{subsubsection.3.5.30}
+\contentsline {subsubsection}{\numberline {3.5.31}SurveyBubbleReceiver}{119}{subsubsection.3.5.31}
+\contentsline {subsubsection}{\numberline {3.5.32}SurveyBubbleConfigMenu}{120}{subsubsection.3.5.32}
+\contentsline {subsubsection}{\numberline {3.5.33}MessageTranslation}{121}{subsubsection.3.5.33}
+\contentsline {subsubsection}{\numberline {3.5.34}TranslationBubbleSender}{122}{subsubsection.3.5.34}
+\contentsline {subsubsection}{\numberline {3.5.35}TranslationBubbleCreator}{123}{subsubsection.3.5.35}
+\contentsline {subsubsection}{\numberline {3.5.36}TranslationBubbleReceiver}{124}{subsubsection.3.5.36}
+\contentsline {subsubsection}{\numberline {3.5.37}TranslationBubbleConfigMenu}{125}{subsubsection.3.5.37}
+\contentsline {section}{\numberline {4}Standard di Progetto}{125}{section.4}
+\contentsline {subsection}{\numberline {4.1}Standard di documentazione del codice}{125}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Standard di denominazione di entit\IeC {\`a} e relazioni }{126}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Strumenti di lavoro}{126}{subsection.4.3}
+\contentsline {section}{\numberline {5}Diagrammi di Attivit\IeC {\`a}}{126}{section.5}
+\contentsline {subsection}{\numberline {5.1}Configurazione sondaggio}{126}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Configurazione ListBubble}{127}{subsection.5.2}
+\contentsline {section}{\numberline {6}Diagramma di Sequenza}{128}{section.6}
+\contentsline {subsection}{\numberline {6.1}Creazione Bolla}{128}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Cancellazione Bolla}{129}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Voto Bolla-Sondaggio}{130}{subsection.6.3}
+\contentsline {section}{\numberline {7}Tracciamento}{130}{section.7}
+\contentsline {subsection}{\numberline {7.1}Tracciamento componenti-requisiti}{130}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Tracciamento requisiti-componenti}{131}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Tracciamento classi-requisiti}{131}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Tracciamento requisiti-classi}{131}{subsection.7.4}
+\contentsline {section}{\numberline {A}Descrizione Design Pattern}{131}{appendix.Alph1}
+\contentsline {subsection}{\numberline {A.1}Design Pattern Utilizzati}{132}{subsection.Alph1.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Factory Method}{132}{subsubsection.Alph1.1.1}

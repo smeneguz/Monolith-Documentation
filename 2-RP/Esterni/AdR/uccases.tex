@@ -1,0 +1,819 @@
+\subsection{Caso d'uso UC0: Monolith.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/0.png}
+   \caption{Diagramma per il caso d'uso UC0.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Lo sviluppatore ha a disposizione gli strumenti per poter creare una bolla funzionante. Ha la possibilità di inizializzare una bolla nuova o di aggiungere funzionalità offerte dall'API.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} Il sistema è installato e pronto all'uso. 
+\item[]\textbf{Postcondizione:} Lo sviluppatore ha avuto modo di utilizzare le funzionalità offerte dall'SDK. 
+\item[]\textbf{Scenario:}
+\begin{itemize}
+\item Lo sviluppatore ha la possibilità di creare una bolla vuota.(1)
+\item Lo sviluppatore accede alle funzionalità offerte dal sistema di API (2) 
+\end{itemize} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1: Creazione bolla vuota.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Lo sviluppatore sceglie di creare una nuova bolla. Il sistema inizializza una bolla vuota e predispone l'ambiente di lavoro (files di progetto pronti alle modifiche). La parte grafica della bolla include solo un contenitore vuoto d'ora in poi riferito come contenitore principale.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} Il sistema è installato e pronto all'uso. 
+\item[]\textbf{Postcondizione:} La bolla vuota è stata creata. 
+\item[]\textbf{Scenario:}
+ Lo sviluppatore sceglie di eseguire la procedura di inizializzazione per una nuova bolla e il sistema crea i files necessari.
+
+ 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC2: Accesso alle funzionalità dell'API.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/2.png}
+   \caption{Diagramma per il caso d'uso UC2.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Lo sviluppatore utilizza le funzionalità offerte dall'API nella propria bolla.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} Esiste una bolla (vuota o meno). 
+\item[]\textbf{Postcondizione:} Lo sviluppatore ha aggiunto alla bolla le funzionalità desiderate. 
+\item[]\textbf{Scenario:}
+\begin{itemize}
+\item Lo sviluppatore utilizza le funzionalità per determinare la GUI (2.1).
+\item Lo sviluppatore identifica le tipologie di utente (2.2).
+\item Lo sviluppatore gestisce la persistenza dei dati (2.3). 
+\end{itemize} 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC2.1: Specifica Gui.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/2_1.png}
+   \caption{Diagramma per il caso d'uso UC2.1.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Lo sviluppatore utilizza le funzionalità offerte dall'API per descrivere l'aspetto visuale della bolla.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} Esiste una bolla. 
+\item[]\textbf{Postcondizione:} L'aspetto visuale della bolla è stato modificato. 
+\item[]\textbf{Scenario:}
+\begin{itemize}
+\item Lo sviluppatore inserisce un componente grafico o un contenitore (2.1.1).
+\item Lo sviluppatore modifica le proprietà di un componenete grafico (2.1.2).
+\item Lo sviluppatore modifica le proprietà di un contenitore (2.1.3).
+\item Lo sviluppatore seleziona un componente grafico o un contenitore (2.1.4).
+\end{itemize}
+ 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.1: Inserimento di un componente grafico o di un contenitore.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Lo sviluppatore inserisce un elemento grafico o un contenitore in un contenitore selezionato. Nel caso di un contenitore i componenti interni vengono disposti automaticamente.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} La bolla esiste e include almeno un contenitore. \'E stato selezionato il contenitore in cui inserire l'elemento. 
+\item[]\textbf{Postcondizione:} Alla bolla è stato aggiunto un componente grafico o un contenitore nel contenitore selezionato. 
+\item[]\textbf{Scenario:}
+ Lo sviluppatore può inserire un contenitore o un componente grafico tra quelli supportati: \begin{itemize}
+\item Componente testo.
+\item Componente immagine.
+\item Componente campo di inserimento testo.
+\item Componente pulsante.
+\item Componente checkbox.
+\item Componente radio button. \end{itemize} \'E inoltre possibile inserire elementi realizzati dallo sviluppatore. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC2.1.2: Modifica proprietà di un componente grafico.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/2_1_2.png}
+   \caption{Diagramma per il caso d'uso UC2.1.2.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} I componenti grafici hanno varie proprietà il cui valore può essere modificato. Alcune proprietà riguardano tutte le tipologie di componente grafico, altre sono valide solo per alcune. Una volta selezionato il componente grafico desiderato l'API permette di modificare il valore di una sua proprietà.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato un componente grafico. 
+\item[]\textbf{Postcondizione:} \'E stata modificata una proprietà del componente grafico. 
+\item[]\textbf{Scenario:}
+ Dopo che l'elemento grafico è stato selezionato (come in 2.1.4) lo sviluppatore può alterare le sue proprietà:
+
+\begin{itemize}
+\item Modifica del contenuto dell'elemento di testo (2.1.2.1).
+\item Selezione dell'immagine da visualizzare nell'elemento immagine (2.1.2.2).
+\item Modifica testo mostrato nel pulsante (2.1.2.3).
+\item Impostazione dell'azione associata al pulsante (2.1.2.4).
+\item Impostazione testo della checkbox (2.1.2.5).
+\item Impostazione opzioni di scelta radiobutton (2.1.2.6). 
+\end{itemize} 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.2.1: Modifica contenuto del componente testo.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene modificato il contenuto del componente di testo selezionato.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato il componente di tipo testo da modificare. 
+\item[]\textbf{Postcondizione:} Il contenuto del componente testo è stato modificato. 
+\item[]\textbf{Scenario:}
+ Lo sviluppatore modifica il contenuto del componente di testo precedentemente selezionato. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.2.2: Impostazione percorso dell'immagine da visualizzare nel componente immagine.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Impostazione percorso dell'immagine da visualizzare nel componente immagine.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato un componente di tipo immagine. 
+\item[]\textbf{Postcondizione:} \'E stata impostata la sorgente dell'immagine da visualizzare. 
+\item[]\textbf{Scenario:}
+ Lo sviluppatore imposta il percorso dell'immagine da visualizzare. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.2.3: Modifica testo mostrato nel pulsante.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene modificato il testo mostrato all'interno di un componente pulsante precedentemente selezionato.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato un componente di tipo pulsante. 
+\item[]\textbf{Postcondizione:} Il testo mostrato nel pulsante è stato modificato. 
+\item[]\textbf{Scenario:}
+Lo sviluppatore modifica il testo mostrato all'interno di un pulsante. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.2.4: Impostazione dell'azione associata al pulsante.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene impostata l'azione che il sistema deve eseguire quando l'utente preme il pulsante.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato un componente di tipo pulsante. 
+\item[]\textbf{Postcondizione:} L'azione associata al pulsante è stata impostata. 
+\item[]\textbf{Scenario:}
+Lo sviluppatore imposta l'azione che il sistema deve intraprendere quando l'utente preme il pulsante selezionato. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.2.5: Impostazione testo della checkbox.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene definito il testo da mostrare il corrispondenza di un componente checkbox.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato un componente di tipo checkbox. 
+\item[]\textbf{Postcondizione:} \'E stato impostato il testo da visualizzane nel componente checkbox selezionato. 
+\item[]\textbf{Scenario:}
+ Lo sviluppatore imposta il testo da visualizzare insieme al componente di tipo checkbox 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.2.6: Impostazione opzioni di scelta del radiobutton.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono impostate le opzioni tra cui è possibile scegliere in un radiobutton.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato selezionato un componente di tipo radiobutton. 
+\item[]\textbf{Postcondizione:} Sono state impostate le possibili opzioni tra cui l'utente può scegliere interagendo con il radiobutton selezionato. 
+\item[]\textbf{Scenario:}
+Lo sviluppatore imposta le possibili scelte offerte dal radiobutton precedentemente selezionato. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.3: Selezione di un componente grafico o di un contenitore.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionato un componente grafico o un contenitore.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} La bolla è stata creata. 
+\item[]\textbf{Postcondizione:} \'E stato selezionato un componente grafico o un contenitore. 
+\item[]\textbf{Scenario:}
+ Lo sviluppatore seleziona un componente grafico. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.1.4: Inserimento del menu di configurazione della bolla.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene definito il menu per configurare la bolla del tipo selezionato.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} \'E stato definito un nuovo tipo di bolla. 
+\item[]\textbf{Postcondizione:} \'E stato definito il menu di configurazione per l'invio di una bolla del tipo corrente. 
+\item[]\textbf{Scenario:}
+Lo sviluppatore definisce il menu di configurazione per l'invio della bolla del tipo corrente. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.2: Identificazione Mittente o Ricevente.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Ciascuna istanza di bolla viene creata da un utente e poi inviata ad uno o più altri utenti. Generalmente ci si aspetta che la bolla si comporti diversamente nelle due situazioni, per esempio fornendo una procedura di inizializzazione al mittente. \'E dunque possibile identificare l'utente corrente come mittente o meno della bolla in esecuzione.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} La bolla esiste. 
+\item[]\textbf{Postcondizione:} \'E stata inserita la funzionalità che permette di identificare il mittente. 
+\item[]\textbf{Scenario:}
+Lo sviluppatore utilizza la funzionalità che permette di identificare a runtime se la bolla è visualizzata dal mittente o da altri utenti. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2.3: Gestione persistenza dei dati.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene offerta un'interfaccia al sistema di memorizzazione dei dati che fornisca in modo trasparente funzionalità utili allo sviluppo delle bolle. In particolare il sistema distingue automaticamente i dati relativi alla singola istanza di bolla.
+\item[]\textbf{Attori:} Sviluppatore. 
+\item[]\textbf{Precondizione:} La bolla esiste. 
+\item[]\textbf{Postcondizione:} \'E stata impostata la persistenza di un'informazione. 
+\item[]\textbf{Scenario:}
+Lo sviluppatore ha scelto quali informazioni devono essere memorizzate dal sistema. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC3: Utilizzo dell'interfaccia in Rocket.Chat per l'uso delle bolle.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/3.png}
+   \caption{Diagramma per il caso d'uso UC3.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Viene fornita una modifica all'interfaccia di Rocket.Chat. In particolare vengono aggiunti due pulsanti alla tabbar di Rocket.Chat. Questi permettono di aprire le SideAreas che permettono la creazione e la visualizzazione delle bolle.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} Il sistema è installato e pronto all'uso. 
+\item[]\textbf{Postcondizione:} \'E stato possibile utilizzare le funzionalità offerte. 
+\item[]\textbf{Scenario:}
+\begin{itemize}
+\item Apertura di una delle due SideAreas (3.1)
+\item Utilizzo della SideArea1 (3.2)
+\item Utilizzo della SideArea2 (3.3)
+\end{itemize} 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.1: Apertura di una delle due SideAreas.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Attraverso la pressione di uno dei pulsanti aggiunti alla tabbar di Rocket.Chat è possibile accedere alla SideArea corrispondente.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} Il sistema è installato e pronto all'uso. 
+\item[]\textbf{Postcondizione:} \'E avvenuto l'apertura di una delle SideAreas. 
+\item[]\textbf{Scenario:}
+L'utente preme uno dei pulsanti nella tabbar di Rocket.Chat e viene aperta la SideArea corrispondente. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC3.2: Utilizzo della SideArea1.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/3_2.png}
+   \caption{Diagramma per il caso d'uso UC3.2.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Viene usata la SideArea1.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stata aperta la SideArea1 (3.1). 
+\item[]\textbf{Postcondizione:} \'E stata utilizzata la SideArea1. 
+\item[]\textbf{Scenario:}
+L'utente utilizza la SideArea1. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.1: Visualizzazione tipi di bolle.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono visualizzati i tipi di bolla presenti nel sistema.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stata aperta la SideArea1 (3.1). 
+\item[]\textbf{Postcondizione:} Sono stati visualizzati i tipi di bolla presenti. 
+\item[]\textbf{Scenario:}
+L'utente visualizza i tipi di bolla presenti nel sistema. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.2: Selezione del tipo di bolla da inviare.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionato il tipo di bolla da inviare.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} Sono stati visualizzati i tipi di bolla presenti nel sistema (3.2.1). 
+\item[]\textbf{Postcondizione:} \'E stato selezionato il tipo di bolla da inviare. 
+\item[]\textbf{Scenario:}
+L'utente ha selezionato il tipo di bolla da inviare. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.3: Configurazione della bolla.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene configurata la bolla da inviare utilizzando l'apposito menu di configurazione (definito dallo sviluppatore in 2.1.4).
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stata selezionata la bolla da inviare (3.2.2). 
+\item[]\textbf{Postcondizione:} La bolla è stata configurata per l'invio. 
+\item[]\textbf{Scenario:}
+L'utente configura la bolla utilizzando il menu apposito. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.4: Invio della bolla.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene inviata la bolla.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} La bolla è stata configurata (3.2.3). 
+\item[]\textbf{Postcondizione:} La bolla è stata inviata. 
+\item[]\textbf{Scenario:}
+L'utente invia la bolla. 
+\item[]\textbf{Estensioni:}
+Viene visualizzato un messaggio di errore quando i dati inseriti nella configurazione non sono corretti 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.5: Visualizzazione storico bolle inviate dall'utente corrente.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono visualizzate le bolle inviate dall'utente corrente.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} La SideArea1 è stata acceduta (3.1). 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato lo storico delle bolle inviate. 
+\item[]\textbf{Scenario:}
+L'utente visualizza lo storico delle bolle inviate. 
+\item[]\textbf{Estensioni:}
+Viene visualizzato un messaggio quando lo storico non contiene bolle (3.2.7). 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.6: Interazione con le bolle inviate.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono svolte le operazioni permesse dalle bolle.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stato visualizzato lo storico delle bolle inviate (3.2.5). 
+\item[]\textbf{Postcondizione:} Sono state svolte azioni sulle bolle inviate. 
+\item[]\textbf{Scenario:}
+L'utente svolge azioni sulle bolle inviate. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.7: Visualizzazione messaggio storico in uscita vuoto.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene visualizzato un messaggio che informa che lo storico delle bolle inviate è vuoto.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} Lo storico delle bolle inviate è vuoto. 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato il messaggio che spiega che lo storico delle bolle inviate è vuoto. 
+\item[]\textbf{Scenario:}
+L'utente visualizza il messaggio che spiega che lo storico delle bolle inviate è vuoto. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.2.8: Visualizzazione messaggio errore.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene visualizzato un messaggio di errore nel caso in cui i dati inseriti nella configurazione non fossero stati corretti.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stata configurata la bolla da inviare. 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato il messaggio di errore. 
+\item[]\textbf{Scenario:}
+L'utente visualizza il messaggio di errore 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC3.3: Utilizzo della SideArea2.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/3_3.png}
+   \caption{Diagramma per il caso d'uso UC3.3.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Viene usata la SideArea2.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stata aperta la SideArea2. 
+\item[]\textbf{Postcondizione:} \'E stata utilizzata la SideArea2. 
+\item[]\textbf{Scenario:}
+L'utente ha utilizzato la SideArea2. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.3.1: Visualizzazione storico bolle ricevute.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene visualizzato lo storico delle bolle ricevute.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} La SideArea2 è stata acceduta (3.1). 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato lo storico delle bolle ricevute. 
+\item[]\textbf{Scenario:}
+L'utente visualizza lo storico delle bolle ricevute. 
+\item[]\textbf{Estensioni:}
+Viene visualizzato un messaggio quando lo storico non contiene bolle (3.3.3). 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.3.2: Interazione con le bolle.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} \'E possibile interagire con le bolle ricevute.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} Sono state ricevute bolle. 
+\item[]\textbf{Postcondizione:} \'E avvenuta l'interazione con le bolle. 
+\item[]\textbf{Scenario:}
+L'utente interagisce con le bolle ricevute 
+\end{itemize}
+
+\subsection{Caso d'uso UC3.3.3: Visualizzazione messaggio storico in ingresso vuoto.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene visualizzato un messaggio che informa che lo storico delle bolle ricevute è vuoto.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} Lo storico delle bolle ricevute è vuoto. 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato il messaggio che spiega che lo storico delle bolle ricevute è vuoto. 
+\item[]\textbf{Scenario:}
+L'utente visualizza il messaggio che spiega che lo storico delle bolle ricevute è vuoto. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC0-cv: Bolla convertitore di valuta.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/soldi.png}
+   \caption{Diagramma per il caso d'uso UC0-cv.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} La bolla converte gli importi inseriti da una valuta all'altra.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} La bolla ha convertito l'importo nella valuta di destinazione. 
+\item[]\textbf{Scenario:}
+\begin{enumerate}
+
+
+
+\item Il mittente seleziona la valuta in ingresso e quella in uscita (1-cv)
+
+\item Il mittente seleziona un importo da convertire (2-cv).
+
+\item Mittente e ricevente visualizzano l'importo convertito (3-cv).
+
+\end{enumerate} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1-cv: Seleziona valute.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Il mittente seleziona la valuta di entrata e quelle di uscita.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} Le valute sono state selezionate. 
+\item[]\textbf{Scenario:}
+Il mittente seleziona le valute tra cui effettuare la conversione 
+\end{itemize}
+
+\subsection{Caso d'uso UC2-cv: Inserimento importo da convertire.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene inserito l'importo da convertire.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} Sono state selezionate le valute per la conversione. 
+\item[]\textbf{Postcondizione:} L'importo è stato inserito. 
+\item[]\textbf{Scenario:}
+Il mittente inserisce l'importo da convertire. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3-cv: Visualizzazione valore convertito.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono visualizzati i valori convertiti.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} Importo e valute sono stati impostati. 
+\item[]\textbf{Postcondizione:} L'importo è stato convertito secondo i tassi di cambio richiesti. 
+\item[]\textbf{Scenario:}
+Il mittente e il ricevente visualizzano i valori convertiti. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC0-dd: Bolla estrazione numeri casuali.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/random.png}
+   \caption{Diagramma per il caso d'uso UC0-dd.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Viene estratto un numero casuale da un range impostato.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} \'E il stato visualizzato il numero estratto. 
+\item[]\textbf{Scenario:}
+\begin{itemize}
+\item Il mittente seleziona il range da cui estrarre il numero casuale (1-dd)
+\item Il mittente e il ricevente visualizzano il numero estratto (2-dd)
+\end{itemize} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1-dd: Seleziona range.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionato il range da cui estrarre il numero casuale.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è installata e funzionante sia sul sistema del mittente che del ricevente. 
+\item[]\textbf{Postcondizione:} Il range è stato impostato. 
+\item[]\textbf{Scenario:}
+Il mittente seleziona il range da cui estrarre il numero 
+\end{itemize}
+
+\subsection{Caso d'uso UC2-dd: Visualizzazione numero estratto.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene visualizzato il numero estratto.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} Il mittente ha selezionato il range e ha inviato la bolla. 
+\item[]\textbf{Postcondizione:} Viene mostrato il numero estratto. 
+\item[]\textbf{Scenario:}
+Il mittente e il ricevente visualizzano il numero estratto 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC0-ls: Lista con checklist.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/lista0.png}
+   \caption{Diagramma per il caso d'uso UC0-ls.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Il mittente inserisce gli elementi nella lista da inviare, ha inoltre a disposizione una lista di controllo (checklist) da cui prendere elementi. I riceventi possono spuntare elementi dalla lista ricevuta.
+\item[]\textbf{Attori:} Mittente, Ricevente, Admin. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} Il mittente ha composto e inviato la lista e i riceventi hanno potuto spuntare delle voci. 
+\item[]\textbf{Scenario:}
+\begin{enumerate}
+
+
+
+\item Il mittente definisce la lista da inviare (1-ls)
+
+\item Il mittente o l'installatore della bolla definiscono delle checklist predefinite a cui attingere per formare la lista da inviare (2-ls).
+
+\item Il ricevente spunta una voce della lista che gli è stata inviata (3-ls).
+
+
+
+\end{enumerate} 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC1-ls: Definizione della lista.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/lista1.png}
+   \caption{Diagramma per il caso d'uso UC1-ls.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Il mittente definisce una lista da inviare.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} La lista è pronta per essere inviata. 
+\item[]\textbf{Scenario:}
+\begin{enumerate}
+
+
+
+\item Il mittente inserisce un elemento nella lista (1.1-ls).
+
+\item Il mittente inserisce un elemento nella lista scegliendolo dalla checklist definita in precedenza (1.2-ls).
+
+\end{enumerate} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1.1-ls: Inserimento di un nuovo elemento.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Il mittente inserisce manualmente un nuovo elemento.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è inizializzata ed è pronta per essere configurata. 
+\item[]\textbf{Postcondizione:} Una voce è stata inserita nella lista. 
+\item[]\textbf{Scenario:}
+Il mittente inserisce un elemento nella lista da inviare. 
+\end{itemize}
+
+\subsection{Caso d'uso UC1.2-ls: Selezione della voce da checklist.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionata un voce da una delle checklist da inserire nella lista da inviare.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è inizializzata ed è pronta per essere configurata. 
+\item[]\textbf{Postcondizione:} Una voce è stata inserita nella lista. 
+\item[]\textbf{Scenario:}
+Il mittente inserisce un elemento prelevandolo da una lista predefinita 
+\end{itemize}
+
+\subsection{Caso d'uso UC2-ls: Definizione di checklist.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene creata una checklist su cui basare liste future.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è stata installata. 
+\item[]\textbf{Postcondizione:} Una checklist è stata creata. 
+\item[]\textbf{Scenario:}
+Il mittente crea una checklist. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3-ls: Spunta della voce.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene spuntata una voce dalla lista ricevuta.
+\item[]\textbf{Attori:} Ricevente. 
+\item[]\textbf{Precondizione:} Il mittente ha composto e inviato una lista. 
+\item[]\textbf{Postcondizione:} Una voce è stata spuntata. 
+\item[]\textbf{Scenario:}
+Il ricevente spunta una voce dalla lista inviatagli. 
+\end{itemize}
+
+\subsection{Caso d'uso UC4-ls: Visualizzazione delle spunte.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono visualizzate le spunte effettuate sugli elementi della lista.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} La lista è stata inviata. 
+\item[]\textbf{Postcondizione:} Sono state visualizzate le spunte. 
+\item[]\textbf{Scenario:}
+Il mittente o il ricevente visualizzano le spunte effettuate sugli elementi della lista. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC0-mt: Meteo.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/meteo.png}
+   \caption{Diagramma per il caso d'uso UC0-mt.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} La bolla restituisce le previsioni meteo per la località scelta.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} La bolla mostra le previsioni meteo per la località scelta. 
+\item[]\textbf{Scenario:}
+\begin{enumerate}
+
+
+
+\item Il mittente seleziona una località (1-mt)
+
+
+
+\item Il mittente e il ricevente visualizzano le informazioni meteorologiche per la località selezionata (2-mt)
+
+
+
+\end{enumerate} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1-mt: Seleziona località.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionata la località di cui si desidera visualizzare il meteo.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} Il mittente ha selezionato la località desiderata. 
+\item[]\textbf{Scenario:}
+Il mittente seleziona la località desiderata. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2-mt: Visualizzazione informazioni meteo.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono visualizzate le informazioni meteorologiche richieste.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} Il mittente ha scelto la località desiderata e ha inviato la bolla. 
+\item[]\textbf{Postcondizione:} Le informazioni relative alle previsioni meteo sono state visualizzate. 
+\item[]\textbf{Scenario:}
+Il mittente e il ricevente visualizzano le informazioni meteorologiche richieste. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC0-sd: Sondaggio.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/sondaggio.png}
+   \caption{Diagramma per il caso d'uso UC0-sd.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Il mittente seleziona un certo numero di opzioni tra cui i riceventi possono scegliere.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} Il sondaggio si è concluso. 
+\item[]\textbf{Scenario:}
+\begin{enumerate}
+
+
+
+\item Il mittente seleziona le opzioni tra cui è possibile scegliere (1-sd).
+
+
+
+\item Il mittente può fermare il sondaggio (2-sd).
+
+
+
+\item I riceventi e il mittente possono scegliere un'opzione da votare (3-sd).
+
+\end{enumerate} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1-sd: Seleziona opzioni.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono impostati un testo introduttivo e le opzioni di voto.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è stata selezionata ed è in attesa di essere configurata. 
+\item[]\textbf{Postcondizione:} La bolla è stata impostata con i parametri del sondaggio. 
+\item[]\textbf{Scenario:}
+Il mittente imposta un testo introduttivo e le opzioni di voto. 
+\item[]\textbf{Estensioni:}
+\begin{itemize}
+\item Sono stati inseriti una o nessuna opzione di voto (UC4-sd)
+\end{itemize} 
+\end{itemize}
+
+\subsection{Caso d'uso UC2-sd: Voto.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono espresse le preferenze sulle opzioni proposte.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} Il mittente ha inviato la bolla sondaggio. 
+\item[]\textbf{Postcondizione:} L'utente (ricevente o mittente) ha espresso il voto. 
+\item[]\textbf{Scenario:}
+L'utente (mittente o ricevente) esprime una preferenza tra le opzioni proposte dal mittente. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3-sd: Visualizzazione risultati.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Vengono visualizzati i risultati della consultazione.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} Il sondaggio è terminato. 
+\item[]\textbf{Postcondizione:} I risultati sono stati visualizzati. 
+\item[]\textbf{Scenario:}
+Il mittente e i riceventi visualizzano i risultati 
+\end{itemize}
+
+\subsection{Caso d'uso UCUC4-sd: Visualizzazione messaggio di errore per numero di opzioni minore o uguale a 1.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Nel caso in cui nel sondaggio ci sia una sola opzione o nessuna l'invio viene impedito.
+\item[]\textbf{Attori:} Utente. 
+\item[]\textbf{Precondizione:} \'E stata selezionata una sola opzione o nessuna (UC1-sd). 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato un messaggio di errore appropriato. 
+\item[]\textbf{Scenario:}
+L'utente visualizza un messaggio di errore appropriato. 
+\end{itemize}
+
+\clearpage
+
+\subsection{Caso d'uso UC0-tr: Bolla traduttore automatico.}
+\begin{itemize}
+   \FloatBarrier
+   \begin{figure}[ht]
+   \centering
+   \includegraphics[scale=0.45]{img/traduttore.png}
+   \caption{Diagramma per il caso d'uso UC0-tr.}
+\end{figure}
+\FloatBarrier
+\item[]\textbf{Descrizione:} Una bolla che trade il testo inserito nelle lingue selezionate.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} La bolla è utilizzabile sul sistema del mittente e del ricevente. 
+\item[]\textbf{Postcondizione:} Il messaggio viene visualizzato tradotto nella lingua obiettivo. 
+\item[]\textbf{Scenario:}
+\begin{enumerate}
+
+
+
+\item Il mittente seleziona la lingua di partenza (1-tr). 
+
+\item Il mittente scrive il messaggio (2-tr)
+
+\item Il mittente seleziona la lingua di destinazione (3-tr)
+
+\item Mittente e ricevente visualizzano la traduzione(4-tr)
+
+\end{enumerate} 
+\end{itemize}
+
+\subsection{Caso d'uso UC1-tr: Selezione della lingua di partenza.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionata la lingua di partenza.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La bolla è stata selezionata ed è in attesa di essere configurata. 
+\item[]\textbf{Postcondizione:} La bolla è configurata con una lingua di partenza. 
+\item[]\textbf{Scenario:}
+Il mittente seleziona la lingua in cui sarà scritto il messaggio. 
+\end{itemize}
+
+\subsection{Caso d'uso UC2-tr: Scrittura del messaggio.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene inserito il testo del messaggio da tradurre.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} La lingua di partenza è stata configurata. 
+\item[]\textbf{Postcondizione:} Il testo del messaggio è stato inserito. 
+\item[]\textbf{Scenario:}
+Il mittente inserisce il testo del messaggio che deve essere tradotto. 
+\end{itemize}
+
+\subsection{Caso d'uso UC3-tr: Selezione lingua di arrivo.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene selezionata la lingua di arrivo.
+\item[]\textbf{Attori:} Mittente. 
+\item[]\textbf{Precondizione:} Il testo del messaggio è stato scritto nella lingua di partenza impostata. 
+\item[]\textbf{Postcondizione:} La lingua di arrivo è stata impostata. 
+\item[]\textbf{Scenario:}
+Il mittente seleziona la lingua di arrivo. 
+\end{itemize}
+
+\subsection{Caso d'uso UC4-tr: Visualizzazione traduzione.}
+\begin{itemize}
+\item[]\textbf{Descrizione:} Viene visualizzata la traduzione nella lingua scelta.
+\item[]\textbf{Attori:} Mittente, Ricevente. 
+\item[]\textbf{Precondizione:} Il testo è stato scritto e le lingue di partenza e di arrivo sono state impostate. La bolla è stata inviata. 
+\item[]\textbf{Postcondizione:} \'E stato visualizzato il testo tradotto nella lingua scelta. 
+\item[]\textbf{Scenario:}
+Il mittente e il ricevente visualizzano la traduzione 
+\end{itemize}
+

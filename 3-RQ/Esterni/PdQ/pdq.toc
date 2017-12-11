@@ -1,0 +1,84 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del prodotto}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{6}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{6}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{6}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{6}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Visione generale della qualit\IeC {\`a}}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Obiettivi di qualit\IeC {\`a}}{7}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Qualit\IeC {\`a} di processo}{7}{subsubsection.2.1.1}
+\contentsline {paragraph}{Miglioramento costante}{7}{section*.4}
+\contentsline {paragraph}{Rispetto della pianificazione}{7}{section*.5}
+\contentsline {paragraph}{Rispetto del budget}{7}{section*.6}
+\contentsline {subsubsection}{\numberline {2.1.2}Qualit\IeC {\`a} di prodotto}{7}{subsubsection.2.1.2}
+\contentsline {paragraph}{Qualit\IeC {\`a} dei documenti}{8}{section*.7}
+\contentsline {subparagraph}{Leggibilit\IeC {\`a} e comprensibilit\IeC {\`a}}{8}{section*.8}
+\contentsline {paragraph}{Qualit\IeC {\`a} del software}{8}{section*.9}
+\contentsline {subparagraph}{Funzionalit\IeC {\`a} obbligatorie}{8}{section*.10}
+\contentsline {subparagraph}{Funzionalit\IeC {\`a} desiderabili}{9}{section*.11}
+\contentsline {subparagraph}{Caratteristiche misurabili del software}{9}{section*.12}
+\contentsline {subsection}{\numberline {2.2}Organizzazione temporale}{9}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Analisi}{9}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Progettazione Architetturale}{9}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Progettazione di Dettaglio e Codifica}{9}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Tecniche di analisi}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Analisi statica}{9}{subsubsection.2.3.1}
+\contentsline {paragraph}{Walkthrough}{9}{section*.13}
+\contentsline {paragraph}{Inspection}{10}{section*.14}
+\contentsline {subsubsection}{\numberline {2.3.2}Analisi dinamica}{10}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Visione di dettaglio della qualit\IeC {\`a}}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Responsabilit\IeC {\`a}}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Risorse}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Risorse umane}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Risorse tecnologiche}{11}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Misure e metriche}{11}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Metriche per i processi}{11}{subsubsection.3.3.1}
+\contentsline {paragraph}{Schedule Variance}{11}{section*.15}
+\contentsline {paragraph}{Budget Variance}{12}{section*.16}
+\contentsline {paragraph}{Produttivit\IeC {\`a}}{12}{section*.17}
+\contentsline {subparagraph}{Produttivit\IeC {\`a} di documentazione}{12}{section*.18}
+\contentsline {subparagraph}{Parametri utilizzati}{12}{section*.19}
+\contentsline {subparagraph}{Produttivit\IeC {\`a} di codifica}{12}{section*.20}
+\contentsline {subparagraph}{Parametri utilizzati}{12}{section*.21}
+\contentsline {paragraph}{Copertura del test}{13}{section*.22}
+\contentsline {subparagraph}{Parametri utilizzati}{13}{section*.23}
+\contentsline {subsubsection}{\numberline {3.3.2}Metriche per i prodotti}{13}{subsubsection.3.3.2}
+\contentsline {paragraph}{Metriche per i documenti}{13}{section*.24}
+\contentsline {subparagraph}{Indice Gulpease}{13}{section*.25}
+\contentsline {paragraph}{Metriche per software}{13}{section*.26}
+\contentsline {subparagraph}{Complessit\IeC {\`a} ciclomatica}{14}{section*.27}
+\contentsline {subparagraph}{Numero di metodi - NOM}{14}{section*.28}
+\contentsline {subparagraph}{Variabili non utilizzate e non definite}{14}{section*.29}
+\contentsline {subparagraph}{Numero parametri per metodo}{14}{section*.30}
+\contentsline {subparagraph}{Halstead}{15}{section*.31}
+\contentsline {subparagraph}{Maintainability index}{16}{section*.32}
+\contentsline {subparagraph}{Statement Coverage}{16}{section*.33}
+\contentsline {subparagraph}{Branch Coverage}{16}{section*.34}
+\contentsline {subparagraph}{Copertura dei test}{17}{section*.35}
+\contentsline {section}{\numberline {4}Gestione amministrativa della revisione}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Comunicazione delle anomalie}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Procedure di controllo per la qualit\IeC {\`a} di processo}{17}{subsection.4.2}
+\contentsline {section}{\numberline {5}Pianificazione dei Test}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Test di Unit\IeC {\`a}}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Test di Integrazione}{21}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Test di Sistema}{24}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Test di Validazione}{26}{subsection.5.4}
+\contentsline {section}{\numberline {A}Standard di qualit\IeC {\`a}}{28}{appendix.Alph1}
+\contentsline {subsection}{\numberline {A.1}Standard ISO/IEC 15504}{28}{subsection.Alph1.1}
+\contentsline {subsection}{\numberline {A.2}Ciclo di Deming - PDCA}{29}{subsection.Alph1.2}
+\contentsline {subsection}{\numberline {A.3}Standard ISO/IEC 9126}{30}{subsection.Alph1.3}
+\contentsline {section}{\numberline {B}Resoconto delle attivit\IeC {\`a} di verifica}{31}{appendix.Alph2}
+\contentsline {subsection}{\numberline {B.1}Revisione dei Requisiti}{31}{subsection.Alph2.1}
+\contentsline {subsubsection}{\numberline {B.1.1}Verifiche sui Processi}{31}{subsubsection.Alph2.1.1}
+\contentsline {subsubsection}{\numberline {B.1.2}Documenti}{32}{subsubsection.Alph2.1.2}
+\contentsline {subsection}{\numberline {B.2}Revisione di Progettazione}{32}{subsection.Alph2.2}
+\contentsline {subsubsection}{\numberline {B.2.1}Verifiche sui processi}{32}{subsubsection.Alph2.2.1}
+\contentsline {subsubsection}{\numberline {B.2.2}Verifica dei Documenti}{33}{subsubsection.Alph2.2.2}
+\contentsline {subsection}{\numberline {B.3}Revisione di Qualifica}{33}{subsection.Alph2.3}
+\contentsline {subsubsection}{\numberline {B.3.1}Verifiche sui processi}{33}{subsubsection.Alph2.3.1}
+\contentsline {subsubsection}{\numberline {B.3.2}Produttivit\IeC {\`a}}{34}{subsubsection.Alph2.3.2}
+\contentsline {subsubsection}{\numberline {B.3.3}Verifica dei Documenti}{34}{subsubsection.Alph2.3.3}
+\contentsline {subsubsection}{\numberline {B.3.4}Metriche per software}{34}{subsubsection.Alph2.3.4}

@@ -1,0 +1,244 @@
+\section{Introduzione}
+
+\subsection{Scopo del documento}
+
+Lo scopo del documento è quello di descrivere le motivazioni che hanno portato il gruppo alla
+scelta del capitolato C5.
+Verranno inoltre riportate le descrizioni di tutti gli altri capitolati e le motivazioni che hanno
+spinto il gruppo a scartarli.
+
+\subsection{Scopo del prodotto}
+
+Lo scopo del prodotto è quello di permettere la creazione di bolle
+interattive, che dovranno funzionare nell’ambiente Rocket.chat. Queste
+bolle permetteranno di aumentare l'interattività tra gli utenti della
+chat e aggiungeranno nuove funzionalità accessibili
+direttamente dalla conversazione senza il bisogno di ricorrere
+all'apertura di applicazioni diverse. 
+Il sistema offrirà agli sviluppatori un set di \glossario{API} per creare e
+rilasciare nuove bolle e agli utenti finali la possibilità di
+usufruire di un insieme di bolle predefinite.  
+
+\subsection{Glossario}
+
+Al fine di evitare ogni ambiguità di linguaggio e massimizzare la
+comprensione dei documenti, i termini che necessitano di essere
+chiariti saranno scritti in corsivo e marcati con una |G| alla prima
+occorrenza in pedice e
+saranno riportati nel Glossario. 
+
+\subsection{Riferimenti}
+
+\subsubsection{Normativi}
+\begin{itemize}
+	\item \emph{Norme di Progetto v1.1.0}
+\end{itemize}
+
+\subsubsection{Informativi}
+\begin{itemize}
+
+\item Capitolato d’appalto C1: \url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C1.pdf}
+\item Capitolato d’appalto C2: \url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C2.pdf}
+\item Capitolato d’appalto C3:
+\url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C3.pdf }
+\item Capitolato d’appalto C4: 
+\url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C4.pdf}
+\item Capitolato d’appalto C5: 
+\url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C5.pdf}
+\item Capitolato d’appalto C6:
+\url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C6.pdf}
+ 
+\end{itemize}
+
+\section{Capitolato scelto C5}
+
+\subsection{Informazioni sul capitolato}
+\begin{trivlist}
+	\setlength{\itemindent}{+.3in}
+	\item  Nome: Monolith
+	\item  Proponente: Red Babel
+	\item  Committente: prof. Tullio Vardanega e prof. Riccardo Cardin
+\end{trivlist}
+	
+\subsection{Descrizione}
+Lo scopo del progetto consiste nella costruzione di un framework che permetta di creare bolle interattive facilmente. La bolla interattiva, creata con Monolith, deve essere in grado di lavorare all'interno dell'ambiente Rocket.chat.
+Il progetto è diviso in 2 parti:
+\begin{itemize}
+	\item Implementazione del framework Monolith come pacchetto per Rocket.chat. 
+	\item Implementazione di un "use case" significativo.
+\end{itemize}
+
+
+
+\subsection{Dominio applicativo}
+Il dominio applicativo del prodotto è la verifica delle conoscenze acquisite durante il processo di
+apprendimento di uno specifico argomento. Il principale ambito di utilizzo del software riguarda
+la didattica in tutti i suoi campi.
+
+
+\subsection{Dominio tecnologico}
+\begin{trivlist}
+	\item  Un framework javascript, da scegliere in seguito, per la realizzazione dell’interfaccia grafica
+	\item  MongoDB: per la memorizzazione dei dati
+	\item  Meteor: framework \glossario{Node.js} usando \glossario{Javascript} 6th edition (ES6)) che gestisce la comunicazione client-server
+\end{trivlist}
+
+
+\subsection{Motivi della scelta}
+
+La scelta del seguente capitolato d’appalto è stata determinata in base all’individuazione delle
+seguenti caratteristiche positive:
+\begin{itemize}
+	\item Interesse nelle moderne tecnologie web proposte
+	\item Acquisizione di esperienza e conoscenze tecniche utili e spendibili nel mondo del lavoro
+\end{itemize}
+
+
+\subsection{Potenziali criticità}
+La maggior parte delle tecnologie utilizzate risultano essere nuove al gruppo. 
+
+\section{Altri Capitolati}
+
+\subsection{Capitolato C1}
+
+\subsubsection{Informazioni sul capitolato}
+\begin{trivlist}
+	\setlength{\itemindent}{+.3in}
+	\item  Nome: Api Market
+	\item  Proponente: ItalianaSoftware
+	\item  Committente: prof. Tullio Vardanega e prof. Riccardo Cardin
+\end{trivlist}
+
+\subsubsection{Descrizione}
+
+L'obiettivo di questo capitolato è la realizzazione di un'applicazione web nella quale sia possibile acquisire e registrare API di microservizi.
+Inoltre dev'essere possibile associare chiavi d'uso per ogni API registrata e monitorarne l'utilizzo da parte degli utenti.
+E' inoltre richiesto di gestire una moneta virtuale per la compravendita delle API e definire delle policy di vendita per le suddette.
+
+\subsubsection{Dominio Tecnologico}
+\begin{trivlist}
+	\item Jolie per la rappresentazione delle interfacce e la creazione	dell'API Gateway
+	\item Javascript, HTML, CSS3 per l'interfaccia web
+\end{trivlist}
+
+\subsubsection{Fattori di rischio}
+
+La gestione di un market online richiede una particolare attenzione per la parte di sicurezza degli account della moneta virtuale rischiando di allungare troppo il tempo di sviluppo e testing.
+
+\subsubsection{Conclusioni}
+
+Il Capitolato lascia abbastanza libertà di scelta per quanto riguarda le tecnologie da utilizzare però in complesso non è riuscito a suscitare un sufficiente interesse da parte del gruppo.
+
+
+\subsection{Capitolato C2}
+
+\subsubsection{Informazioni sul capitolato}
+\begin{trivlist}
+	\setlength{\itemindent}{+.3in}
+	\item  Nome: Innovation Company
+	\item  Proponente: Zero12
+	\item  Committente: prof. Tullio Vardanega e prof. Riccardo Cardin
+\end{trivlist}
+
+\subsubsection{Descrizione}
+
+Creare un'applicazione web che permetta ad un ospite di interagire con un assistente virtuale, il quale dovrà essere in grado di raccogliere informazione sull'interlocutore e mandare messaggi tramite \glossario{slack} al personale interessato.
+
+\subsubsection{Dominio Tecnologico}
+\begin{trivlist}
+	\item Amazon Web Services
+	\item MongoDB/DynamoDB
+	\item HTML5, CSS3, NodeJs
+	\item Siri SDK/Alexa SDK
+\end{trivlist}
+
+
+\subsubsection{Fattori di rischio}
+Le tecnologie utilizzate sono sconosciute al gruppo.
+
+\subsubsection{Conclusioni}
+
+Visto il poco interesse da parte del gruppo nell'argomento trattato dal Capitolato si è deciso di scartarlo per cercare un progetto che lasci più libertà di scelta per quanto riguarda il dominio tecnologico e più spazio creativo nella progettazione.
+
+\subsection{Capitolato C3}
+
+\subsubsection{Informazioni sul capitolato}
+\begin{trivlist}
+	\setlength{\itemindent}{+.3in}
+	\item  Nome: DeGeOP
+	\item  Proponente: Risk App
+	\item  Committente: prof. Tullio Vardanega e prof. Riccardo Cardin
+\end{trivlist}
+
+\subsubsection{Descrizione}
+
+L'obiettivo è quello di creare un'applicazione web per inserire i processi produttivi delle aziende su una mappa geografica, l'applicazione dev'essere fruibile anche da dispositivo mobile.
+L'applicazione fornisce anche gli scenari di danno che possono colpire l’azienda ed invia le informazioni al server di analisi dei dati che fornirà i risultati in modo asincrono.
+
+
+\subsubsection{Dominio Tecnologico}
+\begin{trivlist}
+	\item  Amazon Web Services
+	\item  Riconoscimento vocale
+	\item  Statistical Computing R
+\end{trivlist}
+
+\subsubsection{Fattori di rischio}
+
+Dover rendere l'applicazione web adattabile anche su dispositivi mobili può prolungare eccessivamente il tempo di sviluppo soprattutto per apparecchi piccoli.
+Lavorare con librerie proprietarie può comportare problemi durante la progettazione.
+
+\subsubsection{Conclusioni}
+
+I fattori di rischio superano i potenziali vantaggi di questo capitolato. Il gruppo ha deciso, dunque, di scartarlo. 
+
+\subsection{Capitolato C4}
+
+\subsubsection{Informazioni sul capitolato}
+\begin{trivlist}
+	\setlength{\itemindent}{+.3in}
+	\item  Nome: Mivoq
+	\item  Proponente: eBread
+	\item  Committente: prof. Tullio Vardanega e prof. Riccardo Cardin
+\end{trivlist}
+
+\subsubsection{Descrizione}
+Lo scopo del capitolato è quello di realizzare un'applicazione che utilizzi Sintesi Vocale al fine di poter tradurre testo in Voce, con supporto per: Inglese, Italiano, Tedesco, Francese.
+Inoltre deve permettere di cambiare lo stile della voce e di replicare una voce specifica, basandosi su tecnologie open source.
+
+\subsubsection{Dominio Tecnologico}
+\begin{trivlist}
+	\item  Piattaforma Android
+	\item  Motore di sintesi FA-TTS
+	\item  Tecnologie di terze parti (per accedere o visualizzare)
+\end{trivlist}
+
+
+\subsubsection{Fattori di rischio}
+Le tecnologie utilizzate risultano essere nuove al gruppo, e il percorso per il raggiungimento del progetto finito non è del tutto chiaro, dovuto anche alla libertà e mancanza di paletti fissi nel processo di implementazione.
+
+\subsubsection{Conclusioni}
+Questo Capitolato rappresenta per il gruppo un grosso salto nel vuoto, con possibili inconvenienti dovuti alla poca definizione di strumenti tecnologici richiesti al fine di portare a compimento il progetto. Inoltre il tema della sintesi vocale non ha attirato in particolar modo l’attenzione dei componenti del gruppo. Ciò, tra le altre cose, ne ha causato l’esclusione.
+
+\subsection{Capitolato C6}
+
+\subsubsection{Informazioni sul capitolato}
+\begin{trivlist}
+	\setlength{\itemindent}{+.3in}
+	\item  Nome: SWEDesigner
+	\item  Proponente: Zucchetti
+	\item  Committente: prof. Tullio Vardanega e prof. Riccardo Cardin
+\end{trivlist}
+
+\subsubsection{Descrizione}
+Il presente capitolato ha per oggetto l’ affidamento della fornitura per la realizzazione di un software di costruzione di diagrammi \glossario{UML} con la relativa generazione di codice Java e Javascript.
+
+\subsubsection{Dominio Tecnologico}
+Il sistema dovrà essere realizzato con tecnologie Web. In particolare si richiede che la parte server venga realizzata in Java con server Tomcat o Javascript con server Node.Js. La parte client dovrà essere eseguibile in un browser HTML5 ed utilizzare
+fogli stile CSS per l’ aspetto estetico e Javascript per la parte attiva.
+
+\subsubsection{Fattori di rischio}
+Uno dei principali timori del gruppo è basato sulla vastità del progetto, in quanto sono presenti due tipi di diagrammi tra i tanti previsti dall’UML, il diagramma delle classi e il diagramma delle attività; di seguito verrà chiesto il codice espresso dal disegno, nel primo caso si tratterà dello scheletro delle classi, nel secondo caso del corpo dei metodi. 
+
+\subsubsection{Conclusioni}
+Questo Capitolato ha attirato la nostra attenzione per la sua stesura dettagliata e per la disponibilità da parte del proponente, tuttavia la vastità e la numerosità delle richieste tendono a rappresentare una possibile causa di ritardo, e essendo la puntualità una caratteristica fondamentale per questo lavoro, ciò ha rappresentato l'esclusione del capitolato.

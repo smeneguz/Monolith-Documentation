@@ -1,0 +1,794 @@
+%% DEFINIZIONE DI PRODOTTO
+%controllare gli svantaggi
+
+\section{Introduzione}
+\subsection{Scopo del documento}
+
+Questo documento ha come scopo quello di definire la progettazione ad
+alto  e a basso livello
+per il prodotto Monolith. Verranno presentate l'architettura generale e
+di dettaglio secondo le quali
+saranno organizzate le varie componenti software e i \glossario{Design Pattern} utilizzati nella
+creazione dell'SDK, delle bolle predefinite e della demo. Verrà
+inoltre dettagliato il tracciamento tra le componenti software
+individuate ed i requisiti, i requisiti e i componenti, le classi e i
+requisiti e i requisiti e le classi.
+
+
+\subsection{Scopo del prodotto}
+
+Lo scopo del prodotto è quello di permettere la creazione di bolle
+interattive, che dovranno funzionare nell'ambiente Rocket.chat. Queste
+bolle permetteranno di aumentare l'interattività tra gli utenti della
+chat e aggiungeranno nuove funzionalità accessibili direttamente dalla conversazione 
+senza il bisogno di ricorrere all'apertura di applicazioni diverse.
+Il sistema offrirà agli sviluppatori un set di \glossario{API} per creare e
+rilasciare nuove bolle e agli utenti finali la possibilità di
+usufruire di un insieme di bolle predefinite.
+
+
+\subsection{Glossario}
+
+Al fine di evitare ogni ambiguità di linguaggio e massimizzare la
+comprensione dei documenti, i termini che necessitano di essere
+chiariti saranno scritti in corsivo e marcati con una |G| in pedice alla prima
+occorrenza e saranno riportati nel \gloss.
+
+\subsection{Riferimenti}
+
+\subsubsection{Normativi}
+\begin{itemize}
+	\item \textbf{Norme di Progetto}: \normediprogetto
+	\item \textbf{Capitolato d'appalto C5}: \\ \url{http://www.math.unipd.it/~tullio/IS-1/2016/Progetto/C5.pdf}
+	\item \textbf{Analisi dei Requisiti}: \analisideirequisiti
+	
+\end{itemize}
+
+
+\subsubsection{Informativi}
+\begin{itemize}
+	\item \textbf{Slide del corso di Ingegneria del Software}:
+     \\  \url{http://www.math.unipd.it/~tullio/IS-1/2016/ }
+\item \textbf{Documentazione React}
+\item \textbf{Documentazione Meteor}
+\item \textbf{Documentazione ECMAScript 6} 
+\item \textbf{Libro Design Patterns} Design Patterns, Elementi per il
+  riuso di software a oggetti. Gamma, Helm, Johnson, Vlissides.
+
+\end{itemize}
+
+\section{Tecnologie Utilizzate}
+
+In questa sezione verranno descritte le tecnologie su cui si basa lo
+sviluppo del progetto. Per ognuna di esse, verranno indicati l’ambito
+di utilizzo della tecnologia, i vantaggi e gli svantaggi che ne
+derivano. Alcune delle tecnologie che saranno usate sono richieste come requisito dal capitolato scelto.
+
+\subsection{Javascript 6th edition (ECMA SCRIPT 6)}
+
+JavaScript è un \glossario{linguaggio di scripting} orientato agli oggetti e agli
+eventi. \'E comunemente utilizzato nella programmazione Web lato
+client per la creazione, in siti web e applicazioni web, di effetti
+dinamici interattivi tramite l'uso di funzioni di script invocate da
+eventi innescati in vari modi dall'utente sulla pagina web in
+uso. \\ Come richiesto dal capitolato, per la realizzazione di
+Monolith, deve essere utilizzato \glossario{Javascript} 6th edition (ECMA SCRIPT
+6). \\ 
+
+\paragraph{Licenza}  
+Non esiste una sola implementazione perché ECMAScript (o ES) è un
+linguaggio di programmazione standardizzato e mantenuto da Ecma
+International nell'ECMA-262 ed ISO/IEC 16262. \\
+
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Gestione degli eventi asincroni tramite le promises
+	\item Possibilità di dichiarare classi
+	\item Supporto per le costanti(\emph{const})
+	\item Possibilità di isolare la definizione di variabili ad un blocco (\emph{let})
+	\item Possibilità di isolare lo scope di una funzione usando
+     blocchi delimitati da parentesi graffe \{\} come ambienti isolati (vs closure)
+	\item Uso di sintassi più espressiva per scrivere le funzioni anonime (\emph{Arrow Functions})
+	
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Il supporto di ES6 da parte dei browser è ancora incompleto
+	\item L’assenza di tipizzazione potrebbe ostacolare la valutazione della correttezza del codice
+\end{itemize}
+
+\subsection{Meteor}
+
+Meteor è un framework web JavaScript libero e open source  per lo
+sviluppo di applicazioni web e mobile. \'E una piattaforma basata su
+Node.js. Meteor utilizza, dunque, JavaScript sia lato client che lato
+server.  
+\\
+\paragraph{Licenza} MIT 
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. 
+
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Integrazione con diverse tecnologie utilizzate nello sviluppo web:
+	\begin{itemize}
+		\item React
+		\item MongoDB
+	\end{itemize}
+	\item Isomorfismo: il codice javascript scritto funziona in modo trasparente sul client (browser), sul server (Node.js) o in entrambi
+	\item Ecosistema e modularità: la comunità di Meteor è molto attiva
+     e molte funzionalità client o server potrebbero già essere
+     pacchettizzate dal \glossario{package} manager ufficiale 
+\end{itemize}
+
+\paragraph{Svantaggi} %controllareeeeeee 
+\begin{itemize}
+	\item Inizialmente sconosciuto ai membri del gruppo.
+	%\item Il modo in cui alcuni componenti core della tecnologia si interfacciano potrebbe limitare la libertà degli sviluppatori.
+\end{itemize}
+
+\subsection{Mongo DB}
+MongoDB è un database NoSQL orientato ai documenti, basato sul formato \glossario{BSON} per la memorizzazione e la rappresentazione dei dati. \'E distribuito come software libero open source. \\
+
+\paragraph{Licenza} GNU AGPL v3.0 \\
+\'E una licenza pubblicata da Free Software Foundation. \'E simile alla capostipite GNU GPL, una licenza fortemente copyleft per software libero.
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item \'E più flessibile di un database \glossario{SQL} e facilita la rappresentazione su un modello ad
+	oggetti
+	\item Supporta ricerche per campi, intervalli e regular expression. Le query possono restituire campi specifici del documento e anche includere funzioni definite dall'utente in JavaScript.
+	\item Qualunque campo in MongoDB può essere indicizzato 
+\end{itemize}
+
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Inizialmente sconosciuto ai membri del gruppo
+     \item Non è possibile eseguire query complesse a causa
+       dell'assenza di schema dei dati. A causa di questo parte della
+       complessità non può essere demandata al sistema di database
+\end{itemize}
+
+\subsection{HTML5}
+HTML5 è un linguaggio di markup per la strutturazione delle pagine web.
+
+\paragraph{Licenza}  
+Non esiste una sola implementazione perché HTML5 è un linguaggio di markup standardizzato e mantenuto da W3C.
+
+
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Codice più pulito e sintassi semplificata rispetto alle versioni precedenti
+	\item Interattività senza l’ausilio di plugin esterni valida per diversi formati multimediali
+	\item Semantica intuitiva grazie ai nuovi \glossario{TAG} di formattazione
+	\item Introduzione della geo localizzazione, dovuta ad una forte espansione di sistemi operativi mobili
+	\item Sistema più efficiente alternativo ai normali cookie chiamato Web Storage 
+
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Non tutti i browser supportano HTML5
+\end{itemize}
+
+\subsection{SCSS}
+
+SCSS è una sintassi per i fogli di stile introdotta da Sass 3 (Syntactically Awesome StyleSheets). \'E un'estensione del CSS .
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. 
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Possibilità di utilizzare variabili
+	\item Possibilità di creare funzioni 
+	\item Possibilità di organizzare il foglio di stile in più file
+	\item Compatibilità completa con la sintassi del CSS
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item  Sintassi più complessa.
+\end{itemize}
+
+\subsection{React}
+
+React è una libreria Javascript open source che permette di costruire interfacce utente. 
+\\
+\paragraph{Licenza} BSD-3-Clause \\
+Le licenze BSD sono una famiglia di licenze permissive, senza copyleft, per software.
+Le tre clausole della licenza BSD-3-Clause sono:
+\\
+\begin{itemize}
+	\item Libertà di eseguire il programma per qualsiasi scopo
+	\item Libertà di studiare il programma e modificarlo
+	\item Libertà di ridistribuire copie del programma in modo da aiutare il prossimo
+	
+\end{itemize}
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Semplificazione della realizzazione di interfacce UI dinamiche che possono reagire ai cambiamenti di dati in maniera autonoma attraverso opportuni componenti
+	\item Possibilità di utilizzare le viste per creare codice più facile da comprendere e su cui è più semplice effettuare il debugging.
+	
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Implementa solo la parte puramente visuale
+     dell'applicazione. Esistono alternative che possono gestire molti
+     più aspetti.
+	\item Curva di apprendimento ripida
+	\item \'E una libreria relativamente nuova
+\end{itemize}
+
+\subsection{Node.js}
+
+Node.js è una piattaforma event-driven per il motore JavaScript
+V8. Essa permette di realizzare applicazioni web utilizzando il
+linguaggio JavaScript, che tipicamente è usato client-side, per la scrittura anche
+della parte server-side delle applicazioni web. 
+\\
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. \\
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Facile apprendimento
+	\item Possibilità di realizzare la parte back-end di applicazioni utilizzando lo stesso linguaggio della parte front-end.
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Non supporta database relazionali
+	
+\end{itemize}
+
+\subsection{Rochet.chat}
+
+Rocket.chat è una Web chat server sviluppata in Javascript utilizzando il \glossario{Framework} Meteor.
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. \\
+
+\paragraph{Vantaggi}
+\begin{itemize}
+
+	\item Codice open source
+	\item Possibilità di creare chat di gruppo
+	\item Possibilità di inviare audio, video e file
+	\item Possibilità di effettuare video chiamate
+	\item Community molto attiva
+
+	
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Parzialmente documentata
+\end{itemize}
+
+\subsection{Bootstrap}
+
+Bootstrap è una raccolta di strumenti liberi per la creazione di siti
+e applicazioni per il Web. Essa contiene modelli di progettazione
+basati su HTML e CSS, sia per la tipografia, che per le varie
+componenti dell'interfaccia, come moduli, pulsanti e navigazione, così
+come alcune estensioni opzionali di JavaScript. \\
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. 
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	
+	\item Piattaforma ben standardizzata 
+	\item Non richiede l’appoggio né di un linguaggio di programmazione server side, né di un database
+	\item Ottima documentazione
+	\item \glossario{Responsive} Design	
+	\item \'E supportato dai browser moderni
+	
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item I plugin di jQuery sono limitati
+	\item Le modifiche dovute al continuo sviluppo non sono sempre facili da integrare
+\end{itemize}
+
+
+
+\subsection{polyglot.js}
+Polyglot.js è una libreria per la traduzione scritta in JavaScript, eseguita sia per il browser che per gli ambienti CommonJS(Node).
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. \\
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Non è richiesta una iscrizione per l'utilizzo
+	\item \'E un servizio non a pagamento
+	\item Il Polyglot ha zero dipendenze
+	\item Copre una traduzione di 30 lingue diverse
+\end{itemize}
+
+
+
+
+\subsection{Money.js}
+
+Money.js è una libreria semplice con l'unico obiettivo di convertire
+un valore di denaro da qualsiasi valuta in qualsiasi altra
+valuta. Money.js utilizza una fusione algoritmica per calcolare un
+insieme di tassi costantemente preciso per 165 valute mondiali. 
+ \\
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software.\\ 
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Non è richiesta una iscrizione per l'utilizzo
+	\item \'E un servizio non a pagamento
+	\item \'E una libreria semplice da integrare nel codice JavaScript
+\end{itemize}
+
+
+\subsection{weather.js}
+
+Weather.js è una libreria che recupera i dati da openweathermap.org e
+fa la ricerca di tutti i tipi di informazioni relative alle condizioni
+meteo. 
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. \\
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Non è richiesta una iscrizione per l'utilizzo
+	\item \'E un servizio non a pagamento
+	\item \'E una libreria semplice da integrare nel codice JavaScript
+\end{itemize}
+
+\paragraph{Svantaggi} 
+\begin{itemize}
+	\item Ha bisogno di 11 dipendenze 
+\end{itemize}
+
+
+\subsection{classNames}
+
+classNames è una semplice utility raccomandata per l'uso con \glossario{React} per l'unione condizionata di className
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. 
+\\
+
+\paragraph{Vantaggi}
+\begin{itemize}
+	\item Semplifica la gestione dei className dinamici 
+	\item Non possiede ulteriori dipendenze 
+\end{itemize}
+
+
+\subsection{Bluebird}
+Bluebird è una libreria di promessa incentrata sulle caratteristiche e le prestazioni innovative.
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. 
+\\
+
+\paragraph{Vantaggi}
+\begin{itemize}
+\item Bluebird fornisce tutti gli strumenti e le utility necessarie per realizzare un DSL altamente espressivo e fluente per il JavaScript asincrono
+\item Bluebird esegue praticamente su ogni piattaforma. Ciò rende il bluebird ideale per progetti che si preoccupano di fornire un'esperienza coerente tra piattaforme e cross-version
+\end{itemize}
+
+
+\subsection{Simple-Schema}
+Simple-Schema è un semplice pacchetto intelligente per la validazione dello schema reattivo per Meteor.
+
+\paragraph{Licenza} MIT \\
+La licenza MIT è una delle licenze più permissive nel panorama open
+source. In modo più esplicito dichiara i diritti dati all'utente
+finale, incluso il diritto di utilizzare, copiare, modificare,
+incorporare, pubblicare, distribuire, sotto-licenziare, e/o vendere il
+software. 
+\\
+
+
+
+\paragraph{Vantaggi}
+\begin{itemize}
+\item Permettere la definizione della struttura della collezione in modo semplice
+\item Non possiede ulteriori dipendenze 
+\end{itemize}
+
+
+\section{Descrizione Architettura}
+\subsection{Metodo e formalismo di specifica}
+
+Nell’esposizione dell’architettura dell’applicazione si procederà con
+un approccio top-down, descrivendo l’architettura iniziando dal
+generale ed andando al particolare. 
+Si procederà quindi alla descrizione dei componenti software, per poi descrivere
+nel dettaglio le singole classi, specificando per ognuna il tipo, l’obiettivo, la funzione e
+le relazioni in ingresso ed in uscita.
+Successivamente si illustreranno degli esempi di uso dei Design
+Pattern nell’architettura del sistema. 
+L'architettura dell' \glossario{SDK} e della \glossario{demo} sono state progettate separatamente.  
+Per i diagrammi delle componenti di classe e di attività, si utilizza
+il formalismo \glossario{UML} 2.0. Le classi e componenti presenti in librerie o
+framework esterni vengono contraddistinte da colori diversi. I
+framework esterni verranno rappresentati con un colore azzurro, invece
+le classi e componenti proprie saranno rappresentate con un
+colore giallo. Nella demo le componenti dell'SDK sono in verde.
+L'intera applicazione è progettata utilizzando il framework
+\glossario{Meteor} che permette di utilizzare il linguaggio JavaScript
+sia per il lato client che per quello server(tramite NodeJS). 
+I diagrammi delle classi che permettono di mostrare l’architettura
+generale del sistema vengono affiancati anche dai diagrammi di
+sequenza e attività, che permettono di definire le interazioni tra le
+componenti, senza preoccuparsi della loro classificazione. 
+
+%%  \subsection{Architettura generale - Componenti del sistema}
+\input{components}
+
+
+\input{classes}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Standard di Progetto}
+%\subsection{Standard di progettazione architetturale}
+
+\subsection{Standard di documentazione del codice}
+Gli standard di documentazione del codice sono definiti nel
+documento  \emph{\normediprogetto} .
+
+\subsection{Standard di denominazione di entità e relazioni }
+Gli standard di denominazione sono definiti nel nel
+documento  \emph{\normediprogetto} .
+
+%\subsection{Standard di programmazione}
+%Gli standard di programmazione sono definiti nel nel
+%documento NormeDiProgetto
+\subsection{Strumenti di lavoro}
+Gli strumenti da utilizzare e le procedure da seguire sono descritti
+nel documento  \emph{\normediprogetto} .
+
+
+\section{Diagrammi di Attività}
+Il diagramma delle attività è un diagramma definito all'interno dello
+Unified Modeling Language (UML) che definisce le attività da svolgere
+per realizzare una data funzionalità. Può essere utilizzato durante la
+progettazione del software per dettagliare un determinato
+algoritmo. Più in dettaglio, un activity diagram definisce una serie
+di attività o flusso, anche in termini di relazioni tra le attività, i
+responsabili per le singole attività e i punti di
+decisione. L'activity diagram è spesso usato come modello
+complementare allo Use Case Diagram, per descrivere le dinamiche con
+cui si sviluppano i diversi use case. 
+
+\subsection{Configurazione sondaggio}
+Questo diagramma rappresenta la configurazione e l'invio della bolla
+sondaggio. L’utente inserisce il titolo del sondaggio, dopodichè
+avviene l’inserimento delle opzioni. L’utente ha la possibilità di
+inserire più opzioni (rappresentato nel diagramma con la freccia che
+parte dal nodo decisione e raggiunge il nodo azione chiamato inserisci
+opzioni). Una volta compiuto il processo di configurazione l’utente
+decide di inviare la bolla (rappresentato dal nodo invia). Se il
+numero delle opzioni inserite è minore di due allora il flusso ritorna
+al nodo azione chiamato “inserisci opzione” per poter permettere
+all’utente di incrementare il numero delle opzioni del
+sondaggio. Altrimenti (il numero di opzioni è maggiore di uno) il
+flusso arriva al nodo di fine dell’attività. 
+
+\begin{center}
+  \includegraphics[scale=0.5]{img/Sondaggio.jpg}
+  \captionof{figure}{Diagramma di attività per la bolla sondaggio} 
+\end{center}
+
+
+\subsection{Configurazione ListBubble}
+Questo diagramma rappresenta la configurazione della bolla
+ListBubble. Il flusso inizia con l’inserimento del titolo della
+lista. Dopo questo processo il flusso raggiunge il nodo decisione dove
+l’utente sceglie il modo di inserimento degli elementi. L’inserimento
+degli elementi avviene o manualmente (inserisci elemento manualmente)
+oppure con la selezione nella lista degli elementi predefiniti
+(inserisci elemento da checklist). Nel caso l’utente scegliesse di
+inserire un elemento dalla checklist predefinita, il flusso raggiunge
+il nodo decisione. Da questo punto l’utente può scegliere di inviare
+la bolla già configurata e il flusso raggiunge il nodo terminale,
+oppure scegliere di ritornare nel nodo decisione raggiunto
+precedentemente per poter inserire un altro elemento. Anche nel caso
+in cui l’utente scegliesse di inserire un elemento manualmente il
+flusso segue lo stesso percorso, ovvero l’utente inserisce l’elemento
+e decide di inviare la bolla con il raggiungere il nodo terminale
+oppure inserire un altro elemento. 
+
+\begin{center}
+  \includegraphics[scale=0.5]{img/ListBubble.png}
+  \captionof{figure}{Diagramma di attività per la bolla ListBubble}
+\end{center}
+
+
+
+\section{Diagramma di Sequenza}
+
+\subsection{Creazione Bolla}
+
+
+	\includegraphics[width=\textwidth]{img/CreationBubble.png}
+	\captionof{figure}{Diagramma di sequenza per la creazione di una bolla}
+
+
+\newpage
+
+\textbf{Scenario}: 
+Questo scenario rappresenta la creazione di una bolla con l’utente che
+invia la richiesta per 	accedere al menù di creazione. La richiesta
+passa per il bubbleDiscriminator che capisce la 	tipologia di bolla
+e passa la richiesta al TBubbleCreator e TBubbleConfig che
+costruiscono il 	menù di configurazione adatto.  
+Dopodichè SideArea1 si aggiorna automaticamente (tramite il meccanismo di aggiornamento di Minimongo contenuto in Meteor) e
+una volta compilati i campi la richiesta torna al bubbleDiscriminator e al TBubbleCreator che 	creano la bolla aggiungendola alla SentBubbleHistory. \\
+
+\subsection{Cancellazione Bolla}
+
+\begin{center}
+	\includegraphics[scale=0.36]{img/DeleteBubble.png}
+	\captionof{figure}{Diagramma di sequenza per la cancellazione di una bolla}
+\end{center}
+
+
+
+\textbf{Scenario}: 
+Questo scenario rappresenta la cancellazione, da parte di un utente, di una delle proprie bolle 	inviate precedentemente. L’utente in questione accede alla propria area di bolle inviate e 	seleziona la bolla da cancellare. La richiesta arriva al database dove avviene la cancellazione, 	successivamente, Meteor, gestisce l’aggiornamento dei dati nello storico delle bolle inviate 	(dell’utente attore) e in quello delle bolle ricevute degli altri utenti. 
+\newpage
+
+\subsection{Voto Bolla-Sondaggio}
+
+\begin{center}
+	\includegraphics[scale=0.4]{img/PollVote.png}
+	\captionof{figure}{Diagramma di sequenza per il voto in una bolla-sondaggio}
+\end{center}
+
+
+
+\textbf{Scenario}: 
+Questo scenario rappresenta il voto di un utente ad una bolla sondaggio.
+L’utente accede all’area delle bolle ricevute e vota l’opzione che desidera, il voto viene salvato 	nel database e, attraverso Meteor, vengono aggiornati i dati della bolla in questione di ogni 	utente. \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Tracciamento}
+
+% tracciamento componenti requisiti
+\subsection{Tracciamento componenti-requisiti}
+\input{tracciamento_comp_req}
+% tracciamento requisiti componenti
+\subsection{Tracciamento requisiti-componenti}
+\input{tracciamento_req_comp}
+
+% tracciamento classi requisiti
+\subsection{Tracciamento classi-requisiti}
+\input{tracciamento_class_req}
+% tracciamento requisiti classi
+\subsection{Tracciamento requisiti-classi}
+\input{tracciamento_req_class}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
+\section{Descrizione Design Pattern}
+
+Un design pattern è una soluzione progettuale elegante e generale ad
+un problema ricorrente. In particolare si tratta di un
+modello logico da applicare per la risoluzione di un problema che può
+presentarsi in diverse situazioni durante la fase di progettazione e
+sviluppo del software, ancora prima della definizione dell'algoritmo
+risolutivo. 
+
+Essi si suddividono in quattro categorie: 
+
+
+\begin{itemize}
+	\item \textbf{Architetturali }: esprimono schemi di base per impostare l'organizzazione strutturale di un sistema software;
+	\item \textbf{Creazionali }: forniscono un'astrazione del processo di istanziazione degli oggetti;
+	\item \textbf{Strutturali }: si occupano delle modalità di composizione di classi e oggetti per formare strutture complesse;
+	\item \textbf{Comportamentali }: si occupano di algoritmi e dell'assegnamento di responsabilità tra oggetti collaboranti.
+
+\end{itemize}
+
+\subsection{Design Pattern Utilizzati}
+
+\subsubsection{Factory Method}
+Rappresenta uno dei pattern creazionali adottati dal gruppo Obelix,
+esso  indirizza il problema della creazione di oggetti senza
+specificarne l'esatta classe. Questo pattern raggiunge il suo scopo
+fornendo un'interfaccia per creare un oggetto, ma lascia che le
+sottoclassi decidano quale oggetto istanziare. 
+
+	\FloatBarrier
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.45]{img/method.jpg}
+		\caption{Diagramma del Factory method}
+	\end{figure}
+
+
+Product definisce l'interfaccia implementata da ConcreteProduct,
+creator definisce il factory method che restituisce una interfaccia di
+tipo product, ConcreteCreator definisce il metodo factory effettivo
+per la creazione di un’istanza particolare di tipo Product. 
+Utilizzato in tal modo nella classe BubbleCreator dal gruppo Obelix.
+
+
+I motivi che portano alla scelta del suo utilizzo sono:
+
+\begin{itemize}
+\item La creazione di un oggetto preclude il suo riuso senza una significativa duplicazione di codice
+\item  La creazione di un oggetto richiede l'accesso ad informazioni o risorse che non dovrebbero essere contenute nella classe di composizione
+\item La gestione del ciclo di vita degli oggetti gestiti deve essere centralizzata in modo da assicurare un comportamento coerente all'interno dell'applicazione
+
+\end{itemize}
+
+\subsubsection{Template Method}
+Questo pattern permette di definire la struttura di un algoritmo lasciando alle sottoclassi il compito di implementarne alcuni passi come preferiscono. In questo modo si può ridefinire e personalizzare parte del comportamento nelle varie sottoclassi senza dover riscrivere più volte il codice in comune.
+
+	\FloatBarrier
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.45]{img/template-pattern.png}
+		\caption{Diagramma del Template method}
+	\end{figure}
+
+
+Questo pattern è composto dai seguenti partecipanti:
+\begin{itemize}
+	\item AbstractClass: definisce il metodo concreto ed i metodi primitivi astratti. Il metodo concreto richiama i metodi primitivi implementati nelle sottoclassi
+	\item ConcreteClass: implementa i metodi primitivi per svolgere i passi specifici dell’algoritmo ed eventualmente i metodi hook
+\end{itemize}
+
+Tale pattern presenta i seguenti vantaggi/svantaggi:
+\begin{itemize}
+	\item definizione di metodi comuni: occorre comprendere quali sono i comportamenti comunemente implementati dalle sottoclassi e “promuoverli” come comportamenti della superclasse in modo da centralizzarli ed evitare la duplicazione del codice.
+	\item definizione dei metodi hook: occorre permettere alle sottoclassi di poter definire un comportamento durante l’esecuzione dell’algoritmo tramite l’introduzione di un metodo “hook” che POSSONO ma NON SONO OBBLIGATE a ridefinire.
+\end{itemize}
+
+Utilizzato dal gruppo nella classe BubbleDatabase con una funzione polimorfa che ritorna il nome della bolla in base all'istanza.
+Questa scelta è dovuta al fatto di dover sviluppare comportamenti comuni a più bolle, quindi si è deciso di far in modo da centralizzarli ed evitare la duplicazione del codice.
+
+\subsubsection{Proxy Pattern}
+Invece che chiamare direttamente i metodi di un oggetto li facciamo chiamare da un terzo attore che si occupa di invocare concretamente i metodi sull'oggetto e di restituirci i valori in caso di metodi con valori di ritorno. 
+Di solito questo è utilizzato quando esiste una dipendenza da una risorsa remota (con conseguente latenza di rete) o quando un oggetto richiede molto tempo per caricare.
+Quindi si applica il modello Proxy e si crea un oggetto proxy che "si accende" per l'oggetto originale. Il proxy inoltra la richiesta a un oggetto di destinazione. L'interfaccia dell'oggetto Proxy è uguale all'oggetto originale e i client potrebbero non essere nemmeno consapevoli di trattare con un proxy piuttosto che l'oggetto reale
+
+	\FloatBarrier
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.45]{img/javascript-proxy.jpg}
+		\caption{Diagramma del Proxy Pattern}
+	\end{figure}
+	
+	Partecipanti:
+	\begin{itemize}
+		\item Client
+			\begin{itemize}
+				\item Chiama Proxy richiedendo un'operazione
+			\end{itemize}
+		\item Proxy
+			\begin{itemize}
+				\item Fornisce un'interfaccia simile all'oggetto reale
+				\item Mantiene un riferimento che consente l'accesso proxy all'oggetto reale
+				\item Gestisce le richieste e li inoltra all'oggetto reale
+			\end{itemize}
+		\item RealSubject
+			\begin{itemize}
+				\item Definisce l'oggetto reale per cui è richiesto il servizio
+			\end{itemize}
+	\end{itemize}
+
+Meteor call utilizza il Pattern Proxy, infatti simula lato client una risorsa che si trova lato server gestendo in modo trasparente la comunicazione tra le due.
+
+\subsubsection{Composite Pattern}
+Questo pattern permette di trattare un gruppo di oggetti come se fossero l'istanza di un oggetto singolo. Il design pattern Composite organizza gli oggetti in una struttura ad albero, nella quale i nodi sono delle composite e le foglie sono oggetti semplici.
+
+È utilizzato per dare la possibilità ai client di manipolare oggetti singoli e composizioni in modo uniforme.
+
+	\FloatBarrier
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.45]{img/Composite_Pattern.png}
+		\caption{Diagramma del Composite Pattern}
+	\end{figure}
+
+
+Struttura:
+\begin{itemize}
+	\item Client: manipola gli oggetti attraverso l'interfaccia Component
+	\item Component: dichiara l'interfaccia per gli oggetti nella composizione, per l'accesso e la manipolazione di questi, imposta un comportamento di default per l'interfaccia comune a tutte le classi e può definire un'interfaccia per l'accesso al padre del componente e la implementa se è appropriata
+	\item Composite: definisce il comportamento per i componenti aventi figli, salva i figli e implementa le operazioni ad essi connesse nell'interfaccia Component
+	\item Leaf: definisce il comportamento degli oggetti primitivi, cioè delle foglie.
+\end{itemize}
+
+Attraverso l'interfaccia Component, il Client interagisce con gli oggetti della composite. Se l'oggetto desiderato è una Leaf, la richiesta è processata direttamente; altrimenti, se è una Composite, viene rimandata ai figli cercando di svolgere le operazioni prima e dopo del rimando.
+
+In questo modo, si semplifica il Client, si creano delle gerarchie di classi, si semplifica l'aggiunta di nuovi componenti, anche se il design diventa troppo generale. \\
+Questo Design Pattern è adottato da React, libreria utilizzata dal gruppo Obelix all'interno di Monolith.
+ 
+
+%polyglot.js
+%money.js
+%weather.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{rotating} 
+\usepackage{multirow}
+
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\date{}
+
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\rightmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../../../file_comuni/copertina2}
+\nomedoc{Verbale interno 2017-04-26}
+\versione{v1\_0\_0}
+\datacreazione{2017/04/26}
+\verifica{Riccardo Saggese}
+\approvazione{Nicolò Rigato}
+\redazione{Emanuele Crespan \eanche Federica Schifano}
+\uso{interno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Verbale dell'incontro tra i membri del gruppo \emph{Obelix} in data 2017-04-26}
+
+
+\begin{document}
+\paginatitolo
+\section{Informazioni sulla riunione}
+
+\begin{itemize}
+\item[] Data: 2017-04-26
+\item[] Luogo: Torre Archimede - Via Trieste, 63 Padova
+\item[] Ora: 16:00
+\item[] Durata: 75'
+\item[] Partecipanti interni: Obelix
+  \begin{itemize}
+  \item[] Emanuele Crespan
+  \item[] Federica Schifano
+  \item[] Nicolò Rigato
+  \item[] Riccardo Saggese
+  \item[] Silvio Meneguzzo
+  \item[] Tomas Mali
+ \end{itemize}
+\end{itemize}
+
+\section{Argomenti trattati}
+\begin{enumerate}
+	\item Studio collettivo sul funzionamento React, MongoDB e Meteor	
+	\item Progettazione Pre-Demo
+	\item Decisioni architetturali SDK e Demo
+
+	
+\end{enumerate}
+
+
+\section{Decisioni Prese}
+\begin{enumerate}
+	\item Per affrontare la progettazione e la codifica, sono stati effettuati vari studi personali e di gruppo al fine di capire le strategie di aggregazione dei vari componenti (librerie, framework...), si è giunti ad una conoscenza abbastanza buona al fine di iniziare una possibile Demo, questo ha comportato l'inizio della progettazione di una Pre-Demo
+	\item Pre-Demo consisterà in una to do list che verrà introdotta in rocket.chat accessibile tramite un bottone sulla destra inserito appositamente per la creazione e la visualizzazione delle bolle create, e un altro bottone dove si potrà vedere lo storico delle bolle ricevute internamente a quella room
+	\item SDK sono state decise le linee guida ed è stato fatto un diagramma di flusso dei dati per poterci approcciare meglio a quella che sarà l'architettura, mentre per la Demo è stato deciso che come caso interessante avremmo una to do list che potrà essere arricchita da altre to do list, o bolle da altre bolle
+\end{enumerate}
+
+
+\end{document}

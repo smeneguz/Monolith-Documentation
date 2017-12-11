@@ -1,0 +1,95 @@
+\documentclass[10 pt,a4paper, openany]{article}
+%titlepage
+\usepackage[hidelinks]{hyperref}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{extarrows}
+\usepackage{cancel}
+\usepackage{eurosym}
+\usepackage{listingsutf8}
+\usepackage{lastpage}
+\usepackage{rotating} 
+\usepackage{multirow}
+
+\usepackage{caption}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\date{}
+
+
+\usepackage{makeidx}
+\makeindex
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\includegraphics[width=.6cm]{../../../../../file_comuni/immagini/obelisk_sample_02.png}
+  Obelix Group}
+\chead{}
+\rhead{\rightmark }% \leftmark}%da rimettere
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage / \pageref*{LastPage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lipsum}
+\usepackage{../../../../../file_comuni/copertina2}
+\nomedoc{Verbale interno 2017-07-19}
+\versione{v1\_0\_0}
+\datacreazione{2017/07/19}
+\verifica{Riccardo Saggese}
+\approvazione{Nicolò Rigato}
+\redazione{Emanuele Crespan \eanche Federica Schifano}
+\uso{interno}
+\distribuzione{Prof. Tullio Vardanega \eanche Prof. Riccardo Cardin \eanche Red Babel \eanche Gruppo Obelix}
+\sommario{Verbale dell'incontro tra i membri del gruppo \emph{Obelix} in data 2017-07-19}
+
+
+\begin{document}
+\paginatitolo
+\section{Informazioni sulla riunione}
+
+\begin{itemize}
+\item[] Data: 2017-07-19
+\item[] Luogo: Torre Archimede - Via Trieste, 63 Padova
+\item[] Ora: 09.30
+\item[] Durata: 60'
+\item[] Partecipanti interni: Obelix
+  \begin{itemize}
+  \item[] Emanuele Crespan
+  \item[] Federica Schifano
+  \item[] Nicolò Rigato
+  \item[] Riccardo Saggese
+  \item[] Silvio Meneguzzo
+  \item[] Tomas Mali
+ \end{itemize}
+\end{itemize}
+
+\section{Argomenti trattati}
+\begin{enumerate}
+	\item test SingleComponent 	
+	\item tipologie di test da eseguire 
+
+	
+\end{enumerate}
+
+
+\section{Decisioni Prese}
+\begin{enumerate}
+	\item \textbf{VI2.1} Sono stati implementati i Single Component che successivamente verrano integrati nelle bolle che necessitano del loro utilizzo.
+	\item \textbf{VI2.2} Sono stati individuati quattro livelli di testing:
+	\begin{enumerate}
+		\item \textbf{Test di unità [TU]:} con questa tipologia di test si cerca di verificare la più piccola parte di lavoro prodotta da un programmatore. Questo si traduce tendenzialmente a verificare i metodi e le funzioni scritte;
+		\item \textbf{Test di integrazione [TI]:} con questa tipologia di test si cerca di verificare le componenti di sistema. Più precisamente, l'obiettivo è quello di testare il funzionamento dei vari package prodotti, sia singolarmente che nel loro insieme;
+		\item \textbf{Test di sistema [TS]:} con questa tipologia di test si cerca di verificare che il comportamento e il funzionamento dell'architettura siano corretti;
+		\item \textbf{Test di validazione [TV]:} con questa tipologia di test si vuole verificare che il lavoro prodotto soddisfi quanto richiesto dal proponente.
+	\end{enumerate}
+
+\end{enumerate}
+
+
+\end{document}

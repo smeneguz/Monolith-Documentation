@@ -1,0 +1,182 @@
+
+Rocket.chat
+: web chat open source. Sistema che permette agli utenti di comunicare in tempo reale utilizzando interfacce web facilmente accessibili. 
+
+Bolla interattiva
+: messaggio che può essere inviato all'interno della chat. Aggiunge alle funzionalità base della chat, nuove funzionalità che sono accessibili direttamente dalla conversazione senza il bisogno di ricorrere all’apertura di applicazioni diverse.
+
+API
+: si indica ogni insieme di procedure disponibili al programmatore, di solito raggruppate a formare un set di strumenti specifici per l’espletamento di un determinato compito
+all’interno di un certo programma. Spesso con tale termine si intendono le librerie software disponibili in un certo linguaggio di programmazione. Nel contesto del progetto è utilizzato
+per indicare la parte dell'SDK Monolith esclusa la procedura di inizializzazione della bolla nuova.
+
+JavaScript
+: è un linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall’utente sulla pagina web in uso.
+
+UML
+: unified modelling language, linguaggio di modellazione unificato, è un linguaggio di modellazione e specifica basato sul paradigma orientato agli oggetti, ed una famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto dei sistemi software. Il linguaggio nacque con l’intento di unificare approcci precedenti, raccogliendo le migliori prassi nel settore e definendo così uno standard industriale unificato.
+
+Package
+: è un meccanismo per organizzare classi Java, logicamente correlate o che forniscono servizi simili, all’interno di sottogruppi ordinati. Questi package possono essere compressi permettendo la trasmissione di più classi in una sola volta. In UML, analogamente, è un raggruppamento arbitrario di elementi in una unità di livello più alto.
+
+Design Pattern
+: è un concetto che può essere definito "una soluzione progettuale generale ad un problema ricorrente". Si tratta di una descrizione o modello logico da applicare per la risoluzione di un problema che può presentarsi in diverse situazioni durante le fasi di progettazione e sviluppo del software, ancor prima della definizione dell’algoritmo risolutivo della parte computazionale. \’E un approccio spesso efficace nel contenere o ridurre il debito tecnico. I design pattern orientati agli oggetti tipicamente mostrano relazioni ed interazioni tra classi o oggetti, senza specificare le classi applicative finali coinvolte, risiedendo quindi nel dominio dei moduli e delle interconnessioni. Ad un livello più alto sono invece i pattern
+architetturali che hanno un ambito ben più ampio, descrivendo un pattern complessivo adottato dall’intero sistema, la cui implementazione logica dà vita ad un framework.
+
+Astah
+: precedentemente noto come JUDE (Java e ambiente UML Developers), è uno strumento di modellazione UML creato dall’azienda giapponese Change Vision.
+
+Mac OS
+: è il sistema operativo di Apple dedicato ai computer Macintosh; il nome è l’acronimo di Macintosh Operating System.
+
+Microsoft Windows
+: è una famiglia di ambienti operativi e sistemi operativi dedicati ai personal computer, alle workstation, ai server e agli smartphone. Il sistema operativo si chiama così per via della sua interfaccia a finestre. É software proprietario della Microsoft Corporation che lo rende disponibile esclusivamente a pagamento.
+
+Milestone
+: indica importanti traguardi intermedi nello svolgimento del progetto. Molto spesso sono rappresentate da eventi, cioè da attività con durata zero o di un giorno, e vengono evidenziate in maniera diversa dalle altre attività nell’ambito dei documenti di progetto.
+
+Linguaggio di scripting
+: linguaggio di programmazione interpretato destinato in genere a compiti di automazione del sistema operativo o delle applicazioni, o a essere usato all’interno delle pagine web. I programmi sviluppati con questi linguaggi sono detti script, termine della lingua inglese utilizzato in ambito teatrale per indicare il testo (anche detto canovaccio) in cui sono tracciate le parti che devono essere interpretate dagli attori.
+
+Linux
+: è una famiglia di sistemi operativi di tipo Unix-like, rilasciati sotto varie possibili distribuzioni, aventi la caratteristica comune di utilizzare come nucleo il kernel Linux.
+
+Microsoft Project
+: è un software di pianificazione sviluppato e venduto da Microsoft. \’E uno strumento per assistere i responsabili di progetto nella pianificazione, nell’assegnazione delle risorse, nella verifica del rispetto dei tempi, nella gestione dei budget e nell’analisi dei carichi di lavoro. 
+
+Diagramma di Gantt
+: il diagramma di Gantt è usato principalmente nelle attività di project management. É costruito partendo da un asse orizzontale, a rappresentazione  dell’arco temporale totale del progetto, suddiviso in fasi incrementali; e da un asse verticale,
+a rappresentazione delle mansioni o attività che costituiscono il progetto. Un diagramma di Gantt permette la rappresentazione grafica di un calendario di attività, utile al fine di pianificare, coordinare e tracciare specifiche attività in un progetto dando una chiara illustrazione dello stato d’avanzamento del progetto rappresentato.
+
+SDK
+: un software development kit (SDK, traducibile in italiano come "pacchetto di sviluppo per applicazioni"), in informatica, indica genericamente un insieme di strumenti per lo sviluppo e la documentazione di software.
+Nel contesto del progetto indica tutto Monolith a parte le bolle d'esempio e la Demo.
+
+Demo
+: il demo (abbreviazione dell'inglese demonstration, che significa prova, dimostrazione) è un campione dimostrativo della produzione di musicisti, scrittori, programmatori e autori in genere. \’E prodotto e distribuito dallo stesso autore o da suoi produttori/agenti, solitamente in maniera gratuita, allo scopo di promuovere l'autore presso enti in grado di operare una distribuzione/produzione di più ampio raggio (case editrici, case discografiche, aziende produttrici e così via).
+
+
+Webapp
+: in informatica l'espressione applicazione web, ovvero web-application in inglese, indica genericamente tutte le applicazioni distribuite web-based. Nell'ingegneria del software e nella programmazione Web essa indica infatti un'applicazione accessibile/fruibile via web per mezzo di un network, come ad esempio una Intranet all'interno di un sistema informatico o attraverso la Rete Internet, ovvero in una architettura tipica di tipo client-server, che offre determinati servizi all'utente client
+
+Team
+: gruppo di persone che collabora nello svolgimento di un’attività.
+
+W3C
+: il W3C è un consorzio nato nell'ottobre del 1994 per portare il WWW alla sua massima potenzialità definendo protocolli comuni con la finalità di promuoverne l'evoluzione garantendo l'interoperabilità.
+
+LATEX
+: LaTeX (scritto anche LATEX e pronunciato latek), è un linguaggio di markup usato per la preparazione di testi basato sul programma di composizione tipografica TEX.
+
+JSHint
+: è uno strumento di community-driven che rileva gli errori e potenziali problemi nel codice JavaScript.
+
+CSSHint
+: è uno strumento che aiuta a rilevare possibili errori nel codice CSS.
+
+Complexity-report
+: è un software di analisi della complessità dei progetti JavaScript.
+
+Google Chrome DevTools
+: gli strumenti di Chrome Developer, sono un insieme di web authoring e strumenti di debug integrati in Google Chrome. 
+
+Karma
+: è un test runner per JavaScript che viene eseguito su Node.js. \’E adatto per eseguire test qualsiasi progetto di JavaScript. Karma esegue dei test utilizzando una delle suite di test JavaScript (Gelsomino, Mocha, QUnit, etc) su tutti i browsers e su diverse tipologie di piattaforma. É altamente configurabile ed ha un eccellente supporto di plug-in.
+
+Node.js
+: è un framework relativo all’utilizzo lato server di JavaScript. La caratteristica principale di Node.js risiede nella possibilità di accedere alle risorse del sistema operativo in modalità event-driven e non sfruttando il classico modello basato su processi o threads concorrenti, utilizzato dai classici web server. Il modello event-driven si basa su un concetto piuttosto semplice: si lancia una azione quando accade qualcosa. Ogni azione quindi risulta asincrona a differenza dei pattern di programmazione più comune in cui una azione succede ad un’altra solo dopo che essa è stata completata.
+
+Slack
+: è una piattaforma per la comunicazione tra gruppi di lavoro. \’E organizzato in canali, proprio come le chat IRC, e funziona in tutto e per tutto allo stesso modo. In più, Slack aggiunge la possibilità di condividere file in modo facile e veloce ma soprattutto l’integrazione con servizi esterni.
+
+Repository
+: un repository (letteralmente deposito o ripostiglio) è un ambiente di un sistema informativo (ad es. di tipo ERP), in cui vengono gestiti i metadati.
+
+Telegram
+: è un servizio di messaggistica istantanea basato su cloud ed erogato senza fini di lucro dalla società Telegram LLC. I client ufficiali di Telegram sono distribuiti come software libero per diverse piattaforme. 
+
+Git
+: è un software di controllo versione distribuito utilizzabile da interfaccia a riga di comando, creato da Linus Torvalds nel 2005.
+
+Linus Torvalds
+: è un programmatore, informatico e blogger finlandese, conosciuto soprattutto per essere stato l'autore della prima versione del kernel Linux e coordinatore del progetto di sviluppo dello stesso.
+
+GitHub
+: è un servizio di hosting per progetti software. Il nome deriva dal fatto che GitHub è un servizio sostitutivo del software dell'omonimo strumento di controllo versione distribuito, Git.
+
+Google Drive
+: è un servizio, in ambiente cloud computing, di memorizzazione e sincronizzazione online introdotto da Google il 24 aprile 2012
+
+Google Calendar
+: è un sistema di calendari concepito da Google. Google offre infatti la possibilità di creare più calendari, di condividerli e importarli da altri servizi online
+
+Peer-to-peer
+: peer-to-peer (P2P) o rete paritaria o paritetica, in informatica, è un'espressione che indica un modello di architettura logica di rete informatica in cui i nodi non sono gerarchizzati unicamente sotto forma di client o server fissi (clienti e serventi), ma sotto forma di nodi equivalenti o paritari (in inglese peer) che possono cioè fungere sia da cliente che da servente verso gli altri nodi terminali (host) della rete.
+
+PDCA 
+: il ciclo di Deming o Deming Cycle (ciclo di PDCA, acronimo di Plan–Do–Check–Act, in italiano "Pianificare - Fare - Verificare - Agire") è un metodo di gestione iterativo in quattro fasi utilizzato in attività per il controllo e il miglioramento continuo dei processi e dei prodotti. \’E noto anche come Ciclo di Shewhart, (Plan-Do-Study-Act, "Pianificare - Fare - Studiare - Agire").
+
+Baseline
+: piano approvato rispetto al quale vengono misurate le performance e lo stato del progetto. \’E costituito dal piano iniziale più le modifiche approvate.
+
+Abstract Syntax Tree
+: è una rappresentazione ad albero della struttura sintattica astratta del codice sorgente scritto in un linguaggio di programmazione. Ogni nodo dell'albero indica un costrutto che si verificano nel codice sorgente. 
+
+Halstead
+: sono metriche del software introdotte da Maurice Howard Halstead nel 1977, come parte del suo trattato sulla creazione di una scienza empirica dello sviluppo del software.
+
+Software Quality Management
+: è un processo di gestione che mira a sviluppare e gestire la qualità del software per assicurarsi che il prodotto soddisfa l'utente.
+
+Bug
+: Il termine inglese bug, in italiano baco, identifica in informatica un errore nella scrittura del codice sorgente di un programma software. Meno comunemente, il termine bug può indicare un difetto di progettazione in un componente hardware, che ne causa un comportamento imprevisto o comunque diverso da quello specificato dal produttore.
+
+Committente
+: il committente è la figura che commissiona un lavoro, indipendentemente dall'entità o dall'importo. Esso può essere una persona fisica nel caso di un lavoro privato, una persona giuridica nel caso di un lavoro per un'azienda, un ministero nel caso di un lavoro pubblico.
+
+Proponente
+: in senso giuridico e contrattuale, colui che formula una proposta di contratto.
+
+MySQL
+: è il più diffuso database Open Source basato sul linguaggio SQL. MySQL è un sistema di gestione per database relazionali.
+
+SQL
+: Structured Query Language, è un linguaggio standardizzato per database basati sul modello relazionale.
+
+Tag
+: è una parola chiave o un termine associato a un’informazione, che descrive l’oggetto rendendo possibile la classificazione e la ricerca.
+
+Task
+: è la parola inglese per “compito”. In informatica è spesso utilizzato per identificare tanti piccoli compiti oppure
+una attività da eseguire. è un termine usato anche in Asana con la stessa accezione.
+
+Ticket
+: elemento di una lista di compiti produttivi o correttivi, viene utilizzato per organizzare e distribuire il lavoro di un gruppo in maniera centralizzata.
+
+Ticketing
+: è la procedura con cui il Project Manager assegna un ticket.
+
+Asana
+: strumento di project management utilizzato per la gestione e assegnazione dei compiti e delle attività. \'E strutturato in aree di lavoro, progetti, task e subtask.
+
+React
+: è una libreria Javascript open source che permette di costruire interfacce utente. 
+
+tabbar
+: in Rocket.Chat è la parte della finestra di chat più a destra su cui si trovano alcuni pulsanti. \'E qui che Monolith aggiunge i suoi pulsanti.
+
+sidearea
+: per sidearea si intende una delle due aree che Monolith crea in Rocket.Chat alla pressione dei pulsanti nella tabbar. Si tratta di una parte dello schermo sulla destra che diventa fullscreen in visualizzazione mobile.
+
+responsive
+: paradigma di progettazione di interfacce, in particolare web. Col termine responsive ci si riferisce a interfacce pensate per essere visualizzate automaticamente in modo diverso a seconda delle dimensioni dello schermo del dispositivo su cui sono visualizzati.
+
+BSON
+: per esteso Binary JSON. \'E il formato binario in cui MongoDb memorizza i dati
+
+room
+: in Rocket.Chat è una qualunque situazione in cui utenti possono comunicare tramite la chat. Queste includono chat 1:1 o di gruppo.
+
+classNames
+: utility raccomandata per l’uso con React per l’unione condizionata di className, semplifica la gestione dei className dinamici
+

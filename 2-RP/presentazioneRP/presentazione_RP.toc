@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {italian}
+\select@language {italian}
+\beamer@sectionintoc {2}{Il gruppo Obelix}{3}{0}{1}
+\beamer@sectionintoc {3}{Introduzione}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Cos'era una bolla?}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Cos'\IeC {\`e} una bolla?}{5}{0}{2}
+\beamer@sectionintoc {4}{Descrizione Architettura SDK}{14}{0}{3}
+\beamer@subsectionintoc {4}{1}{Visione ad alto livello}{14}{0}{3}
+\beamer@subsectionintoc {4}{2}{Visione di dettaglio}{16}{0}{3}
+\beamer@sectionintoc {5}{Descrizione Architettura Demo}{21}{0}{4}
+\beamer@subsectionintoc {5}{1}{Visione ad alto livello}{21}{0}{4}
+\beamer@sectionintoc {6}{Modifiche Apportate}{24}{0}{5}
+\beamer@subsectionintoc {6}{1}{Generali}{24}{0}{5}
+\beamer@subsectionintoc {6}{2}{Documenti}{25}{0}{5}
+\beamer@sectionintoc {7}{Preventivo e Consuntivo}{26}{0}{6}

@@ -1,0 +1,468 @@
+\section{Introduction}
+\subsection{Intro}
+Monolith is an SDK to build interactive bubbles in Rocket.Chat environment.
+The following document explains how to install and use Monolith SDK.
+It provides code snippet and examples on how to create a custom bubble on Rocket.chat using the SDK.
+There are 4 repositories containing relevant code:
+\begin{itemize}
+\item \textbf{monolith-sdk}\\
+It contains the code for the SDK. Here core funtionalities are provided. All other packages depends on this.\\
+URL\\
+This package includes some built-in bubbles:
+\begin{itemize}
+\item \textbf{CurrencyBubble}\\
+This bubble allows to convert monetary values from one currency to another.
+\item \textbf{PollBubble}\\
+This bubble allows to make a survey.
+\item \textbf{RandomBubble}\\
+This bubble allow to roll a dice.
+\end{itemize}
+
+\item \textbf{monolith-hello}\\
+It contains the code for the simplest example possible of how to use Monolith-SDK.\\
+URL
+\item \textbf{monolith-demo}\\
+It contains the code for the official Monolith Demo. It represents a more complex use case than monolith-hello. See description for details.\\
+URL
+\item \textbf{monolith-emptybubble}\\
+It contains the code for the empty bubble i.e. a set of files you can use to start to build your own bubble. See the developer guide for details.\\
+URL
+\end{itemize}
+
+\subsection{How to install monolith-sdk}
+To install Monolith SDK on Rocket.chat you need to follow the following steps:
+
+\begin{lstlisting}
+    git clone https://github.com/RocketChat/Rocket.Chat.git
+    cd Rocket.Chat
+    meteor npm start # when finished close meteor
+    meteor add templating blaze-html-templates
+    		react-meteor-data maxharris9:classnames
+    		react-template-helper	
+    meteor npm i react react-dom bluebird simpl-schema
+    		react-addons-pure-render-mixin money
+    		request request-promise  --save
+    # copy monolith-sdk folder inside
+    # the packages folder on Rocket.chat
+    meteor add monolith-sdk
+    meteor
+\end{lstlisting}
+
+\subsection{How to install monolith-hello}
+\textbf{Precondition:} monolith-sdk must be already installed as seen in the previous section.
+
+\begin{lstlisting}
+# download from the repository monolith-hello
+# and put the directory in Rocket.Chat/packages
+# execute in the main directory of RocketChat:
+meteor add monolith-hello
+\end{lstlisting}
+
+\subsection{How to install monolith-demo}
+\textbf{Precondition:} monolith-sdk must be already installed as seen in the previous section.
+
+\begin{lstlisting}
+# download from the repository monolith-demo 
+# and put the directory in Rocket.Chat/packages
+# execute in the main directory of RocketChat:
+meteor add monolith-demo
+\end{lstlisting}
+
+
+
+
+\subsection{Error and bug reporting}
+If you encounter any error or bug during the normal use of the
+application, please report it to us by opening an issue on our GitHub
+repository at the following URL:
+\url{https://github.com/ObelixSWE/monolith-sdk/issues}. \\ 
+We will work to continuously improve our application and fix all the bugs and error that will be reported. 
+
+% ------------------------------------------- 
+\section{New bubble creation}
+\subsection{A new bubble from an empty bubble}
+monolith-emptybubble is provided as a starting point to develop a new bubble.
+The first thing to do is to choose a name for your bubble. From now will be used
+ <yourbubble> to indicate your project.
+Once you downloaded the directory modify files as follow:
+\begin{itemize}
+\item rename the main directory and all files to a different name such it includes <yourbubble>
+\item \textbf{package.js}
+	\begin{itemize}
+	\item change package name to <yourbubble> in Package.describe name.
+	\item substitute empty with <yourbubble> in api.addFiles
+	\end{itemize}
+	\item \textbf{client/main.js}: correct file path
+	\item \textbf{server/main.js}: correct file path
+	\item \textbf{server/Methods.js}: write your own Meteor.method. It is required for update but is optional for insertion. Usage is explained in section \emph{Database configuration and possible uses}
+	\item \textbf{lib/emptyDb.js}: rename the collection using <yourbubble>
+	\item \textbf{lib/emptyCheck.js}: rename the check object and insert your data schema as described in \emph{Data schema description}
+	\item \textbf{lib/emptyBubble.jsx}: 
+	Gui component. See \emph{Gui requirement} for details.
+	\item \textbf{lib/emptyBubbleConfig.jsx}: 
+	Gui component. See \emph{Gui requirement} for details.
+	\item \textbf{lib/emptyBubbleCreationButton.jsx}: 
+	Gui component. See \emph{Gui requirement} for details.
+	\item \textbf{lib/emptyCreator.jsx}: substitute empty for
+     <yourbubble>. This file is required to integrate your graphical
+     elements with monolith's gui.
+\end{itemize}
+
+Keep in mind that names you gave here need to precise. Monolith relies
+on that.
+
+
+\subsection{Gui requirements}
+These are the gui components you must realize to obtain a bubble. You can ease your work using the component library provided with Monolith.
+\subsubsection{emptyBubble.jsx}
+You can realize up to 2 versione of this, for sender and for receiver,
+or just use one as in examples. Just modify accordingly
+<yourbubble>Creator.js.
+
+You have to realize a React component that will receive in props all
+database data for that bubble.
+If you need to modify bubble server status you'll have to use
+<yourbubble>Db.
+
+
+
+\subsubsection{emptyBubbleConfig.jsx}
+You have to realize a React component that will receive in props a
+\emph{closeMenu} function. Use this to close menu when finished to
+configure your bubble like this:
+
+\begin{lstlisting}
+    send(){
+        let insProm = <yourbubble>Db.insert({...});
+        insProm.then(
+            (result) => {this.props.closeMenu();},
+            (error) => {console.log(error);}
+        );
+    }
+\end{lstlisting}
+
+The example uses the promise syntax. If operation succeedes the menu
+is closed.
+
+To insert a bubble into server side database you'll have to use
+<yourbubble>Db.
+
+\subsubsection{emptyBubbleCreationButton.jsx}
+This is the button in the menu to start to configure <yourbubble>.
+For a basic usage you can simply insert <yourbubble> in the given
+file.
+
+If you need two button (like monolith-demo) you can redefine the
+method \emph{secondAreaName} (commented in empty). You also have to
+pass as props \emph{secondButtonName}.
+Note that you will need a second configmenu and creator named accordingly.
+
+
+\subsection{Data schema description}
+In <yourbubble>Check.js you have to define a schema to validate data you put in
+database.
+Define it with SimpleSchema syntax:
+\url{https://www.npmjs.com/package/simpl-schema}
+
+\subsection{Database configuration and possible uses}
+
+In <yourbubble>Db.js you simply have to insert the correct name for your
+bubble.
+In <yourbubble>Methods.js you can insert you can put Meteor methods to
+be called at insertion or update of bubble:
+\paragraph{Method for insertion} \emph{Use is optional.} 
+
+\begin{lstlisting}
+newDataObj method(dataObj);
+\end{lstlisting}
+
+This alters the data Object sent from client before it is
+checked. Note the modified object must be returned.
+Call it by inserting the method's name as argument of <yourbubble>Db.
+
+\paragraph{Method for update} \emph{Use is mandatory.} 
+
+\begin{lstlisting}
+boolean method(bubbleId, argument);
+\end{lstlisting}
+
+In this method you have to put all database update operation for
+<yourbubble>. It must return true for success, false for failure.
+Call it by inserting the method's name as argument of <yourbubble>Db.
+
+
+
+% ------------------------------------------- 
+
+\section{Sdk's Classes Description}
+This section explains how to use the Monolith library classes.
+
+\subsection{SingleComponents}
+\begin{flushleft}
+Singlecomponent classes represent the components that can be rendered.
+
+\paragraph{CheckButton}
+CheckButton represent a HTML <checkbox> tag.
+\begin{verbatim}
+<CheckButton
+    id="HTML id"
+    classes="CSS classes"
+    getCheck={this.functionName}
+    value="checkbox value"
+/>
+\end{verbatim}
+getCheck is a props that hold a function called when the checkbox onChange event is called and passes to the function a variable containing the state of the checkbox.
+\begin{verbatim}
+functionName(m){...}
+
+m={id:"id", value:"value", check:[true/false]};
+\end{verbatim}
+
+    \paragraph{CheckBoxList}
+CheckBoxList represent a group of CheckButton.
+CheckBoxList needs to have an array passed like this:
+\begin{verbatim}
+let opt=[{id: 1, value: 'Hello World'},{id: 2, value: 'Installation'}];
+
+<CheckBoxList
+    classes="CSS classes"
+    options={opt}
+    getCheck={this.functionName}
+/>
+\end{verbatim}
+getCheck like the CheckButton getCheck.
+\begin{verbatim}
+functionName(m){...}
+
+m={id:"id", value:"value", check:[true/false]};
+\end{verbatim}
+
+    \paragraph{ComboBox}
+ComboBox represent a HTML <select> tag.
+\begin{verbatim}
+<ComboBox
+    id="HTML id"
+    classes="CSS classes"
+    options={["a","b","c"]}
+    getSelection={this.functionName}
+/>
+\end{verbatim}
+getSelection is a props that hold a function called when the select onChange event is called and passes to the function a variable containing the selected option.
+\begin{verbatim}
+functionName(m){...}
+
+m="selected option";
+\end{verbatim}
+
+    \paragraph{Image}
+Image represent a HTML <img> tag.
+
+\begin{verbatim}
+<Image
+    id="HTML id"
+    classes="CSS classes"
+    src="img source location"
+    alt="image description"
+    width="image width"
+    height="image height"
+/>
+\end{verbatim}
+
+    \paragraph{ImageButton}
+ImageButton represent a button with an image.
+\begin{verbatim}
+<ImageButton
+    id="HTML id"
+    src="img source location"
+    alt="image description"
+    width="image width"
+    height="image height"
+    handleClick={this.functionName}
+/>
+\end{verbatim}
+handleClick is a props that hold a function called when the ImageButton is clicked.
+\begin{verbatim}
+functionName(id){...}
+id="id of the clicked button"
+\end{verbatim}
+    \paragraph{LineEdit}
+LineEdit represent a HTML text <input> tag.
+\begin{verbatim}
+<LineEdit
+    id="HTML id"
+    classes="CSS classes"
+    updateState={this.functionName}
+    value="default value"
+ />
+\end{verbatim}
+updateState is a props that hold a function called when onChange event of the text input is called.
+\begin{verbatim}
+updateState(text,id){...}
+
+text="text of the text input"
+id="id of the text input"
+\end{verbatim}
+
+    \paragraph{LineEditComboBox}
+LineEditComboBox represent a HTML text <input> and a HTML <select> tag.
+\begin{verbatim}
+<LineEditComboBox
+    idle="LineEdit HTML id"
+    idcb="ComboBox  HTML id"
+    classesle="LineEdit CSS classes"
+    classescb="ComboBox CSS classes"
+    textUpdate={this.functionName1}
+    options={["a","b","c"]}
+    comboUpdate={this.functionName2}
+/>
+\end{verbatim}
+textUpdate is a props that hold a function passed to the LineEdit.
+comboUpdate is a props that hold a function passed to le ComboBox.
+\begin{verbatim}
+functionName1(text,id){...}
+
+text="text of the text input"
+id="id of the text input"
+
+functionName2(m){...}
+
+m="selected option";
+\end{verbatim}
+    \paragraph{PushButton}
+PushButton represent a HTML <button>.
+\begin{verbatim}
+<PushButton
+    id="HTML id"
+    classes="CSS classes"
+    handleClick={this.functionName}
+    buttonName="button name"
+/>
+\end{verbatim}
+handleClick is a props that hold a function called when the button is clicked.
+\begin{verbatim}
+functionName(id){...}
+
+id="id of the button"
+\end{verbatim}
+
+    \paragraph{LineEditPushButton}
+LineEditPushButton represent LineEdit and a PushButton.
+\begin{verbatim}
+<LineEditPushButton
+    idle="LineEdit HTML id"
+    idpb="PushButton HTML id"
+    classesle="LineEdit CSS classes"
+    classespb="PushButton CSS classes"
+    getText={this.functionName}
+    buttonName="button name"
+/>
+\end{verbatim}
+getText is a props that hold a function called when the PushButton is clicked and passes to the function a variable containing the text of the LineEdit.
+\begin{verbatim}
+functionName(text){...}
+
+text="text of the LineEdit"
+\end{verbatim}
+
+    \paragraph{RadioButtonGroup}
+RadioButtonGroup represent a group of HTML radio button <input>.
+\begin{verbatim}
+<RadioButtonGroup
+    classes="CSS classes"
+    options={["a","b","c"]}
+    getValue={this.functionName}
+/>
+\end{verbatim}
+getValue is a props that hold a function called when a radio button is clicked and passes to the function a variable containing the selected radio information.
+\begin{verbatim}
+functionName(value){...}
+
+value="value of the selected radio button"
+\end{verbatim}
+
+    \paragraph{TextAreaButton}
+TextAreaButton represent a HTML <textarea> tag and a PushButton.
+\begin{verbatim}
+<TextAreaButton
+    idta="textArea HTML id"
+    classesta="textArea CSS classes"
+    idpb="PushButton HTML id"
+    classespb="PushButton CSS classes"
+    getText={this.functionName}
+    width="textarea width"
+    height="textarea height"
+    buttonName="button name"
+/>
+\end{verbatim}
+getText is a props that hold a function called when the PushButton is clicked and passes to the function a variable containing the text of the textarea.
+\begin{verbatim}
+functionName(text){...}
+
+text="text of the textarea"
+\end{verbatim}
+
+    \paragraph{TextAreaComboBox}
+TextAreaComboBox represent a HTML <textarea> tag and a ComboBox.
+\begin{verbatim}
+<TextAreaComboBox
+    idtx="textArea HTML id"
+    classestx="textArea CSS classes"
+    idcb="combobox HTML id"
+    classescb="combobox CSS classes"
+    width="textarea width"
+    height="textarea height"
+    textUpdate={this.functionName1}
+    options={["a","b","c"]}
+    comboUpdate={this.functionName2}
+/>
+\end{verbatim}
+textUpdate is a props that hold a function called when onChange event of the textarea is called.\\
+comboUpdate is a props that hold a function called when the select onChange event is called and passes to the function a variable containing the selected option.
+\begin{verbatim}
+functionName1(text){...}
+
+text="text of the textarea"
+
+functionName2(m){...}
+
+m="selected option";
+\end{verbatim}
+\end{flushleft}
+
+\subsection{Layout}
+\begin{flushleft}
+Layout are classes that represent are containers that place the elements conteined in a certain way.
+
+\paragraph{VerticalLayout}
+VerticalLayout represent a container that place the elements contained in a vertically.
+
+\begin{verbatim}
+<VerticalLayout hide={"visibility state(true or false)"}>
+    <Children/>
+    <Children/>
+    .
+    .
+    .
+</VerticalLayout>
+\end{verbatim}
+
+\paragraph{HorizontalLayout}
+HorizontalLayout represent a container that place the elements contained in a horizontally.\\
+The maximum number of element that can be displayed horizontally is 12
+due to Bootstrap limits.
+
+\begin{verbatim}
+<HorizontalLayout hide={"visibility state(true or false)"}>
+    <Children/>
+    <Children/>
+    .
+    .
+    .
+</HorizontalLayout>
+\end{verbatim}
+\end{flushleft}
+
+
+% ------------------------------------------- 
+%\section{monolith-demo guide}
+%The monolith demo

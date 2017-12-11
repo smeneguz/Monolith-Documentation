@@ -1,0 +1,31 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Cos'\IeC {\`e} Monolith SDK?}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del documento}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Utilizzo}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Layout}{3}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}VerticalLayout}{3}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}HorizontalalLayout}{4}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Components}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}CheckBoxList}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}CheckButton}{4}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}ComboBox}{5}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Image}{5}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}ImageButton}{5}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}LineEdit}{6}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}LineEditComboBox}{6}{subsubsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.8}LineEditPushButton}{6}{subsubsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.9}PushButton}{7}{subsubsection.2.2.9}
+\contentsline {subsubsection}{\numberline {2.2.10}RadioButtonGroup}{7}{subsubsection.2.2.10}
+\contentsline {subsubsection}{\numberline {2.2.11}TextAreaButton}{7}{subsubsection.2.2.11}
+\contentsline {subsubsection}{\numberline {2.2.12}TextAreaComboBox}{8}{subsubsection.2.2.12}
+\contentsline {section}{\numberline {3}Bolle}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}CurrencyBubble}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}ListBubble}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}PollBubble}{9}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}DiceBubble}{11}{subsection.3.4}
+\contentsline {section}{\numberline {4}DEMO - Lista con Checklist}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Checklist}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Lista}{13}{subsection.4.2}
